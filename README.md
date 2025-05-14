@@ -1,4 +1,4 @@
-# boiler prueba
+# boiler
 Este boiler utiliza React, Next y Tailwind
 
 ## Quick Start
