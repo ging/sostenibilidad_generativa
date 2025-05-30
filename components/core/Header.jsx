@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import { usePathname } from "next/navigation";
@@ -18,6 +18,7 @@ export default function Header(props) {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
   const currentPath = usePathname();
+  const refs = useRef([]);
 
   // classes
   const headerClasses = clsx(
@@ -33,7 +34,25 @@ export default function Header(props) {
     }
   );
 
-  //
+  console.log(activeRoutes, " activeRoutes");
+
+  // // funcion que pille height, width de elemento y haga push al array de activeRoutes
+  // //
+  // activeRoutes.map((route) => {
+  //   const elementRef = useRef();
+   
+  //   useEffect(() => {
+  //     const route =  elementRef.current;
+    
+  //   if (route) {
+  //     const { width} = route.getBoundingClientRect();
+  //     console.log('width:', width);
+  //   }
+  // }, []);
+    
+
+  //      console.log(elementRef, " elementRef");
+  // })
 
   const menuClasses = clsx(
     "w-screen px-8 py-4 md:p-0 md:w-fit",
@@ -102,17 +121,30 @@ export default function Header(props) {
             {activeRoutes.map((route, index, page) => (
               <li key={index}>
                 <Link
+                  data-label={route.route}
+                  ref={(el) => refs.current[index] = el}
                   href={route.route}
                   className={
                     currentPath == route.route
                       ? menuItemClasses + " font-semibold"
                       : menuItemClasses + " font-normal"
                   }
+                  // todo esto de coger el width del elemento y pasarlo a style no funciona
+                  // porque no se renderiza el elemento antes de que se ejecute el useEffect
+                  // de modo que hay que GUARDAR el width en un array de refs
+                  // y luego pasarlo al style del elemento
+                  // style={{
+                  //   width: refs.current[index].clientWidth + 1 + "rem"
+                    
+                  // }}
                 >
                   {t(route.key)}
+                  {console.log(refs.current, " refs.current")}
+                   {/* {console.log(refs.current[index].clientWidth, " width current")}  */}
                 </Link>
               </li>
             ))}
+            {console.log(refs , " refs only")}
           </ul>         
           <LangSwitcher />
         </div>

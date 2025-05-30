@@ -155,7 +155,8 @@ const Card = React.forwardRef(
       webOfScience,
       googleScholar,
       linkedin,
-      portalUpm
+      portalUpm,
+    
     },
     ref
   ) => {
@@ -464,7 +465,42 @@ const Card = React.forwardRef(
           )}
           <Button asChild variant="secondary" radius="rounded_md">
             <Link rel="noopener noreferrer" target="_blank" href={route}>
-              Ver herramienta
+              {t("tools.toolCards.button")}
+              <ArrowRightIcon />
+            </Link>
+          </Button>
+        </CardFooter>
+      </CustomCard>
+    );
+
+    
+    const escaperoomCard = (
+      <CustomCard className={cn(CardVariants({ direction, className }))}>
+        {img && (
+          <Image
+            src={/* process.env.PUBLIC_URL */ +img || "placeholder.jpg"}
+            alt={/* process.env.PUBLIC_URL */ +img || "placeholder.jpg"}
+            className={"h-24"}
+            fit="contain"
+          />
+        )}
+        <CardBody>
+          <CardContent>
+            <CardTitle>{title}</CardTitle>
+            <CardDescription>{description}</CardDescription>
+          </CardContent>
+        </CardBody>
+        <CardFooter>
+          {github && (
+            <Button asChild variant="link">
+              <Link rel="noopener noreferrer" target="_blank" href={github}>
+                GitHub
+              </Link>
+            </Button>
+          )}
+          <Button asChild variant="secondary" radius="rounded_md">
+            <Link rel="noopener noreferrer" target="_blank" href={route}>
+              {t("escaperooms.escaperoomCards.button")}
               <ArrowRightIcon />
             </Link>
           </Button>
@@ -489,6 +525,8 @@ const Card = React.forwardRef(
         return toolCard;
       case "researchline":
         return researchLineCard;
+      case "escaperoom":
+        return escaperoomCard;
     }
   }
 );

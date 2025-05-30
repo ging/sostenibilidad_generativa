@@ -10,6 +10,7 @@ import { mytools } from "@/constants/tools";
 import { useTranslation } from "react-i18next";
 import FaceIcon from "@mui/icons-material/Face";
 import { Card, CardVariants } from "@/components/core/Cards";
+// import  ToolCard from "@/components/core/Cards/ToolCard";
 import Heading from "@/components/ui/Heading";
 import Text from "@/components/ui/Text";
 
@@ -17,30 +18,7 @@ import Text from "@/components/ui/Text";
 export default function Tools(props) {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
-  const [tools, setTools] = useState([]);
-
-  // Update tools when language changes
-  useEffect(() => {
-    const translatedTools = mytools.map(
-      ({
-        logo,
-        route,
-        title,
-        translationKey,
-        github,
-        key,
-        description,
-      }) => ({
-        title,
-        logo,
-        route,
-        github,
-        key,
-        description: t(translationKey),
-      })
-    );
-    setTools(translatedTools);
-  }, [i18n.language, t]);
+ 
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -56,8 +34,8 @@ export default function Tools(props) {
       <main>
         <section className="standard_margin">
           <div className="grid sm:gap-4 gap-y-8 sm:grid-cols-2 md:grid-cols-3 ">
-              {tools.map( 
-                ({ key, title, description, route, logo, github}) => {
+              {mytools.map( 
+                ({ key, title, description_es, description_en, route}) => {
                   return (
                     <Card
                       key={key}
@@ -65,41 +43,13 @@ export default function Tools(props) {
                       currentLang={currentLang}
                       cardType={"tool"}
                       className={CardVariants({variant: "tool"})}
-                      description={description}
+                      description={currentLang === "es" ? description_es : description_en}
                       route={route}
-                    ></Card>
-                    //   <div className="tool" key={title}>
-                    //     <div className={`tool_logo ${gradient}`}>
-                    //       <img alt={"Project Logo"} src={logo} />
-                    //     </div>
-
-                    //     <div className="tool_content">
-                    //       <div className="tool_title">
-                    //         <h3>{title}</h3>
-                    //       </div>
-                    //       <div className="tool_description">
-                    //         <p>{description}</p>
-                    //       </div>
-                    //       <div className="tool_button_container">
-                    //         <button className="tool_button">
-                    //           <CreateLink route={route}>
-                    //             <FaceIcon />
-                    //             <span> {t("tools.toolCards.button")}</span>
-                    //           </CreateLink>
-                    //         </button>
-                    //         <button className="tool_github">
-                    //           <CreateLink route={github}>
-                    //             {/* <FontAwesomeIcon
-                    //               className="mr-2 "
-                    //               icon={faGithub}
-                    //               size="lg"
-                    //             /> */}
-                    //             <span> Github </span>{" "}
-                    //           </CreateLink>
-                    //         </button>
-                    //       </div>
-                    //     </div>
-                    //   </div>
+                  
+                    >
+                 
+                    </Card>
+                 
                   );
                 }
               )}

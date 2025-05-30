@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
 
   return (
     <html className={` ${sourceSans.variable} ${inter.variable} `}>
-      <title>Boiler</title>
+      <title>Sostenibilidad Generativa</title>
       <body className="bg-background">
         <Header route={"/"} />
         {children}

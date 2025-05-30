@@ -47,7 +47,7 @@ export default function Footer(props) {
         <div className={sectionTitleClasses}>{t("footer.title1")}</div>
         <ul
           className={`columns-1 gap-x-8 inline-block ${
-            activeRoutes.length <= 3 ? "xs:columns-1" : "xs:columns-2"
+            activeRoutes.length <= 4 ? "xs:columns-1" : "xs:columns-2"
           }`}
         >
           {activeRoutes.map((route, index) => (
