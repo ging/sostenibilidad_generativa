@@ -16,8 +16,8 @@ export const es = {
         "publicationstab": "Publicaciones",
     },
     "front": {
-        "title": "Boilerplate del GING",
-        "description": "Plantilla personalizable de sitios web para grupos de investigación y otros proyectos. Puedes consultar la documentación en el enlace de abajo para empezar a usarla.",
+        "title": "Sostenibilidad en la IA Generativa",
+        "description": "Un proyecto de investigación para promover la sostenibilidad y el uso eficiente de la IA Generativa.",
         "doc-button": "Documentación",
         "action-button": "Sobre nosotros",
         "section1Title": "Sobre el proyecto",

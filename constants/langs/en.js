@@ -14,8 +14,8 @@ export const en = {
         "publicationstab": "Publications",
     },
     "front": {
-        "title": "Boilerplate by GING",
-        "description": "Customizable website template for research groups and other projects. See documentation at the link below to use the template.",
+        "title": "Sustainability in Generative AI",
+        "description": "A project to promote sustainability in the field of generative AI.",
         "doc-button": "Documentation",
         "action-button": "About us",
         "section1Title": "Short description of the project",

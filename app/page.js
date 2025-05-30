@@ -57,11 +57,11 @@ export default function Page() {
           <BannerTitle className={"text-white"}>{t("front.title")}</BannerTitle>
           <BannerDescription className="h-full text-balance flex flex-col gap-2">
             {t("front.description")}
-              <Button asChild variant="link" className={"w-fit text-white"}>
+              {/* <Button asChild variant="link" className={"w-fit text-white"}>
                 <Link rel="noopener noreferrer" target="_blank" href={"https://ging.github.io/boiler/documentation/"}>
                   {t("front.doc-button")}
                 </Link>
-            </Button>
+            </Button> */}
           </BannerDescription>
           <Divider />
           <Button
