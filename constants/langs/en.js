@@ -1,20 +1,15 @@
 export const en = {
     "nav":{
-        "item1":"Challenges",
-        "item2":"Environmental impact",
-        "item3":"Team",
-        "item4":"Research",
-        "item5":"Contact",
-        "item6":"Design system",
-        "item7":"Documentation",
-        "item8":"Courses",
-        "item9":"Tools"
+         "challenges":"Challenges",
+        "environmentalImpact":"Environmental Impact",
+        "results":"Results",
     },
     "header": {
         "publicationstab": "Publications",
     },
     "front": {
-        "title": "Sustainability in Generative AI",
+        "title1": "Sustainability in",
+        "title2": "Generative AI",
         "description": "A project to promote sustainability in the field of generative AI.",
         "doc-button": "Documentation",
         "action-button": "About us",
@@ -26,19 +21,19 @@ export const en = {
         "sectionHomeTitle": "A collaborative project between UC3M and UPM",
         "sectionHomeBody": "The collaboration between the groups will help in aligning the strategies to meet the objectives, instead of producing divergent solutions. Finally, the PI1 for the UPM subproject was part of UC3M team until a few months ago, with multipleshared projects and papers published with both PIs from UC3M, many of them related to the topics of this project. This will greatly facilitate the alignment of both subprojects and effective coordination.",
         "sectionHomeSubtitle": "“The collaboration between the groups will help in aligning the strategies to meet the objectives, instead of producing divergent solutions”.",
-        "ResearchLines": {
-            "sectionTitle": "Research lines",
-            "ResearchLine1": {
-                "ResearchLineTitle": "Research line 1",
-                "ResearchLineBody": "Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus.",
+        "summaryWeb": {
+            "sectionTitle": "Sección",
+            "environmentalImpact": {
+                "title": "Environmental Impact",
+                "body": "Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus.",
             },
-            "ResearchLine2": {
-                "ResearchLineTitle": "Research line 2",
-                "ResearchLineBody": "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
+            "challenges": {
+                "title": "Challenges",
+                "body": "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
             },
-            "ResearchLine3": {
-                "ResearchLineTitle": "Research line 3",
-                "ResearchLineBody": "Sed auctor lectus at elit consectetur, at venenatis ligula faucibus.",
+            "results": {
+                "title": "Results",
+                "body": "Sed auctor lectus at elit consectetur, at venenatis ligula faucibus.",
             },
         },
     },

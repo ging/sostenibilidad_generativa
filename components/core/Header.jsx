@@ -23,9 +23,9 @@ export default function Header(props) {
   // classes
   const headerClasses = clsx(
     "h-fit",
-    "px-8 py-4 sticky -top-[1px] w-full",
-    "flex justify-between items-center md:items-start",
-    "bg-background text-gray-800 shadow-md",
+    "px-8 py-3 sticky -top-[1px] w-full",
+    "flex justify-between items-center ",
+    "bg-background text-text shadow-md border-b border-gray-400",
     
     `header_${currentLang} z-50`,
     {
@@ -36,23 +36,6 @@ export default function Header(props) {
 
   console.log(activeRoutes, " activeRoutes");
 
-  // // funcion que pille height, width de elemento y haga push al array de activeRoutes
-  // //
-  // activeRoutes.map((route) => {
-  //   const elementRef = useRef();
-   
-  //   useEffect(() => {
-  //     const route =  elementRef.current;
-    
-  //   if (route) {
-  //     const { width} = route.getBoundingClientRect();
-  //     console.log('width:', width);
-  //   }
-  // }, []);
-    
-
-  //      console.log(elementRef, " elementRef");
-  // })
 
   const menuClasses = clsx(
     "w-screen px-8 py-4 md:p-0 md:w-fit",
@@ -83,15 +66,11 @@ export default function Header(props) {
   return (
     <header className={headerClasses + "z-50"} id="header_home"> {/* route={routes.route} ?????*/}
       <a href="/">
-        <div className="h-6 py-0.5 flex gap-4">
-        <img
-            className="object-contain"
-            src="logo_sm_boiler.svg"
-            alt="logo"
-          />
+        <div className="h-8 flex gap-4">
+        
           <img
             className="object-contain"
-            src="logo_boiler.svg"
+            src="assets/logos/sg-logo.png"
             alt="logo"
           />
         </div>

@@ -22,7 +22,11 @@ module.exports = {
     extend: {
       fontFamily: {
         "title": ['var(--font-inter)', 'sans-serif'],
-        "main": ['var(--font-sourceSans)', 'sans-serif'],
+        "main": ['Heebo', 'sans-serif'],
+        "body": ['Heebo', 'sans-serif'],
+        "chaney": ['Chaney', 'sans-serif'],
+        "chaney-wide": ['Chaney-wide', 'sans-serif'],
+        
       },
       fontSize: {
         '2xs': ['0.625rem', { lineHeight: '1.4' }],  /* 10px */
@@ -79,9 +83,9 @@ module.exports = {
           // 100: "#FFE685",
         },
         background: {
-          DEFAULT:"#f7f7ef",
-          400: "#EFF7FB",
-          300: "#EFF7FB"
+          DEFAULT:"#1B1F1D",
+          400: "#1B1F1D",
+          300: "#242424"
         },
         ring: {
           DEFAULT: "#cbe0ed",
@@ -93,7 +97,7 @@ module.exports = {
           DEFAULT:"#323232"
         },
         text: {
-          DEFAULT:"#323232"
+          DEFAULT:"#FFFFFF"
         }
       },
     },
@@ -106,7 +110,7 @@ module.exports = {
       '2xl': '1536px',    
     },
     backgroundImage: {
-      'main': `url('${basePathTailwind}/assets/fondos/background_banner.png')`,
+      'main': `url('${basePathTailwind}/assets/img/banner.png')`,
     }
   },
   plugins: [

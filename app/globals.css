@@ -3,14 +3,35 @@
 @tailwind utilities;
 
 * {
- /* border: 1px solid salmon */
+  /* border: 1px solid salmon */
 }
 
-
+@layer base {
+  @font-face {
+    font-family: "Chaney";
+    src: local("Chaney"),
+      url("../public/assets/fonts/chaney/CHANEY-Regular.otf") format(opentype);
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "Chaney-wide";
+    src: local("Chaney-wide"),
+      url("../public/assets/fonts/chaney/CHANEY-Extended.otf") format(opentype);
+  }
+}
+@layer base {
+  @font-face {
+    font-family: "Heebo";
+    src: local("Heebo"),
+      url("../public/assets/fonts/Heebo-VariableFont_wght.ttf") format(truetype);
+  }
+}
 /*TYPE*/
-/* .text-h5 {
-  color: inherit
-} */
+
+p {
+  color: white;
+}
 /*MARGINS*/
 .standard_margin {
   @apply m-6 sm:my-6 sm:mx-8 md:my-8 md:mx-14 lg:my-12 lg:mx-24 xl:mx-44 2xl:mx-72;
@@ -22,23 +43,22 @@
 /* MÁRGENES PARA CONTENEDORES CON IMÁGENES DE FONDO*/
 /* margen estandar pero solo en eje x (para elementos que encuentran en otros contenedores) */
 .standard_margin-x {
-    @apply mx-6 sm:mx-8 md:mx-14 lg:mx-24 xl:mx-44 2xl:mx-72
+  @apply mx-6 sm:mx-8 md:mx-14 lg:mx-24 xl:mx-44 2xl:mx-72;
 }
 .standard_margin-xl-x {
   @apply m-6 sm:mx-12 md:mx-32 lg:mx-40 xl:mx-72 2xl:mx-96;
 }
 /* margen estandar pero solo en eje y (para elementos contenedores con otros elementos con margen dentro) */
 .standard_margin-y {
-    @apply my-6 sm:my-6 md:my-8 lg:my-12 xl:my-44 2xl:my-72
+  @apply my-6 sm:my-6 md:my-8 lg:my-12 xl:my-44 2xl:my-72;
 }
-
 
 /*PADDINGS*/
 .standard_padding {
   @apply p-6 sm:py-6 sm:px-8 md:py-8 md:px-14 lg:py-12 lg:px-24 xl:px-44 2xl:px-72;
 }
 .padding_home {
-  @apply px-8 sm:p-12 md:px-20 lg:px-24 xl:px-32 2xl:px-48 py-6 sm:py-6 md:py-8 lg:py-12;;
+  @apply px-8 sm:p-12 md:px-20 lg:px-24 xl:px-32 2xl:px-48 py-6 sm:py-6 md:py-8 lg:py-12;
 }
 .narrow_padding {
   @apply p-6 sm:py-6 sm:px-8 md:py-8 md:px-14 lg:py-10;
@@ -50,26 +70,25 @@
   @apply p-4 lg:p-6;
 }
 
-
 /*GAPS*/
 /* Esto no se puede incluir en una clase grid y que ya tenga configurada la rejilla también????????? */
 .gap_text {
-    @apply gap-0 sm:gap-2 md:gap-4
+  @apply gap-0 sm:gap-2 md:gap-4;
 }
 .gap_div {
-  @apply gap-2 sm:gap-3 lg:gap-4 xl:gap-6
+  @apply gap-2 sm:gap-3 lg:gap-4 xl:gap-6;
 }
 .gap_grid {
-  @apply gap-3 sm:gap-4 md:gap-5 xl:gap-6
+  @apply gap-3 sm:gap-4 md:gap-5 xl:gap-6;
 }
 /*esta clase es importante, porque los gaps con el responsive
 no son iguales, ni van in crecendo, porque la estructura
 del filter cambia de bloque a inline*/
 .gap_filter {
-@apply gap-0 md:gap-5 xl:gap-6
+  @apply gap-0 md:gap-5 xl:gap-6;
 }
 .gap_grid-r {
-    @apply gap-x-4 sm:gap-x-6 lg:gap-x-8 xl:gap-x-10
+  @apply gap-x-4 sm:gap-x-6 lg:gap-x-8 xl:gap-x-10;
 }
 
 /* DIVIDERS */
@@ -77,11 +96,10 @@ del filter cambia de bloque a inline*/
   @apply h-full;
 }
 
-
 main {
   min-height: 85dvh;
 }
-  
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -148,10 +166,10 @@ main {
 
 /* NAVEGADOR ITEMS*/
 .item-menu::before {
- content: attr(data-label);
-    font-weight: bold;
-    height: 0;
-    visibility: hidden;
-    overflow: hidden;
-    display: block;
+  content: attr(data-label);
+  font-weight: bold;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  display: block;
 }

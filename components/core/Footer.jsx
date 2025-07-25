@@ -21,25 +21,25 @@ export default function Footer(props) {
   );
 
   const sectionTitleClasses = clsx(
-    "smallcaps text-left-2 text-[14px] font-bold"
+    "uppercase text-left-2 text-[14px] font-semibold "
   );
 
   return (
-    <footer className="narrow_padding flex flex-col flex-wrap justify-start gap-8 xs:flex-row justify-between items-start bg-gray-300 text-gray-800">
+    <footer className="narrow_padding flex flex-col flex-wrap  gap-8 xs:flex-row justify-between items-start bg-background-300 text-gray-400">
       <div className={projectLogoContainerClasses}>
         <img
-          className="min-w-40 max-w-[200px]" // Corrige la sintaxis del max-width
-          src="logo_boiler.svg"
+          className="min-w-60 max-w-[200px]" // Corrige la sintaxis del max-width
+          src="assets/logos/sg-logo.png"
           alt="logo placeholder"
         />
-        <div className=" flex justify-center flex-col gap-0 xs:gap-2 md:flex-col md:gap-0">
+        <div className=" flex justify-center flex-col gap-0 xs:gap-2 md:flex-col md:gap-0 ">
           <div className="flex flex-row">
-          <EmailOutlinedIcon className="mr-2 mt-1" />
-          <Text className=" text-[14px] flex gap-1">
+          <EmailOutlinedIcon className="mr-2 mt-0.5 text-base text-gray-400"  />
+          <Text className=" text-[14px] flex gap-1 text-sm text-gray-400">
             <b>{t("footer.email")} </b>
           </Text>
           </div>
-          <Text className=""> responsable@upm.es</Text>
+          <Text className="text-gray-400 text-sm"> responsable@upm.es</Text>
         </div>
       </div>
 
@@ -55,11 +55,11 @@ export default function Footer(props) {
               key={index}
               className={
                 route.route === props.route
-                  ? "li-selected text-left mb-1 lg:mb-1.5 hover:underline"
-                  : "text-left mb-1 lg:mb-1.5 hover:underline"
+                  ? "li-selected text-left mb-0.5 lg:mb-1.5 hover:underline"
+                  : "text-left mb-1 lg:mb-1 hover:underline"
               }
             >
-              <Link className="text-base" href={route.route}>
+              <Link className="text-sm" href={route.route}>
                 {t(route.key)}
               </Link>
             </li>
@@ -74,7 +74,7 @@ export default function Footer(props) {
           <div className={partnerLogoClasses}>
             <Image
               fit="contain" // Ajuste de la imagen
-              src="placeholder.jpg" // Usa una ruta válida
+              src="assets/logos/cotec-logo.png" // Usa una ruta válida
               alt="Descripción de la imagen"
               className="max-h-full w-auto" // Asegura que la imagen no exceda la altura máxima
             />
@@ -82,7 +82,15 @@ export default function Footer(props) {
           <div className={partnerLogoClasses}>
             <Image
               fit="contain" // Ajuste de la imagen
-              src="placeholder.jpg" // Usa una ruta válida
+              src="assets/logos/GING-logo.png" // Usa una ruta válida
+              alt="Descripción de la imagen"
+              className="max-h-full w-auto" // Asegura que la imagen no exceda la altura máxima
+            />
+          </div>
+            <div className={partnerLogoClasses}>
+            <Image
+              fit="contain" // Ajuste de la imagen
+              src="assets/logos/UPM-logo.png" // Usa una ruta válida
               alt="Descripción de la imagen"
               className="max-h-full w-auto" // Asegura que la imagen no exceda la altura máxima
             />

@@ -16,6 +16,8 @@ import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import RocketLaunchIcon from '@mui/icons-material/RocketLaunch';
 import CategoryIcon from '@mui/icons-material/Category';
 import HubIcon from '@mui/icons-material/Hub';
+import team from "@/constants/placeholder-constants/team.json";
+import { Card, CardVariants } from "@/components/core/Cards";
 
 import {
   CustomCard,
@@ -41,30 +43,61 @@ const iconCardClasses = clsx(
 // UI
 export default function Page() {
   //const [projects, setProjects] = useState(myprojectCards);
+  const [members, setMembers] = useState(team || []); // Inicializa el estado con los datos de 'team'
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
-  // <p className="basis-3/4">{t("project.Intro.title")}</p>
+ 
+  const renderMembers = (members) => {
+      return members.map(
+        (
+          {
+            name,
+            description,
+            position,
+            img,
+            github,
+            email,
+            center,
+            roleTranslationKey,
+          },
+          key
+        ) => {
+          const translatedRole = t(`${roleTranslationKey}`);
+          const translatedPosition = t(position);
+          return (
+            <Card
+              key={key}
+              cardType={"team"}
+              className={CardVariants({
+                variant: "team",
+              })}
+              img={img}
+              name={name}
+              position={position}
+              role={translatedRole}
+              center={center}
+              email={email}
+            />
+          );
+        }
+      );
+    };
+  
 
   return (
     <main>
       <Banner>
         <BannerContent className={"w-full"}>
-          <BannerTitle className={"text-white"}>{t("front.title")}</BannerTitle>
+          <BannerTitle className={"text-white"}>{t("front.title1")} <br></br>
+        <span className="font-chaney-wide">{t("front.title2")} </span>  </BannerTitle>
           <BannerDescription className="h-full text-balance flex flex-col gap-2">
             {t("front.description")}
-              {/* <Button asChild variant="link" className={"w-fit text-white"}>
-                <Link rel="noopener noreferrer" target="_blank" href={"https://ging.github.io/boiler/documentation/"}>
-                  {t("front.doc-button")}
-                </Link>
-            </Button> */}
+      
           </BannerDescription>
           <Divider />
-          <Button
+          {/* <Button
             href="#"
             className={ButtonVariants({
               variant: "default",
@@ -73,23 +106,18 @@ export default function Page() {
             })}
           >
             {t("front.action-button")} <ArrowForwardIcon className=" h-4 w-4" />
-          </Button>
+          </Button> */}
         </BannerContent>
-        <Image className={"hidden md:flex"}
-          src="placeholder.jpg"
-          alt="Descripción de la imagen"
-          fit="cover"
-          hasBadge={false}
-        />
+
       </Banner> 
-      {/* <BannerPum></BannerPum> */}
+
 
       <section className="standard_padding">
         <Heading level="h3">{t("front.section1Title")}</Heading>
-        <Text type="p"> {t("front.section1Description")}</Text>
+        <Text type="p" > {t("front.section1Description")}</Text>
         <Divider size="lg" />
         <Heading level="h3" className="mb-8">
-          {t("front.ResearchLines.sectionTitle")}
+          {t("front.summaryWeb.sectionTitle")}
         </Heading>
         {/* Cards con iconos */}
         <div className="h-fit flex flex-col sm:grid md:grid-cols-3 gap-6 mb-16">
@@ -97,10 +125,10 @@ export default function Page() {
            <RocketLaunchIcon className="text-40 text-primary-500 mb-2" />
             <CardContent>
               <Heading level="h5" className="text-primary-500">
-                {t("front.ResearchLines.ResearchLine1.ResearchLineTitle")}
+                {t("front.summaryWeb.environmentalImpact.title")}
               </Heading>
               <CardDescription>
-                {t("front.ResearchLines.ResearchLine1.ResearchLineBody")}
+                {t("front.summaryWeb.environmentalImpact.body")}
               </CardDescription>
             </CardContent>
           </div>
@@ -108,24 +136,36 @@ export default function Page() {
           <div>
           <CategoryIcon className="text-40 text-primary-500 mb-2" />
           <Heading level="h5" className="text-primary-500">
-                {t("front.ResearchLines.ResearchLine2.ResearchLineTitle")}
+                {t("front.summaryWeb.challenges.title")}
               </Heading>
               <CardDescription>
-              {t("front.ResearchLines.ResearchLine2.ResearchLineBody")}
+              {t("front.summaryWeb.challenges.body")}
               </CardDescription>
           </div>
 
          <div>
          <HubIcon className="text-40 text-primary-500 mb-2" />
          <Heading level="h5" className="text-primary-500">
-                {t("front.ResearchLines.ResearchLine3.ResearchLineTitle")}
+                {t("front.summaryWeb.results.title")}
               </Heading>
               <CardDescription>
-              {t("front.ResearchLines.ResearchLine3.ResearchLineBody")}
+              {t("front.summaryWeb.results.body")}
               </CardDescription>
           </div>
         </div>
       </section>
+   
+        <Heading level="h2" className="mx-auto mb-8 sm:mx-0 text-center">
+          {t("team.title")}
+        </Heading>
+        <section className="flex flex-wrap justify-center xs:gap-x-6 md:gap-x-8 gap-y-8 md:gap-y-12">
+          {Array.isArray(members) && members.length > 0 ? (
+            renderMembers(members)
+          ) : (
+            <p>No members found.</p>
+          )}
+        </section>
+  
     </main>
   );
 }
