@@ -16,8 +16,14 @@ const Text = ({ type = "p", children, className }) => {
     case "p":
       Component = "p";
       break;
+        case "lg-p":
+      Component = "p";
+      break;
     case "small":
       Component = "small";
+      break;
+       case "xs":
+      Component = "xs";
       break;
       case "short-p":
         Component = "p";
@@ -29,11 +35,13 @@ const Text = ({ type = "p", children, className }) => {
 
   // clsx, aplica clases según el valor del atributo level de manera dinámica
   const classes = clsx([
-    "font-body font-normal",
+    "font-body font-normal tracking-wide",
     {/*"text-balance"*/},
     {
+       "text-20 max-w-[60ch] xl:max-w-[63ch] 2xl:max-w-[65ch] text-pretty": type === "lg-p",
       "text-base max-w-[75ch] xl:max-w-[83ch] 2xl:max-w-[90ch] text-pretty": type === "p",
       "text-sm": type === "small",
+        "text-xs": type === "xs",
       "text-base max-w-[66ch] xl:max-w-[71ch] 2xl:max-w-[83ch]": type === "short-p",
     },
     className

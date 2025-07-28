@@ -324,14 +324,14 @@ const Card = React.forwardRef(
         // className={
         //   cn(CardVariants({direction, className }))
         // }
-        className="w-80 bg- transparent border-none shadow-none 300/60 h-86  items-start"
+        className="w-[285px] bg- transparent border-none shadow-none 300/60 h-86  items-start"
       >
         {(img || svg) && (
 
-          <div className="relative h-[160px] w-[160px]">
-            <div className="absolute h-[160px] w-[160px]  rounded-full bg-blue-700 opacity-30"></div>
+          <div className="relative h-[100px] w-[130px]">
+            <div className="absolute h-[100px] w-[100px]  rounded-full bg-green-700 opacity-30"></div>
             <img src={img || "placeholder.jpg"}
-              className={"absolute h-[160px] w-[160px] rounded-full object-cover saturate-0  mix-blend-lighten"}
+              className={"absolute h-[100px] w-[100px] rounded-full object-cover saturate-0  mix-blend-lighten"}
             >
             </img>
           </div>
@@ -339,12 +339,12 @@ const Card = React.forwardRef(
         {(name || description || email) && (
           <CardContent className="flex justify-center items-start mb-auto">
             <div className="flex flex-row">
-              <CardTitle level="title-sm" className={"text-inherit text-center"}>
+              <CardTitle level="title-sm" className={"tracking-wide text-inherit text-center"}>
                 <b>{name} </b>
               </CardTitle>
               {/* {position && (<Badge> {position}</Badge>)} */}
             </div>
-            {role && <CardDescription type="short-p">{role}</CardDescription>}
+            {role && <CardDescription type="short-p" className="text-sm  mt-1  text-gray-300/90">{role}</CardDescription>}
             {email && (
               <Badge size="sm" variant="secondary"
                 className={"font-semibold break-words text-wrap mt-1 text-gray-300 bg-background-300"}>
@@ -353,12 +353,12 @@ const Card = React.forwardRef(
               </Badge>
             )}
             <Divider></Divider>
-            <Text type="small" className="pb-3">
-              <p className={isExpanded ? "line-clamp-none text-white" : "line-clamp-4 text-white"}>{description_translation}</p>
-              <a className="cursor-pointer font-bold hover:text-blue-300  text-white underline underline-offset-2" onClick={toggleDescription}>
+            <div className="pb-3 gap-2">
+              <Text type="small" className={isExpanded ? "line-clamp-none text-white" : "line-clamp-3 text-white"}>{description_translation}</Text>
+              <a className="cursor-pointer font-semibold hover:text-accent-300  text-accent-100 underline underline-offset-2 mt-2 text-sm " onClick={toggleDescription}>
                 {isExpanded ? t(`projects.card.toggleLess`) : t(`projects.card.toggleMore`)}
               </a>
-            </Text>
+            </div>
             
             <div className="flex gap-2 mt-3">
               {researchgate && <Link target="_blank" href={researchgate}

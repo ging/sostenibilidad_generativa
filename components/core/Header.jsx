@@ -65,7 +65,8 @@ export default function Header(props) {
 
   return (
     <header className={headerClasses + "z-50"} id="header_home"> {/* route={routes.route} ?????*/}
-      <a href="/">
+      {/* <a href="/sostenibilidad_generativa"> */}
+         <a href="/">
         <div className="h-8 flex gap-4">
         
           <img

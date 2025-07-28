@@ -45,10 +45,10 @@ const BannerTitle = React.forwardRef(({ className, ...props }, ref) => (
 BannerTitle.displayName = "BannerTitle";
 
 const BannerDescription = React.forwardRef(({ className, ...props }, ref) => (
-    <p
+    <Text type="lg-p"
     ref={ref}
 
-    className= {cn("!text-black font-body font-semibold text-20 md:max-w-[60vw] lg:max-w-[60vw] mb-4", className)}
+    className= {cn("!text-black font-body font-semibold text-balance text-20 md:!max-w-[60vw] lg:!max-w-[60vw] mb-4", className)}
     {...props} />
     ))
 BannerDescription.displayName = "BannerDescription"

@@ -69,7 +69,7 @@ export default function Footer(props) {
 
       <div>
         <div className={sectionTitleClasses + " pb-2"} >{t("footer.title3")}</div>
-        <div className="w-fit flex gap-4 justify-start items-center flex-wrap flex-col xs:flex-row sm:flex-wrap lg:flex-nowrap">
+        <div className="w-fit flex gap-2 justify-start items-center flex-wrap flex-col xs:flex-row sm:flex-wrap lg:flex-nowrap">
 
           <div className={partnerLogoClasses}>
             <Image

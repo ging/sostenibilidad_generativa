@@ -26,14 +26,17 @@ export const en = {
             "environmentalImpact": {
                 "title": "Environmental Impact",
                 "body": "Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus.",
+                "button": "See more"
             },
             "challenges": {
                 "title": "Challenges",
-                "body": "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
+                "body": "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien purus ac vehicula.",
+               "button": "Challenge yourself"
             },
             "results": {
                 "title": "Results",
-                "body": "Sed auctor lectus at elit consectetur, at venenatis ligula faucibus.",
+                "body": "Sed auctor etra, orci nec ultrices lectus at elit consectetur,  urna faucibus lorullam id dolor em at venenatis ligula faucibus.",
+            "button": "Find out more"
             },
         },
     },
@@ -153,14 +156,14 @@ export const en = {
         "title": "Team",
         "professorCards": {
             "roles":{
-                "1":"Professor", // Profesor Titular de Universidad
-                "2":"Associate Professor", // Profesor Titular / Profesor contratado doctor
-                "3":"PhD candidate", // Estudiante de doctorado
-                "4":"Full-Time Technician",
-                "5":"Full Professor", // Profesor Titular de Universidad
-                "6":"Assistant Professor",
-                "7":"Researcher",
-                "8":"External staff"
+                "professor":"Professor", // Profesor Titular de Universidad
+                "associate":"Associate Professor", // Profesor Titular / Profesor contratado doctor
+                "phd":"PhD candidate", // Estudiante de doctorado
+                "fulltec":"Full-Time Technician",
+                "fullprofessor5":"Full Professor", // Profesor Titular de Universidad
+                "assistant":"Assistant Professor",
+                "researcher":"Researcher",
+                "external":"External staff"
             },
             "positions":{
                 "1":"IP1",

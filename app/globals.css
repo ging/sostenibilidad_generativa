@@ -32,6 +32,16 @@
 p {
   color: white;
 }
+
+/*HEIGHTS*/
+
+.section-props {
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start
+}
 /*MARGINS*/
 .standard_margin {
   @apply m-6 sm:my-6 sm:mx-8 md:my-8 md:mx-14 lg:my-12 lg:mx-24 xl:mx-44 2xl:mx-72;

@@ -28,14 +28,17 @@ export const es = {
             "environmentalImpact": {
                 "title": "Impacto ambiental",
                 "body": "Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus.",
+          "button": "Saber más"
             },
             "challenges": {
                 "title": "Desafíos",
-                "body": "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
+                 "body": "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien purus ac vehicula.",
+             "button": "Rétate"
             },
             "results": {
                 "title": "Resultados",
-                "body": "Sed auctor lectus at elit consectetur, at venenatis ligula faucibus.",
+                "body": "Sed auctor etra, orci nec ultullam id dolor rices lectus at elit consectetur,  urna faucibus lorem at venenatis ligula faucibus.",
+                "button": "Descubre más"
             },
         },
     },
@@ -150,14 +153,14 @@ export const es = {
         "title": "Equipo",
         "professorCards":{
             "roles":{
-                "1":"Profesor Titular de Universidad",
-                "2":"Profesor contratado doctor",
-                "3":"Candidato de doctorado",
-                "4":"Técnico a tiempo completo",
-                "5":"Profesor Titular de Universidad", // Full Professor
-                "6":"Profesor ayudante doctor", 
-                "7":"Investigador",
-                "8":"Personal externo"
+                            "professor":"Profesor Titular de Universidad",
+                "associate":"Profesor Contratado Doctor",
+                "phd":"Candidato de Doctorado",
+                "fulltec":"Técnico a Tiempo Completo",
+                "fullprofessor":"Catedrático de Universidad", // Full Professor
+                "assistant":"Profesor Ayudante Doctor", 
+                "researcher":"Investigador",
+                "external":"Personal Externo"
             },
             "positions":{
                 "1":"IP1",

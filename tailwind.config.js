@@ -24,6 +24,7 @@ module.exports = {
         "title": ['var(--font-inter)', 'sans-serif'],
         "main": ['Heebo', 'sans-serif'],
         "body": ['Heebo', 'sans-serif'],
+          "heebo": ['Heebo', 'sans-serif'],
         "chaney": ['Chaney', 'sans-serif'],
         "chaney-wide": ['Chaney-wide', 'sans-serif'],
         
@@ -76,16 +77,19 @@ module.exports = {
           50: "#f9fafb",
           foreground: "#ffffff"
         },
-        accent: { // morado
-          DEFAULT: "#62388E",
-          // 300: "#FF9900",
-          // 200: "#FFBD1B",
-          // 100: "#FFE685",
+        accent: { // verde fosforescente
+          DEFAULT: "#01E401",
+          300: "#47EE47",
+          200: "#87FF87",
+          100: "#B2FFB2",
+        },
+        green: {
+          800: "#05382d",
         },
         background: {
           DEFAULT:"#1B1F1D",
           400: "#1B1F1D",
-          300: "#242424"
+          300: "#000000"
         },
         ring: {
           DEFAULT: "#cbe0ed",
