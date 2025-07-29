@@ -203,7 +203,14 @@ export const en = {
     },
     "escaperooms":{
         "title": "Escape Rooms",
-        "description": "In this section you can find the escape rooms we have created.",
+        
+            "description1": "Welcome to the Generative Sustainability Escape Room! 🕵️‍♂️ To open the room, you'll need to interact with the chatbot and uncover the hidden password 🔑.",
+            "description2": "Once you have it, enter it into the lock to exit the room.⏰ You have 5 minutes to find the code. You can use anything you want besides the chatbot (internet, books, your brain 🧠...)",
+            "description3": "One last thing... to unlock the door, we must have saved some energy ⚡ in the system.",
+            "description4": "Each mistake ❌ drains 10% of energy, each word you ask the chatbot uses energy, and each word it responds with also consumes energy... So you must design effective prompt strategies 📝.",
+            "description5": "Good luck!",
+          
+        
         "escaperoomCards":
         {
             "button":"Play",

@@ -201,7 +201,11 @@ export const es = {
 },
  "escaperooms":{
         "title":"Escape Rooms",
-        "description":"En esta sección encontrarás las últimas escape rooms que hemos desarrollado.",
+        "description1":"Bienvenido/a al escape room de Sostenibilidad Generativa! 🕵️‍♂️ Para abrir la sala, deberás interactuar con el chatbot y descubrir la contraseña oculta 🔑.",
+"description2": "Cuando la tengas, introdúcela en el candado para salir de la sala. ⏰ Tienes 5 minutos para encontrar el código. Puedes utilizar todo lo que quieras además del chatbot (internet, libros, tu cerebro 🧠...)",
+"description3": "Una última cosa... para poder desbloquear la puerta debemos de haber reservado un poco de energía ⚡ en el sistema.", 
+"description4": "Cada fallo ❌ resta un 10% de energía, cada palabra que le preguntes al chatbot resta energía, y cada palabra que este nos responda también... Por lo tanto debes diseñar estrategias de prompt efectiva 📝.",
+"description5": "¡Mucha suerte! ",
         "escaperoomCards":
         {
             "button":"Jugar",

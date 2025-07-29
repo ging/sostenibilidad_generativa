@@ -40,12 +40,13 @@ const iconCardClasses = clsx("!h-20 fill-primary");
 // UI
 export default function Page() {
   //const [projects, setProjects] = useState(myprojectCards);
-  const [members, setMembers] = useState(myteam || []); // Inicializa el estado con los datos de 'team'
+  //const [members, setMembers] = useState(myteam || []); // Inicializa el estado con los datos de 'team'
   const [isHovered1, setIsHovered1] = useState(false);
   const [isHovered2, setIsHovered2] = useState(false);
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
 
+  
   const renderMembers = (members) => {
     return members.map(
       (
@@ -55,7 +56,7 @@ export default function Page() {
           description_en,
           position,
           img,
-          github,
+          
           email,
           center,
           role
@@ -65,18 +66,24 @@ export default function Page() {
       ) => {
    const translatedRole = t("team.professorCards.roles." + role);
         return (
+          // <div>
+          //   hola
+          //    {name}
+          //    {translatedRole}
+          //    {email}
+          // </div>
           <Card
-            key={key}
+          key={email || name || key}
             cardType={"team"}
             className={CardVariants({
               variant: "team",
             })}
-                 description_en={description_en}
-            description_es={description_es}
+            description={currentLang === "es" ? description_es : description_en}
             img={img}
             name={name}
             position={position}
             role={translatedRole}
+            currentLang={currentLang}
             center={center}
             email={email}
           />
@@ -183,18 +190,21 @@ export default function Page() {
         </section>
       </div>
 
-      {/* <section className="standard_padding section-props">
+       <section className="standard_padding section-props">
         <Heading level="h3" className="mx-auto mb-8 sm:mx-0 text-center">
           {t("team.title")}
         </Heading>
         <div className="flex flex-wrap justify-start xs:gap-x-3 md:gap-x-4 gap-y-3 md:gap-y-4">
-          {Array.isArray(members) && members.length > 0 ? (
-            renderMembers(members)
+          {Array.isArray(myteam) && myteam.length > 0 ? (
+            // myteam.map((member) => (<div>
+            //   {/* {member.name} {member.description_en} */}
+              renderMembers(myteam)
+            // </div>))
           ) : (
             <p>No members found.</p>
-          )}
+          )} 
         </div>
-      </section> */}
+      </section> 
     </main>
   );
 }

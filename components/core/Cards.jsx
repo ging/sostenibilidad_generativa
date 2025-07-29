@@ -137,8 +137,8 @@ const Card = React.forwardRef(
       category,
       route,
       name,
-      position,
-      center,
+      // position,
+      // center,
       email,
       author,
       doi,
@@ -150,12 +150,12 @@ const Card = React.forwardRef(
       logo,
       projectType = "european-project",
       keywords,
-      researchgate,
-      orcid,
-      webOfScience,
-      googleScholar,
-      linkedin,
-      portalUpm,
+      // researchgate,
+      // orcid,
+      // webOfScience,
+      // googleScholar,
+      // linkedin,
+      // portalUpm,
     
     },
     ref
@@ -354,87 +354,15 @@ const Card = React.forwardRef(
             )}
             <Divider></Divider>
             <div className="pb-3 gap-2">
-              <Text type="small" className={isExpanded ? "line-clamp-none text-white" : "line-clamp-3 text-white"}>{description_translation}</Text>
+              <Text type="small" className={isExpanded ? "line-clamp-none text-white" : "line-clamp-3 text-white"}>{description}</Text>
               <a className="cursor-pointer font-semibold hover:text-accent-300  text-accent-100 underline underline-offset-2 mt-2 text-sm " onClick={toggleDescription}>
                 {isExpanded ? t(`projects.card.toggleLess`) : t(`projects.card.toggleMore`)}
               </a>
             </div>
-            
-            <div className="flex gap-2 mt-3">
-              {researchgate && <Link target="_blank" href={researchgate}
-                className={" icon_link_publication relative text-left mb-1 lg:mb-1.5 hover:underline flex flex-row items-center cursor-pointer"}>
-                <Button href="#" className={ButtonVariants({
-                  variant: "default",
-                  size: "icon",
-                  radius: "rounded_full",
-                }) + " bg-blue-600 hover:bg-blue-700 "}>
-                  <img className="h-5 max-w-5 contrast-200 saturate-50"  src="/assets/img/logos/researchgate.png"/>
-                  <Badge variant="secondary" size="xs" className="link_publication bg-[#00000097] absolute left-0 bottom-7">   ResearchGate </Badge>   
-
-                </Button>
-                
-              </Link>}
-              {orcid && <Link target="_blank" href={orcid}
-                className={" icon_link_publication relative text-left mb-1 lg:mb-1.5 hover:underline flex flex-row items-center cursor-pointer"}>
-                <Button href="#" className={ButtonVariants({
-                  variant: "default",
-                  size: "icon",
-                  radius: "rounded_full",
-                }) + " bg-green-600 hover:bg-green-700 "}>
-                  <img className="h-7 max-w-7"  src="/assets/img/logos/orcid-1.png"/>
-                  <Badge variant="secondary" size="xs" className="link_publication shadow-lg bg-[#00000097] absolute left-0 bottom-7">   Orcid </Badge>   
-                </Button>
-              </Link>}
-              {/* {webOfScience && <Link target="_blank" href={webOfScience}
-                className={"text-left mb-1 lg:mb-1.5 hover:underline flex flex-row items-center cursor-pointer"}>
-                <Button href="#" className={ButtonVariants({
-                  variant: "default",
-                  size: "icon",
-                  radius: "rounded_full",
-                }) + " bg-green-700 hover:bg-green-800 "}>
-                  <img className="h-5 max-w-5"  src="/assets/img/logos/researchgate.png"/>
-                </Button>
-              </Link>} */}
-              {googleScholar && <Link target="_blank" href={googleScholar}
-                className={" icon_link_publication relative text-left mb-1 lg:mb-1.5 hover:underline flex flex-row items-center cursor-pointer"}>
-                <Button href="#" className={ButtonVariants({
-                  variant: "default",
-                  size: "icon",
-                  radius: "rounded_full",
-                }) + " bg-blue-800 hover:bg-blue-900 "}>
-                  <img className="h-7 max-w-7 rounded-full"  src="/assets/img/logos/google-scholar.png"/>
-                  <Badge variant="secondary" size="xs" className="link_publication bg-[#00000097] absolute left-0 bottom-7"> Google Scholar </Badge>   
-                </Button>
-              </Link>}
-              {linkedin && <Link target="_blank" href={linkedin}
-                className={" icon_link_publication relative text-left h-7 max-w-7 mb-1 lg:mb-1.5 hover:underline flex flex-row items-center cursor-pointer"}>
-                <Button href="#" className={ButtonVariants({
-                  variant: "default",
-                  size: "icon",
-                  radius: "rounded_full",
-                }) + " bg-[#006198] hover:bg-[#006198] "}>
-                 <img className="h-[28px] rounded-full max-w-[28px] object-scale-down "  src="/assets/img/logos/linkedin.png"/>
-                 <Badge variant="secondary" size="xs" className="link_publication bg-[#00000097] absolute left-0 bottom-7"> LinkedIn </Badge>   
-                </Button>
-              </Link>}
-              {portalUpm  && <Link target="_blank" href={portalUpm}
-                className={"icon_link_publication relative text-left mb-1 lg:mb-1.5 hover:underline flex flex-row items-center cursor-pointer"}>
-                <Button href="#" className={ButtonVariants({
-                  variant: "default",
-                  size: "icon",
-                  radius: "rounded_full",
-                }) + " bg-blue-600 hover:bg-blue-700 "}>
-                  <p className="text-2xs font-bold"> UPM </p>
-                  <Badge variant="secondary" size="xs" className="link_publication bg-[#00000097] absolute left-0 bottom-7"> Portal Científico UPM </Badge>   
-                </Button>
-              </Link>}
-            </div>
+          
           </CardContent>
         )}
-        {/* {( email &&    
-        <CardFooter>
-          <a href={email}>{email}</a>
-        </CardFooter>)} */}
+       
       </CustomCard>
     );
 
@@ -476,10 +404,11 @@ const Card = React.forwardRef(
     
     const escaperoomCard = (
       <CustomCard className={cn(CardVariants({ direction, className }))}>
+        {console.log(img, "voy por aqui")}
         {img && (
           <Image
-            src={/* process.env.PUBLIC_URL */ +img || "placeholder.jpg"}
-            alt={/* process.env.PUBLIC_URL */ +img || "placeholder.jpg"}
+            src={img}
+            alt={img}
             className={"h-24"}
             fit="contain"
           />
