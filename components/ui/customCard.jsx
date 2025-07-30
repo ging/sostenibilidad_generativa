@@ -13,7 +13,7 @@ import Text from "@/components/ui/Text"
 const CustomCard = React.forwardRef(({ className, ...props }, ref) => (
   <article
     ref={ref}
-    className={cn("p-2 h-full w-full rounded-xl border flex flex-col justify-start gap-4 overflow-hidden shadow bg-primary-200/70 text-primary-800", className)}
+    className={cn("p-2 h-full w-full rounded-xl border flex flex-col justify-start gap-4 overflow-hidden shadow ", className)}
     {...props} />
 ))
 CustomCard.displayName = "CustomCard"

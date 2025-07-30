@@ -23,7 +23,7 @@ const Image = ({
   );
 
   const imageClasses = clsx(
-    "w-full h-full flex items-center justify-center", 
+    "w-full h-full flex items-center justify-center ", 
     {
       "object-cover": fit === "cover",
       "object-contain": fit === "contain",

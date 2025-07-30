@@ -79,17 +79,21 @@ module.exports = {
         },
         accent: { // verde fosforescente
           DEFAULT: "#01E401",
+          400: "#00EC00",
           300: "#47EE47",
           200: "#87FF87",
           100: "#B2FFB2",
         },
         green: {
+          700: "#10543a",
           800: "#05382d",
         },
         background: {
           DEFAULT:"#1B1F1D",
+          200: "#414443",
+          300: "#2b2d2c",
           400: "#1B1F1D",
-          300: "#000000"
+          500: "#000000"
         },
         ring: {
           DEFAULT: "#cbe0ed",

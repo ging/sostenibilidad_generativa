@@ -122,41 +122,32 @@ const deleteSpaces = (string) => {
 const Card = React.forwardRef(
   (
     {
-      variant,
       direction,
       className,
       title,
-      subtitle,
       description,
       description_en,
       description_es,
       img,
       svg,
-      tags,
-      date,
-      category,
       route,
       name,
       // position,
       // center,
       email,
-      author,
-      doi,
       github,
-      buttonText,
       cardType,
       role,
       researchLine,
       logo,
-      projectType = "european-project",
-      keywords,
+      type,
       // researchgate,
       // orcid,
       // webOfScience,
       // googleScholar,
       // linkedin,
       // portalUpm,
-    
+
     },
     ref
   ) => {
@@ -186,138 +177,39 @@ const Card = React.forwardRef(
     }
 
     // PROJECT
-    const projectCard = (
-      <CustomCard className={cn(CardVariants({ direction, className })) + " hover:scale-[100%] border-transparent shadow-none border-b-gray-400 border-b-1 rounded-none flex-col sm:flex-row gap-3 sm:gap-6 px-0 py-6 items-start"}>
-        <div className={`w-full h-fit relative sm:self-stretch sm:w-1/2 flex min-w-[184px] sm:min-h-[200px] sm:h-[237px] sm:max-h-[237px] justify-center items-center ${backgroundColor} rounded-md `}>
-          <Image className="brightness-0 invert min-h-[160px]" src={logo} fit="contain"
+    const resultCard = (
+      <CustomCard className={cn(CardVariants({ direction, className })) + " hover:scale-[102%]  shadow-sm border-gray-400/20 border-b-1 rounded-md bg-background-300 flex-col sm:flex-row gap-3 sm:gap-6 px-6 py-6 items-start"}>
+        <div className={`w-full h-fit relative sm:self-stretch sm:w-1/2 flex min-w-[184px] sm:min-h-[200px] sm:h-[200px] sm:max-h-[200px] justify-center items-center  rounded-md`}>
+          <Image className=" min-h-[130px] rounded-md" src={logo} fit="cover"
             layout={"bottom-right"}
             hasBadge={true}
-            badgeVariant={"secondary"}
-            badgeSize={"md"}
-            badgeContent={t(`projects.type.${projectType}`)}
+            badgeVariant={"default"}
+            badgeContent={type}
           />
-
         </div>
-
         <CardBody className="">
-          <CardContent className="gap-5 mt-0.5 lg:mt-0 lg:gap-[22px]">
+          <CardContent className="gap-5 mt-0.5 lg:mt-0 lg:gap-[32px]">
             {/* lg:gap-[22px] */}
             <div>
-              <CardTitle level="h3" className=" w-fit hover:text-blue-400 transition-all mb-0">
+              <CardTitle level="h4" className=" w-fit  hover:!text-accent-400 transition-all mb-0">
                 {title && <Link href={route} rel="noopener noreferrer"
                   target="_blank" className={`flex flex-row w-fit gap-2 ${title.length > 18 ? "items-start" : "items-center"}`}>{title} <ExternalLinkIcon className="mt-1 flex-shrink-0" width={24} height={24} /> </Link>
                 }
               </CardTitle>
-
-              {description_translation && 
-              <div className="flex flex-col gap-1"> 
-                <CardDescription className={isExpanded ? "line-clamp-none" : "line-clamp-4"}>{description_translation}
-
-                </CardDescription>
-                {isDescriptionLongEnough(description_translation) && <a className="cursor-pointer font-bold underline underline-offset-2" onClick={toggleDescription} > {isExpanded ? t(`projects.card.toggleLess`) : t(`projects.card.toggleMore`)}</a>}
-              </div>}
+              {description_translation &&
+                <div className="flex flex-col gap-1 ">
+                  <CardDescription className={isExpanded ? "line-clamp-none text-gray-200" : "line-clamp-4 text-gray-200"}>{description_translation}
+                  </CardDescription>
+                  {isDescriptionLongEnough(description_translation) && <a className="cursor-pointer font-bold underline underline-offset-2" onClick={toggleDescription} > {isExpanded ? t(`results.card.toggleLess`) : t(`results.card.toggleMore`)}</a>}
+                </div>}
             </div>
-
-          </CardContent>
-
-        </CardBody>
-
-      </CustomCard>
-    );
-
-    // COURSE
-    const courseCard = (
-      <CustomCard
-        className={cn(CardVariants({ direction, className }))}
-        style={{
-          backgroundImage: "url('assets/fondos/background_image.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
-      >
-        <CardHeader className="flex w-full gap-2 items-center">
-          <Badge variant="outline" size="lg">
-            {date}
-          </Badge>
-          <Badge variant="outline" size="lg">
-            {category}
-          </Badge>
-          <span className="spacer w-full" />
-          <Button href={route} variant="ghost" size="lg">
-            Ir al curso <ExternalLinkIcon className="w-5 h-5" />
-          </Button>
-        </CardHeader>
-        {/* <Image
-            className={"h-40"}
-            src={img || "placeholder.jpg"} // La imagen por defecto será una cadena vacía si no hay src
-            alt={title || "Image"} // Usa el título como alt si existe
-            fit="cover" // Ajustamos el contenido al contenedor
-          /> */}
-        <CardBody>
-          <CardContent>
-            <CardTitle>{title}</CardTitle>
-            <CardSubtitle level="h6">{subtitle}</CardSubtitle>
-            <CardDescription>{description}</CardDescription>
-            {/* <div className={tagContainerClasses}>{renderTags(tags)}</div> */}
           </CardContent>
         </CardBody>
       </CustomCard>
     );
 
-    // PUBLICATIONS - ok
-    const publicationCard = (
-      <CustomCard
-        className={cn(
-          CardVariants({ direction, className }) + "  bg-background-300 border-none shadow-md"
-        )}
-      >
-        <CardHeader>
-          <Badge variant="outline" size="lg">
-            {date && date[0]}
-            
-          </Badge>
-          <Badge variant="outline" size="lg">
-            {category}
-          </Badge>
-        </CardHeader>
-        <CardBody>
-          <CardContent className="gap-1">
-            <CardTitle level="title-sm">
-              {title}
-            </CardTitle>
-            {/* <div className="flex"> <Text type="small" className="font-bold">
-            {t(`research.filter.${category}`)}</Text>
-              <div className="mx-2 mb-2">·</div> 
-                <Text type="small">    {date && date[0]} </Text> 
-              </div> */}
-            <Text className="text-gray-300/90 mb-4" type="small">{author}</Text>
-            <div className="flex flex-wrap gap-1.5">
-              {Array.isArray(keywords) ? keywords.map((keyword, index) => {
-                return (
-                  <Badge key={index} size="default" className="bg-black border-none text-gray-300"> {keyword} </Badge>
-                )
-              }) : null}
-            </div>
 
-          </CardContent>
-        </CardBody>
-        <CardFooter>
-          {doi ? (
-            <Button asChild variant="outline" size="sm" radius="rounded_sm">
-              <Link rel="noopener noreferrer" target="_blank" href={doi}>
-                {t("research.button")}
-
-                <ArrowRightIcon />
-              </Link>
-            </Button>
-          ) : null}
-        </CardFooter>
-
-      </CustomCard>
-
-    );
-
+   
     // TEAM - ok
     const teamCard = (
       <CustomCard
@@ -348,7 +240,7 @@ const Card = React.forwardRef(
             {email && (
               <Badge size="sm" variant="secondary"
                 className={"font-semibold break-words text-wrap mt-1 text-gray-300 bg-background-300"}>
-                <MailOutlinedIcon className=" text-gray-300 mr-1"  sx={{ fontSize: 16 }}/>
+                <MailOutlinedIcon className=" text-gray-300 mr-1" sx={{ fontSize: 16 }} />
                 {email}
               </Badge>
             )}
@@ -356,13 +248,13 @@ const Card = React.forwardRef(
             <div className="pb-3 gap-2">
               <Text type="small" className={isExpanded ? "line-clamp-none text-white" : "line-clamp-3 text-white"}>{description}</Text>
               <a className="cursor-pointer font-semibold hover:text-accent-300  text-accent-100 underline underline-offset-2 mt-2 text-sm " onClick={toggleDescription}>
-                {isExpanded ? t(`projects.card.toggleLess`) : t(`projects.card.toggleMore`)}
+                {isExpanded ? t(`results.card.toggleLess`) : t(`results.card.toggleMore`)}
               </a>
             </div>
-          
+
           </CardContent>
         )}
-       
+
       </CustomCard>
     );
 
@@ -401,59 +293,44 @@ const Card = React.forwardRef(
       </CustomCard>
     );
 
-    
+
     const escaperoomCard = (
-      <CustomCard className={cn(CardVariants({ direction, className }))}>
-        {console.log(img, "voy por aqui")}
+      <div className="bg-background-300 border-white/20 border rounded-md flex flex-col justify-stretch ">
         {img && (
-          <Image
+          <img
             src={img}
             alt={img}
-            className={"h-24"}
-            fit="contain"
+            className={"w-full contrast-75 rounded-t-md opacity-75"}
           />
         )}
-        <CardBody>
-          <CardContent>
-            <CardTitle>{title}</CardTitle>
-            <CardDescription>{description}</CardDescription>
-          </CardContent>
-        </CardBody>
-        <CardFooter>
-          {github && (
-            <Button asChild variant="link">
-              <Link rel="noopener noreferrer" target="_blank" href={github}>
-                GitHub
+        <div className="px-4 pt-2 pb-4 flex flex-col h-full justify-between">
+          <div>
+            <Heading level="h5">{title}</Heading>
+            <Text type="small">{description}</Text>
+          </div>
+          <div className="flex justify-end mt-4">
+            <Button asChild variant="secondary" size="sm" radius="rounded_md">
+              <Link rel="noopener noreferrer" target="_blank" href={route}>
+                {t("challenges.escaperoom.escaperoomCards.button")}
+                <ArrowRightIcon />
               </Link>
             </Button>
-          )}
-          <Button asChild variant="secondary" radius="rounded_md">
-            <Link rel="noopener noreferrer" target="_blank" href={route}>
-              {t("escaperooms.escaperoomCards.button")}
-              <ArrowRightIcon />
-            </Link>
-          </Button>
-        </CardFooter>
-      </CustomCard>
+          </div>
+        </div>
+      </div>
     );
 
 
     // Usar el prop cardType para determinar qué tipo de tarjeta renderizar
     switch (cardType) {
       default:
-        return projectCard;
-      case "project":
-        return projectCard;
-      case "course":
-        return courseCard;
-      case "publication":
-        return publicationCard;
+        return resultCard;
+      case "result":
+        return resultCard;
       case "team":
         return teamCard;
       case "tool":
         return toolCard;
-      case "researchline":
-        return researchLineCard;
       case "escaperoom":
         return escaperoomCard;
     }

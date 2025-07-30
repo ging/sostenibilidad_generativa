@@ -2,7 +2,7 @@
 
 import { useTranslation } from "react-i18next";
 // import TabsResearchLineFilter from "@/components/filters/TabsResearchLineFilter";
-import { projects } from "@/constants/projects";
+import { results } from "@/constants/results";
 import { Card } from "@/components/core/Cards";
 // import { researchlines } from "@/constants/researchlines";
 import Heading from "@/components/ui/Heading";
@@ -35,7 +35,7 @@ function ProjectsPage() {
   const [projectType, setProjectType] = useState(undefined);
   const [search, setSearch] = useState("");
 
-  const pathname = "/projects";
+  const pathname = "/results";
   
 //   // creado array de categorías de publications 
 //   const projectTypes = ["all",...new Set(projects.map(project => project.projectType))];
@@ -115,15 +115,15 @@ function ProjectsPage() {
   return (
       <div>
         <div className="standard_margin" id="banner-publications">
-        <Heading level="h2">{t("projects.title")}</Heading>
+        <Heading level="h3">{t("results.title")}</Heading>
           <Text type="p">
-            {t("projects.description")}
+            {t("results.description")}
           </Text>
           </div>
       <div>
-    
+      {/* 
         <div className="flex flex-col justify-center">
-        {/* <ProjectsFilter 
+      <ProjectsFilter 
           researchLines={researchLines} 
           researchLine={researchLine}
           projectType={projectType} 
@@ -133,11 +133,11 @@ function ProjectsPage() {
           changeResearchLine={(researchLine) => setResearchLine(researchLine)}
           changeSearch={(search) => setSearch(search)} 
           pathname={pathname}
-        /> */}
+        /> 
+        </div>*/}
         
-        </div>
-        <div className="project_cards standard_margin my-4 sm:my-6 lg:my-10 sm:gap-4">
-          {projects.map(
+        <div className="standard_margin my-4 sm:my-6 lg:my-10 flex flex-col sm:gap-4 gap-16">
+          {results.map(
             (
               {
                 year,
@@ -147,13 +147,13 @@ function ProjectsPage() {
                 researchLine,
                 logo,
                 route,
-                projectType
+              type
               },
               index
             ) => (
               <Card
                 key={index}
-                cardType={"project"}
+                cardType={"result"}
                 year={year}
                 researchLine={researchLine}
                 title={title}
@@ -161,7 +161,7 @@ function ProjectsPage() {
                 route={route}
                 description_en={description}
                 description_es={description_es}
-                projectType={projectType}
+                type={type}
               ></Card>
             )
           )}

@@ -5,9 +5,9 @@ export const escaperooms = [
     route: "#",
     title: "Introducción",
     description_es:
-      "descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom ",
+      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. ",
     description_en:
-      "escaperoom description escaperoom description escaperoom description escaperoom description escaperoom description",
+      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
     key: "1",
   },
   {
@@ -15,29 +15,29 @@ export const escaperooms = [
     route: "#",
     title: "El restaurante de Li",
     description_es:
-      "descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom ",
+      "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. ",
     description_en:
-      "escaperoom description escaperoom description escaperoom description escaperoom description escaperoom description",
-    key: "1",
+      "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+    key: "2",
   },
   {
     img: "assets/img/escaperooms/lab.png",
     route: "#",
     title: "El laboratorio",
     description_es:
-      "descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom ",
+      "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
     description_en:
-      "escaperoom description escaperoom description escaperoom description escaperoom description escaperoom description",
-    key: "1",
+      "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+    key: "3",
   },
   {
     img: "assets/img/escaperooms/space-trip.png",
     route: "#",
     title: "Viaje por el espacio",
-    description_es:
-      "descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom descripción del escaperoom ",
+   description_es:
+      "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. ",
     description_en:
-      "escaperoom description escaperoom description escaperoom description escaperoom description escaperoom description",
-    key: "1",
+      "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+    key: "4",
   },
 ];

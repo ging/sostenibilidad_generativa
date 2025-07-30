@@ -25,7 +25,7 @@ export default function Footer(props) {
   );
 
   return (
-    <footer className="narrow_padding flex flex-col flex-wrap  gap-8 xs:flex-row justify-between items-start bg-background-300 text-gray-400">
+    <footer className="narrow_padding flex flex-col flex-wrap  gap-8 xs:flex-row justify-between items-start bg-background-500 text-gray-400">
       <div className={projectLogoContainerClasses}>
         <img
           className="min-w-60 max-w-[200px]" // Corrige la sintaxis del max-width

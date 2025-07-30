@@ -152,7 +152,7 @@ export const myteam = [
       "Cristina Pozo es investigadora en la Universidad Politécnica de Madrid, donde estudia el conocimiento lingüístico de los LLMs. Es graduada en Lengua Inglesa y Literatura por la Universidad de Essex, donde realizó un trabajo sociolingüístico sobre el debilitamiento de la /s/ en el castellano de Segovia, basado en entrevistas a diecisiete informantes, y calificado con sobresaliente. Actualmente cursa el Máster en Investigación de Lengua Española en la Universidad Autónoma de Madrid. Formó parte del equipo editorial de Creel 5 y Creel 6: Chiaroscuro, participando en la selección de textos, corrección, maquetación, ilustración y diseño de portada. Escribe ficción y estudia inglés (C2 CPE) y japonés (JLPT N4).",
     img: "assets/img/team/cristina-pozo.jpg",
     github: "",
-    email: "",
+    email: "cpozohuertas@gmail.com",
     center: "E.T.S. de ingenieros de telecomunicacion",
     researchgate: "",
     orcid: "",

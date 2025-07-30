@@ -183,3 +183,11 @@ main {
   overflow: hidden;
   display: block;
 }
+
+.highlight-a {
+background: #29453c;
+background: radial-gradient(circle,rgba(41, 69, 60, 1) 32%, rgba(52, 107, 91, 1) 90%);
+p,h4,span {
+  @apply !text-accent-200
+}
+}
