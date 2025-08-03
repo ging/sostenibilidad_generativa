@@ -47,8 +47,8 @@ const nextConfig = {
    * Environment variables
    */
   env: {
-    PUBLIC_URL: isProd ? "" : "",
-    BASE_PATH: isProd ? "" : ""
+    PUBLIC_URL: isProd ? "sostenibilidad_generativa" : "",
+    BASE_PATH: isProd ? "sostenibilidad_generativa" : ""
   }
 };
 

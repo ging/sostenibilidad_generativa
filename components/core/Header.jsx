@@ -19,7 +19,6 @@ export default function Header(props) {
   const currentLang = i18n.language;
   const currentPath = usePathname();
   const refs = useRef([]);
-  const isProd = process.env.NODE_ENV === 'production';
 
 
   // classes
@@ -68,7 +67,7 @@ export default function Header(props) {
   return (
     <header className={headerClasses + "z-50"} id="header_home"> {/* route={routes.route} ?????*/}
       {/* <a href="/sostenibilidad_generativa"> */}
-         <a href={isProd ? "/sostenibilidad_generativa" : "/"} className="flex items-center gap-2">
+         <a href="/" className="flex items-center gap-2">
         <div className="h-8 flex gap-4">
         
           <img
