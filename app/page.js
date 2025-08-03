@@ -1,7 +1,6 @@
 "use client";
 import * as React from "react";
 
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 import { useTranslation } from "react-i18next";
@@ -11,17 +10,10 @@ import Heading from "@/components/ui/Heading";
 import { Divider, DividerVariants } from "@/components/ui/divider";
 import Text from "@/components/ui/Text";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import MailOutlinedIcon from "@mui/icons-material/MailOutlined";
-import RocketLaunchIcon from "@mui/icons-material/RocketLaunch";
-import CategoryIcon from "@mui/icons-material/Category";
-import HubIcon from "@mui/icons-material/Hub";
 import { myteam }  from "@/constants/team";
 import { Card, CardVariants } from "@/components/core/Cards";
 
 import {
-  CustomCard,
-  CardContent,
-  CardTitle,
   CardDescription,
 } from "@/components/ui/customCard";
 
@@ -30,24 +22,20 @@ import {
   Banner,
   BannerTitle,
   BannerDescription,
-  BannerButton,
   BannerContent,
-  BannerImg,
 } from "@/components/core/Banner";
 
 const iconCardClasses = clsx("!h-20 fill-primary");
 
 // UI
 export default function Page() {
-  //const [projects, setProjects] = useState(myprojectCards);
-  //const [members, setMembers] = useState(myteam || []); // Inicializa el estado con los datos de 'team'
-  const [isHovered1, setIsHovered1] = useState(false);
-  const [isHovered2, setIsHovered2] = useState(false);
+
   const { t, i18n } = useTranslation();
-  const currentLang = i18n.language;
+     const currentLang = i18n.language;
 
   
   const renderMembers = (members) => {
+   
     return members.map(
       (
         {
@@ -56,37 +44,33 @@ export default function Page() {
           description_en,
           position,
           img,
-          
           email,
           center,
-          role
- 
+          role,
         },
         key
       ) => {
    const translatedRole = t("team.professorCards.roles." + role);
+ 
         return (
-          // <div>
-          //   hola
-          //    {name}
-          //    {translatedRole}
-          //    {email}
-          // </div>
           <Card
           key={email || name || key}
             cardType={"team"}
             className={CardVariants({
               variant: "team",
             })}
-            description={currentLang === "es" ? description_es : description_en}
+             description_es={description_es}
+            description_en={description_en}
             img={img}
             name={name}
             position={position}
             role={translatedRole}
-            currentLang={currentLang}
             center={center}
+
             email={email}
-          />
+          >
+           
+          </Card>
         );
       }
     );
@@ -96,7 +80,7 @@ export default function Page() {
     <main>
       <Banner>
         <BannerContent className={"w-full"}>
-          <BannerTitle className={"text-white"}>
+          <BannerTitle className={""}>
             {t("front.title1")} <br></br>
             <span className="font-chaney-wide">{t("front.title2")} </span>{" "}
           </BannerTitle>
@@ -104,16 +88,6 @@ export default function Page() {
             {t("front.description")}
           </BannerDescription>
           <Divider />
-          {/* <Button
-            href="#"
-            className={ButtonVariants({
-              variant: "default",
-              size: "lg",
-              radius: "rounded_sm",
-            })}
-          >
-            {t("front.action-button")} <ArrowForwardIcon className=" h-4 w-4" />
-          </Button> */}
         </BannerContent>
       </Banner>
 
@@ -132,7 +106,7 @@ export default function Page() {
             <div>
               {/* <RocketLaunchIcon className="text-40 text-primary-500 mb-2" /> */}
 
-              <Heading level="h5" className="text-primary-500">
+              <Heading level="h5" className="">
                 {t("front.summaryWeb.environmentalImpact.title")}
               </Heading>
               <CardDescription>
@@ -151,7 +125,7 @@ export default function Page() {
 
             <div>
               {/* <CategoryIcon className="text-40 text-primary-500 mb-2" /> */}
-              <Heading level="h5" className="text-primary-500">
+              <Heading level="h5" className="">
                 {t("front.summaryWeb.challenges.title")}
               </Heading>
               <CardDescription>
@@ -170,7 +144,7 @@ export default function Page() {
 
             <div>
               {/* <HubIcon className="text-40 text-primary-500 mb-2" /> */}
-              <Heading level="h5" className="text-primary-500">
+              <Heading level="h5" className="">
                 {t("front.summaryWeb.results.title")}
               </Heading>
               <CardDescription>
@@ -191,15 +165,12 @@ export default function Page() {
       </div>
 
        <section className="standard_padding section-props">
-        <Heading level="h3" className="mx-auto mb-8 sm:mx-0 text-center">
+        <Heading level="h3" className="text-left mb-8 sm:mx-0 sm:text-center">
           {t("team.title")}
         </Heading>
         <div className="flex flex-wrap justify-start xs:gap-x-3 md:gap-x-4 gap-y-3 md:gap-y-4">
           {Array.isArray(myteam) && myteam.length > 0 ? (
-            // myteam.map((member) => (<div>
-            //   {/* {member.name} {member.description_en} */}
               renderMembers(myteam)
-            // </div>))
           ) : (
             <p>No members found.</p>
           )} 

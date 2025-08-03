@@ -27,9 +27,12 @@ export default function enviromentalImpact() {
   // }, []);
 
   return (
-    <div className={"projects page_" + currentLang}>
+    <div
+      lang={currentLang}
+      className={"environmental-impact page_" + currentLang}
+    >
       {/* INTRO */}
-      <div className="parallax__layer standard_margin">
+      <div className="parallax__layer standard_margin lg:!mb-4">
         <div className="flex flex-col">
           <Heading level="h3" className="text-left">
             {t("environmentalImpact.Intro.sectionTitle")}
@@ -42,117 +45,119 @@ export default function enviromentalImpact() {
         </div>
       </div>
       {/* TARJETAS DATOS */}
-      <div className="flex flex-col gap-6 mb-12">
+      <div className="flex flex-col gap-2 mb-12">
         {/* SECCION 1 */}
-        <div className="standard_margin !my-0 py-4 px-8 rounded-md bg-green-800 flex gap-4">
-          <div className="w-3/5">
+        <div className="standard_margin  !my-0 pb-4 rounded-md flex gap-4">
+          <div className="w-full lg:w-4/5">
             <Heading level="h4" className="text-left">
               {t("environmentalImpact.firstSection.title")}
             </Heading>
+            <div className=" md:float-right mb-4 md:mb-2 md:mx-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-green ">
+              <span className="">{t("environmentalImpact.fact")} </span>
+              <Heading level="highlightTitle" className="text-left ">
+                {t("environmentalImpact.firstSection.highlight.title")}
+              </Heading>
+              <div className="flex flex-col justify-between h-full ">
+                <Text type="small" className="text-left ">
+                  {t("environmentalImpact.firstSection.highlight.body")}
+                </Text>
+                <Text type="source" className="mt-4 text-left ">
+                  <b> {t("environmentalImpact.source")}</b>
+                  {t("environmentalImpact.firstSection.highlight.source")}
+                </Text>
+              </div>
+            </div>
             <Text className="text-left">
               {t("environmentalImpact.firstSection.body")}
             </Text>
           </div>
-          <div className="w-2/5 px-4 py-2 rounded-md flex flex-col highlight-a ">
-            <span className="">{t("environmentalImpact.fact")} </span>
-
-            <Heading level="highlightTitle" className="text-left ">
-              {t("environmentalImpact.firstSection.highlight.title")}
-            </Heading>
-            <div className="flex flex-col justify-between h-full ">
-              <Text type="small" className="text-left ">
-                {t("environmentalImpact.firstSection.highlight.body")}
-              </Text>
-
-              <Text type="source" className="text-left ">
-                <b> {t("environmentalImpact.source")}</b>
-                {t("environmentalImpact.firstSection.highlight.source")}
-              </Text>
-            </div>
-          </div>
         </div>
-        {/* SECCION 2 */}
-        <div className="standard_margin !my-0 py-4 px-8 rounded-md  bg-green-800 flex  flex-row-reverse  gap-6">
-          <div className="w-3/5">
+
+        {/* SECCION 2. */}
+        <div className="standard_margin !my-0 pb-4 rounded-md flex gap-4">
+          <div className="w-full lg:w-4/5">
             <Heading level="h4" className="text-left">
-              {t("environmentalImpact.firstSection.title")}
+              {t("environmentalImpact.secondSection.title")}
             </Heading>
+            <div className=" md:float-left mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-outline ">
+              <span className="">{t("environmentalImpact.fact")} </span>
+              <Heading level="highlightTitle" className="text-left ">
+                {t("environmentalImpact.secondSection.highlight.title")}
+              </Heading>
+              <div className="flex flex-col justify-between h-full ">
+                <Text type="small" className="text-left ">
+                  {t("environmentalImpact.secondSection.highlight.body")}
+                </Text>
+
+                <Text type="source" className="mt-4 text-left ">
+                  <b> {t("environmentalImpact.source")}</b>
+                  {t("environmentalImpact.secondSection.highlight.source")}
+                </Text>
+              </div>
+            </div>
+
             <Text className="text-left">
-              {t("environmentalImpact.firstSection.body")}
+              {t("environmentalImpact.secondSection.body")}
             </Text>
           </div>
-          <div className="w-2/5 bg-black px-4 py-2 rounded-md flex flex-col">
-            <div className="text-white">{t("environmentalImpact.fact")} </div>
-
-            <Heading level="highlightTitle" className="text-left ">
-              {t("environmentalImpact.firstSection.highlight.title")}
-            </Heading>
-            <div className="flex flex-col justify-between h-full">
-              <Text type="small" className="text-left text-white">
-                {t("environmentalImpact.firstSection.highlight.body")}
-              </Text>
-              <Text type="source" className="text-left text-white">
-                <b> {t("environmentalImpact.source")}</b>
-                {t("environmentalImpact.firstSection.highlight.source")}
-              </Text>
-            </div>
-          </div>
         </div>
-        {/* SECCION 3 */}
-        <div className="standard_margin !my-0 py-4 px-8 rounded-md flex flex-row bg-green-800 gap-4">
-          <div className="w-3/5">
+
+ {/* SECCION 3. */}
+        <div className="standard_margin !my-0 pb-4 rounded-md flex gap-4">
+          <div className="w-full lg:w-4/5">
             <Heading level="h4" className="text-left">
-              {t("environmentalImpact.firstSection.title")}
+              {t("environmentalImpact.thirdSection.title")}
             </Heading>
+            <div className=" md:float-right mb-4 md:mb-2 md:mx-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-blue ">
+              <span className="">{t("environmentalImpact.fact")} </span>
+              <Heading level="highlightTitle" className="text-left ">
+                {t("environmentalImpact.thirdSection.highlight.title")}
+              </Heading>
+              <div className="flex flex-col justify-between h-full ">
+                <Text type="small" className="text-left ">
+                  {t("environmentalImpact.thirdSection.highlight.body")}
+                </Text>
+                <Text type="source" className="mt-4 text-left ">
+                  <b> {t("environmentalImpact.source")}</b>
+                  {t("environmentalImpact.thirdSection.highlight.source")}
+                </Text>
+              </div>
+            </div>
             <Text className="text-left">
-              {t("environmentalImpact.firstSection.body")}
+              {t("environmentalImpact.thirdSection.body")}
             </Text>
           </div>
-          <div className="w-2/5 bg-black px-4 py-2 rounded-md flex flex-col ">
-            <div className="text-white">{t("environmentalImpact.fact")} </div>
-
-            <Heading level="highlightTitle" className="text-left ">
-              {t("environmentalImpact.firstSection.highlight.title")}
-            </Heading>
-            <div className="flex flex-col justify-between h-full">
-              <Text type="small" className="text-left text-white">
-                {t("environmentalImpact.firstSection.highlight.body")}
-              </Text>
-              <Text type="source" className="text-left text-white">
-                <b> {t("environmentalImpact.source")}</b>
-                {t("environmentalImpact.firstSection.highlight.source")}
-              </Text>
-            </div>
-          </div>
         </div>
-        {/* SECCION 4 */}
-        <div className="standard_margin !my-0 py-4 px-8 rounded-md bg-green-800 flex  flex-row-reverse  gap-6">
-          <div className="w-3/5">
+
+         {/* SECCION 4. */}
+        <div className="standard_margin !my-0 pb-4 rounded-md flex gap-4">
+          <div className="w-full lg:w-4/5">
             <Heading level="h4" className="text-left">
-              {t("environmentalImpact.firstSection.title")}
+              {t("environmentalImpact.forthSection.title")}
             </Heading>
+            <div className=" md:float-left mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-neonGreen ">
+              <span className="">{t("environmentalImpact.fact")} </span>
+              <Heading level="highlightTitle" className="text-left ">
+                {t("environmentalImpact.forthSection.highlight.title")}
+              </Heading>
+              <div className="flex flex-col justify-between h-full ">
+                <Text type="small" className="text-left ">
+                  {t("environmentalImpact.forthSection.highlight.body")}
+                </Text>
+
+                <Text type="source" className="mt-4 text-left ">
+                  <b> {t("environmentalImpact.source")}</b>
+                  {t("environmentalImpact.forthSection.highlight.source")}
+                </Text>
+              </div>
+            </div>
+
             <Text className="text-left">
-              {t("environmentalImpact.firstSection.body")}
+              {t("environmentalImpact.forthSection.body")}
             </Text>
           </div>
-          <div className="w-2/5 bg-black px-4 py-2 rounded-md flex flex-col">
-            <div className="text-white">{t("environmentalImpact.fact")} </div>
-
-            <Heading level="highlightTitle" className="text-left ">
-              {t("environmentalImpact.firstSection.highlight.title")}
-            </Heading>
-            <div className="flex flex-col justify-between h-full">
-              <Text type="small" className="text-left text-white">
-                {t("environmentalImpact.firstSection.highlight.body")}
-              </Text>
-
-              <Text type="source" className="text-left text-white">
-                <b> {t("environmentalImpact.source")}</b>
-                {t("environmentalImpact.firstSection.highlight.source")}
-              </Text>
-            </div>
-          </div>
         </div>
+      
       </div>
     </div>
   );

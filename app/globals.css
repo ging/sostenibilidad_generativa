@@ -40,7 +40,7 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start
+  align-items: start;
 }
 /*MARGINS*/
 .standard_margin {
@@ -65,10 +65,10 @@ p {
 
 /*PADDINGS*/
 .standard_padding {
-  @apply p-6 sm:py-6 sm:px-8 md:py-8 md:px-14 lg:py-12 lg:px-24 xl:px-44 2xl:px-72;
+  @apply px-4 py-6 sm:py-6 sm:px-8 md:py-8 md:px-14 lg:py-12 lg:px-24 xl:px-44 2xl:px-72;
 }
 .padding_home {
-  @apply px-8 sm:p-12 md:px-20 lg:px-24 xl:px-32 2xl:px-48 py-6 sm:py-6 md:py-8 lg:py-12;
+  @apply px-4 sm:p-12 md:px-20 lg:px-24 xl:px-32 2xl:px-48 py-6 sm:py-6 md:py-8 lg:py-12;
 }
 .narrow_padding {
   @apply p-6 sm:py-6 sm:px-8 md:py-8 md:px-14 lg:py-10;
@@ -183,11 +183,64 @@ main {
   overflow: hidden;
   display: block;
 }
-
-.highlight-a {
-background: #29453c;
-background: radial-gradient(circle,rgba(41, 69, 60, 1) 32%, rgba(52, 107, 91, 1) 90%);
-p,h4,span {
-  @apply !text-accent-200
+/*ENVIRONMENTAL IMPACT PAGE*/
+.environmental-impact {
+  /* guiones break words */
+  p {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
 }
+
+.highlight-green {
+  background: #29453c;
+  background: radial-gradient(
+    circle,
+    rgba(41, 69, 60, 1) 32%,
+    rgba(52, 107, 91, 1) 90%
+  );
+  p,
+  h4,
+  span {
+    @apply !text-accent-200;
+  }
+}
+.highlight-blue {
+  background: radial-gradient(
+    185.61% 103.2% at 79.64% 93.15%,
+    #272f35 31.73%,
+    #495860 100%
+  );
+  p,
+  h4,
+  span {
+    @apply !text-SGblue-200;
+  }
+}
+.highlight-neonGreen {
+  background: #01e401;
+  background: linear-gradient(
+    145deg,
+    rgba(1, 228, 1, 1) 14%,
+    rgba(174, 226, 210, 1) 71%
+  );
+  p,
+  h4,
+  span {
+    @apply !text-black;
+  }
+  p {
+    font-weight: bold;
+  }
+}
+.highlight-outline {
+  @apply border border-white;
+  background: transparent;
+  p,
+  h4,
+  span {
+    @apply !text-white;
+  }
 }

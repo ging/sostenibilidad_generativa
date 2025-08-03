@@ -1,43 +1,42 @@
 export const escaperooms = [
-
   {
     img: "assets/img/escaperooms/game-creator.png",
-    route: "#",
+    route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_1",
     title: "Introducción",
     description_es:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. ",
+      "ES Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. ",
     description_en:
-      "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+      "EN Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
     key: "1",
   },
   {
     img: "assets/img/escaperooms/li-restaurant.png",
-    route: "#",
+    route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_2",
     title: "El restaurante de Li",
     description_es:
-      "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. ",
+      "ES Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. ",
     description_en:
-      "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "EN Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
     key: "2",
   },
   {
     img: "assets/img/escaperooms/lab.png",
-    route: "#",
+    route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_3",
     title: "El laboratorio",
     description_es:
-      "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "ES Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
     description_en:
-      "Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+      "EN Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
     key: "3",
   },
   {
     img: "assets/img/escaperooms/space-trip.png",
-    route: "#",
+    route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_4",
     title: "Viaje por el espacio",
    description_es:
-      "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. ",
+      "ES Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. ",
     description_en:
-      "Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+      "EN Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
     key: "4",
   },
 ];

@@ -19,11 +19,13 @@ export default function Header(props) {
   const currentLang = i18n.language;
   const currentPath = usePathname();
   const refs = useRef([]);
+  const isProd = process.env.NODE_ENV === 'production';
+
 
   // classes
   const headerClasses = clsx(
     "h-fit",
-    "px-8 py-3 sticky -top-[1px] w-full",
+    "px-4 sm:px-8 py-3 sticky -top-[1px] w-full",
     "flex justify-between items-center ",
     "bg-background text-text shadow-md border-b border-gray-400",
     
@@ -39,11 +41,11 @@ export default function Header(props) {
 
   const menuClasses = clsx(
     "w-screen px-8 py-4 md:p-0 md:w-fit",
-    "absolute top-[40px] -right-8 md:static",
+    "absolute top-[39px] -right-7 md:static",
     "flex flex-col lg:flex-row ",
-    "gap-4 md:gap-2 lg:gap-8",
+    "gap-8 md:gap-2 lg:gap-8",
     "bg-background bg-blend-darken md:bg-none",
-    "border-t-2 border-t-gray md:border-none",
+    "border-t border-gray-600 md:border-none",
     "shadow-md md:shadow-none",
     {
       "block md:flex": state.open,
@@ -53,20 +55,20 @@ export default function Header(props) {
 
   const menuItems = clsx(
     "flex flex-col justify-end items-center md:flex-row",
-    "gap-1 md:gap-4",
+    "gap-4 md:gap-4",
     
   );
 
   const menuItemClasses = clsx(
-    "w-full px-4 text-center md:p-0 md:w-fit",
-    "text-lg md:text-base",
+    "w-fit px-4 py-4 text-center md:p-0 md:w-fit ",
+    "text-20 md:text-base",
     "hover:underline"
   );
 
   return (
     <header className={headerClasses + "z-50"} id="header_home"> {/* route={routes.route} ?????*/}
       {/* <a href="/sostenibilidad_generativa"> */}
-         <a href="/">
+         <a href={isProd ? "/sostenibilidad_generativa" : "/"} className="flex items-center gap-2">
         <div className="h-8 flex gap-4">
         
           <img

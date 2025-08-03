@@ -88,6 +88,10 @@ module.exports = {
           700: "#10543a",
           800: "#05382d",
         },
+        SGblue: {
+          200: "#96DFFF",
+          700: "#272E34"
+        },
         background: {
           DEFAULT:"#1B1F1D",
           200: "#414443",

@@ -13,10 +13,10 @@ import { useState, useEffect } from "react";
 import { Suspense } from 'react';
 
 
-export default function Projects() {
+export default function Results() {
   return (
     <Suspense>
-      <ProjectsPage />
+      <ResultsPage />
     </Suspense>
   );
 
@@ -24,7 +24,7 @@ export default function Projects() {
 
 
 
-function ProjectsPage() {
+function ResultsPage() {
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
 
@@ -141,10 +141,10 @@ function ProjectsPage() {
             (
               {
                 year,
-                title,
-                description,
+                title_es,
+                title_en,
+                description_en,
                 description_es,
-                researchLine,
                 logo,
                 route,
               type
@@ -155,12 +155,10 @@ function ProjectsPage() {
                 key={index}
                 cardType={"result"}
                 year={year}
-                researchLine={researchLine}
-                title={title}
+                title={currentLang === "es" ? title_es : title_en}
                 logo={logo}
                 route={route}
-                description_en={description}
-                description_es={description_es}
+                description={currentLang === "es" ? description_es : description_en}
                 type={type}
               ></Card>
             )

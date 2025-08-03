@@ -1,7 +1,4 @@
 export const myteam = [
- 
-
- 
   {
     name: "Javier Conde",
     position: "",

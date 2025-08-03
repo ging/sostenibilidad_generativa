@@ -135,7 +135,6 @@ const Card = React.forwardRef(
       // position,
       // center,
       email,
-      github,
       cardType,
       role,
       researchLine,
@@ -167,9 +166,6 @@ const Card = React.forwardRef(
       description_translation = description_es;
     }
 
-    // fondo researchline cards - project cards
-    let backgroundColor;
-
     //si tiene más de una researchline le ponemos all al link a las publicaciones
     let pubResearchLine = "all";
     if (researchLine && researchLine.length == 1) {
@@ -196,11 +192,11 @@ const Card = React.forwardRef(
                   target="_blank" className={`flex flex-row w-fit gap-2 ${title.length > 18 ? "items-start" : "items-center"}`}>{title} <ExternalLinkIcon className="mt-1 flex-shrink-0" width={24} height={24} /> </Link>
                 }
               </CardTitle>
-              {description_translation &&
+              {description &&
                 <div className="flex flex-col gap-1 ">
-                  <CardDescription className={isExpanded ? "line-clamp-none text-gray-200" : "line-clamp-4 text-gray-200"}>{description_translation}
+                  <CardDescription className={isExpanded ? "line-clamp-none text-gray-200" : "line-clamp-4 text-gray-200"}>{description}
                   </CardDescription>
-                  {isDescriptionLongEnough(description_translation) && <a className="cursor-pointer font-bold underline underline-offset-2" onClick={toggleDescription} > {isExpanded ? t(`results.card.toggleLess`) : t(`results.card.toggleMore`)}</a>}
+                  {isDescriptionLongEnough(description) && <a className="cursor-pointer font-bold underline underline-offset-2" onClick={toggleDescription} > {isExpanded ? t(`results.card.toggleLess`) : t(`results.card.toggleMore`)}</a>}
                 </div>}
             </div>
           </CardContent>
@@ -209,16 +205,16 @@ const Card = React.forwardRef(
     );
 
 
-   
+
     // TEAM - ok
     const teamCard = (
       <CustomCard
         // className={
         //   cn(CardVariants({direction, className }))
         // }
-        className="w-[285px] bg- transparent border-none shadow-none 300/60 h-86  items-start"
+        className="!p-0 sm:!p-2 w-[285px] bg- transparent border-none shadow-none 300/60 h-86  items-start"
       >
-        {(img || svg) && (
+        {img && (
 
           <div className="relative h-[100px] w-[130px]">
             <div className="absolute h-[100px] w-[100px]  rounded-full bg-green-700 opacity-30"></div>
@@ -246,10 +242,20 @@ const Card = React.forwardRef(
             )}
             <Divider></Divider>
             <div className="pb-3 gap-2">
-              <Text type="small" className={isExpanded ? "line-clamp-none text-white" : "line-clamp-3 text-white"}>{description}</Text>
+        
+        
+                     <CardDescription>
+              <Text type="small" className={isExpanded ? "line-clamp-none text-white" : "line-clamp-3 text-white"}>
+             {currentLang === "es"
+                           ? description_es
+                         : description_en}
+                </Text>
+                 </CardDescription>
+                
+               
               <a className="cursor-pointer font-semibold hover:text-accent-300  text-accent-100 underline underline-offset-2 mt-2 text-sm " onClick={toggleDescription}>
                 {isExpanded ? t(`results.card.toggleLess`) : t(`results.card.toggleMore`)}
-              </a>
+              </a> 
             </div>
 
           </CardContent>
@@ -258,38 +264,37 @@ const Card = React.forwardRef(
       </CustomCard>
     );
 
-    // TOOL - ok
     const toolCard = (
-      <CustomCard className={cn(CardVariants({ direction, className }))}>
+      <CustomCard className={cn(CardVariants({ direction, className })) + "border border-white/40 flex flex-col justify-stretch h-full"}>
         {img && (
-          <Image
-            src={/* process.env.PUBLIC_URL */ +img || "placeholder.jpg"}
-            alt={/* process.env.PUBLIC_URL */ +img || "placeholder.jpg"}
-            className={"h-24"}
-            fit="contain"
-          />
+          <div className="flex justify-start w-full">
+            <img
+              // src={/* process.env.PUBLIC_URL */ +img || "placeholder.jpg"}
+              src={img}
+              alt={img || "placeholder.jpg"}
+              className={"h-12"}
+
+            />
+          </div>
         )}
-        <CardBody>
-          <CardContent>
-            <CardTitle>{title}</CardTitle>
-            <CardDescription>{description}</CardDescription>
-          </CardContent>
-        </CardBody>
-        <CardFooter>
-          {github && (
-            <Button asChild variant="link">
-              <Link rel="noopener noreferrer" target="_blank" href={github}>
-                GitHub
+        <div className="flex flex-col justify-between h-full">
+          <div>
+            <Heading level="h5">{title}</Heading>
+            <CardDescription>
+              <Text type="small">{description}
+                </Text>
+              </CardDescription>
+          </div>
+
+          <div className="flex justify-end mt-4">
+            <Button asChild variant="secondary" size="sm" radius="rounded_md">
+              <Link rel="noopener noreferrer" target="_blank" href={route}>
+                {t("tools.toolCards.button")}
+                <ArrowRightIcon />
               </Link>
             </Button>
-          )}
-          <Button asChild variant="secondary" radius="rounded_md">
-            <Link rel="noopener noreferrer" target="_blank" href={route}>
-              {t("tools.toolCards.button")}
-              <ArrowRightIcon />
-            </Link>
-          </Button>
-        </CardFooter>
+          </div>
+        </div>
       </CustomCard>
     );
 
@@ -306,7 +311,13 @@ const Card = React.forwardRef(
         <div className="px-4 pt-2 pb-4 flex flex-col h-full justify-between">
           <div>
             <Heading level="h5">{title}</Heading>
-            <Text type="small">{description}</Text>
+       
+              <CardDescription>
+            <Text type="small">{currentLang === "es"
+                           ? description_es
+                         : description_en}</Text>
+              </CardDescription>
+             
           </div>
           <div className="flex justify-end mt-4">
             <Button asChild variant="secondary" size="sm" radius="rounded_md">

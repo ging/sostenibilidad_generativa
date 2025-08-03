@@ -1,29 +1,21 @@
-export const mytools = [
+export const tools = [
   {
-    img: "assets/img/logos/sgame.svg",
-    route: "#",
-    title: "AI Energy Efficiency Trainer",
-    description_es: "descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta",
+    img: "assets/img/tools/ai-efficiency-training.png",
+    route: " https://huggingface.co/spaces/GING-UPM/ArenaEnergy",
+    title_en: "AI Energy Efficiency Trainer",
+    title_es: "Entrenamiento de eficiencia energética de IA",
+    description_es: "Descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta",
     description_en: "Tool description Tool description Tool description Tool description Tool description Tool description",
-    github: "https://github.com/CyberAula/sgame_platform",
     key:"1",
-    // ESTO NO SE HACE ASI, PERO PROVISIONALMENTE LO DEJAMOS
-    // HASTA QUE PASE LAS TOOLCARDS
-    button_es: "Ir a la herramienta",
-    button_en: "Go to the tool",
   },
    {
-    img: "assets/img/logos/sgame.svg",
-    route: "https://huggingface.co/spaces/GING-UPM/ArenaEnergy",
-    title: "LLM Arena",
-    description_es: "descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta",
+    img: "assets/img/tools/llm-arena.png",
+    route: " https://huggingface.co/spaces/GING-UPM/Eco-Friendly_Use",
+    title_en: "LLM Arena - choose the best model",
+    title_es: "LLM Arena - elige el mejor modelo",
+    description_es: "Descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta descripción de la herramienta",
     description_en: "Tool description Tool description Tool description Tool description Tool description Tool description",
-    github: "https://github.com/CyberAula/sgame_platform",
-    key:"1",
-        // ESTO NO SE HACE ASI, PERO PROVISIONALMENTE LO DEJAMOS
-    // HASTA QUE PASE LAS TOOLCARDS
-    button_es: "Ir a la herramienta",
-    button_en: "Go to the tool",
+    key:"2",
   },
 
 ];

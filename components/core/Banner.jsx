@@ -35,11 +35,10 @@ const BannerContent = React.forwardRef(({ className, ...props }, ref) => (
 BannerContent.displayName = "BannerContent";
 
 const BannerTitle = React.forwardRef(({ className, ...props }, ref) => (
-  <Heading
-    ref={ref}
-    level="h1"
-    className={cn("!text-black !font-chaney font-normal  w-full leading-[40px] md:max-w-[50vw]", className)}
-    {...props}
+  <h1
+  
+    className=" !text-28 sm:!text-36 !text-black !font-chaney font-normal  w-full !leading-[28px] sm:!leading-[40px] md:max-w-[50vw] mb-4  "
+  {...props}
   />
 ));
 BannerTitle.displayName = "BannerTitle";
@@ -48,7 +47,7 @@ const BannerDescription = React.forwardRef(({ className, ...props }, ref) => (
     <Text type="lg-p"
     ref={ref}
 
-    className= {cn("!text-black font-body font-semibold text-balance text-20 md:!max-w-[60vw] lg:!max-w-[60vw] mb-4", className)}
+    className= {cn("!text-black font-body font-semibold text-balance text-20 md:!max-w-[60vw] lg:!max-w-[43vw] mb-4", className)}
     {...props} />
     ))
 BannerDescription.displayName = "BannerDescription"
