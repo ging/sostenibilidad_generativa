@@ -1,6 +1,6 @@
 export const results = [
   {
-    logo: "/assets/img/results/event-placeholder.jpg",
+    logo: "assets/img/results/event-placeholder.jpg",
     route: "www.linkedin.com",
     title_es:"Evento ",
     title_en: "Event ",
