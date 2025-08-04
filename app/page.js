@@ -98,7 +98,7 @@ export default function Page() {
             <div className="mb-4 md:mb-0">
               {/* <RocketLaunchIcon className="text-40 text-primary-500 mb-2" /> */}
               <img
-                src="/assets/img/sections/environmental-impact.png"
+                src="assets/img/sections/environmental-impact.png"
                 alt="environmental impact placeholder"
                 className="w-5/6 md:h-32 object-cover rounded-md mb-4 border border-slate-500"
               ></img>
@@ -123,7 +123,7 @@ export default function Page() {
       <div className="mb-4 md:mb-0">
               {/* <CategoryIcon className="text-40 text-primary-500 mb-2" /> */}
               <img
-                src="/assets/img/sections/challenges.png"
+                src="assets/img/sections/challenges.png"
                 alt="challenges"
                 className="w-5/6 md:h-32 object-cover rounded-md mb-4 border border-slate-500"
               ></img>
@@ -148,7 +148,7 @@ export default function Page() {
              <div className="mb-4 md:mb-0">
               {/* <HubIcon className="text-40 text-primary-500 mb-2" /> */}
                <img
-                src="/assets/img/results/event-placeholder.jpg"
+                src="assets/img/results/event-placeholder.jpg"
                 alt="results"
                 className="w-5/6 md:h-32 object-cover rounded-md mb-4 border border-slate-500"
               ></img>

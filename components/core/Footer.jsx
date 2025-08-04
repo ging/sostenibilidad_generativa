@@ -17,7 +17,7 @@ export default function Footer(props) {
   );
 
   const partnerLogoClasses = clsx(
-    "flex justify-start items-start h-20 w-40 overflow-hidden"
+    "flex justify-start items-start h-20 w-auto md:w-40 overflow-hidden"
   );
 
   const sectionTitleClasses = clsx(
@@ -28,7 +28,7 @@ export default function Footer(props) {
     <footer className="narrow_padding flex flex-col flex-wrap  gap-8 xs:flex-row justify-between items-start bg-background-500 text-gray-400">
       <div className={projectLogoContainerClasses}>
         <img
-          className="min-w-60 max-w-[300px] opacity-70" // Corrige la sintaxis del max-width
+          className="min-w-60 max-w-[200px] md:max-w-[300px] opacity-70" // Corrige la sintaxis del max-width
           src="assets/logos/sg-logo.png"
           alt="logo placeholder"
         />
@@ -69,7 +69,7 @@ export default function Footer(props) {
 
       <div>
         <div className={sectionTitleClasses + " pb-2"} >{t("footer.title3")}</div>
-        <div className="w-fit flex gap-2 justify-start items-center flex-wrap flex-col xs:flex-row sm:flex-wrap lg:flex-nowrap">
+        <div className="w-fit flex gap-4 md:gap-2 justify-start items-start md:items-center flex-wrap flex-col xs:flex-row sm:flex-wrap lg:flex-nowrap">
 
           <div className={partnerLogoClasses}>
             <Image
