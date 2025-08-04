@@ -28,14 +28,14 @@ export default function Footer(props) {
     <footer className="narrow_padding flex flex-col flex-wrap  gap-8 xs:flex-row justify-between items-start bg-background-500 text-gray-400">
       <div className={projectLogoContainerClasses}>
         <img
-          className="min-w-60 max-w-[200px]" // Corrige la sintaxis del max-width
+          className="min-w-60 max-w-[300px] opacity-70" // Corrige la sintaxis del max-width
           src="assets/logos/sg-logo.png"
           alt="logo placeholder"
         />
         <div className=" flex justify-center flex-col gap-0 xs:gap-2 md:flex-col md:gap-0 ">
           <div className="flex flex-row">
-          <EmailOutlinedIcon className="mr-2 mt-0.5 text-base text-gray-400"  />
-          <Text className=" text-[14px] flex gap-1 text-sm text-gray-400">
+          <EmailOutlinedIcon className="mr-2 mb-1 text-base text-gray-400" sx={{fontSize: 20}} />
+          <Text className=" text-[14px] flex gap-1 text-sm text-gray-400" >
             <b>{t("footer.email")} </b>
           </Text>
           </div>

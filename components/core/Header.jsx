@@ -25,7 +25,7 @@ export default function Header(props) {
   // classes
   const headerClasses = clsx(
     "h-fit",
-    "px-4 sm:px-8 py-3 sticky -top-[1px] w-full",
+    "px-4 sm:px-8 py-2 sticky -top-[1px] w-full",
     "flex justify-between items-center ",
     "bg-background text-text shadow-md border-b border-gray-400",
     
@@ -69,7 +69,7 @@ export default function Header(props) {
     <header className={headerClasses + "z-50"} id="header_home"> {/* route={routes.route} ?????*/}
       {/* <a href="/sostenibilidad_generativa"> */}
          <a href={isProd ? "/sostenibilidad_generativa" : "/"} className="flex items-center gap-2">
-        <div className="h-8 flex gap-4">
+        <div className="h-9 flex gap-4">
         
           <img
             className="object-contain"
@@ -109,7 +109,7 @@ export default function Header(props) {
                   className={
                     currentPath == route.route
                       ? menuItemClasses + " font-semibold"
-                      : menuItemClasses + " font-normal"
+                      : menuItemClasses + " font-normal text-gray-300"
                   }
                   // todo esto de coger el width del elemento y pasarlo a style no funciona
                   // porque no se renderiza el elemento antes de que se ejecute el useEffect
