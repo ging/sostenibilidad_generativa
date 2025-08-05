@@ -45,7 +45,7 @@ export default function Header(props) {
     "flex flex-col lg:flex-row ",
     "gap-8 md:gap-2 lg:gap-8",
     "bg-background bg-blend-darken md:bg-none",
-    "border-t border-gray-600 md:border-none",
+    "border-y border-gray-600 md:border-none",
     "shadow-md md:shadow-none",
     {
       "block md:flex": state.open,
