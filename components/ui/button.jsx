@@ -28,9 +28,9 @@ const ButtonVariants = cva(
           "bg-transparent text-primary-foreground underline-offset-4 underline hover:bg-secondary-100/60 shadow-none", 
         },
       size: {
-        default: "px-4 py-2 text-base",
-        sm: "px-3 py-1.5 text-sm font-semibold",
-        lg: "px-5 py-2.5 text-lg",
+        default: "px-4 py-2 text-20 sm:text-base 2xl:text-20",
+        sm: "px-3 py-1.5 text-base sm:text-sm 2xl:text-base font-semibold",
+        lg: "px-5 py-2.5 text-24 sm:text-20 text-24",
         icon: "px-5 w-8 py-2.5",
       },
       radius: {

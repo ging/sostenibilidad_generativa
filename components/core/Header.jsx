@@ -55,13 +55,13 @@ export default function Header(props) {
 
   const menuItems = clsx(
     "flex flex-col justify-end items-center md:flex-row",
-    "gap-4 md:gap-4",
+    "gap-6 md:gap-6 2xl:gap-8 mt-3 sm:mt-0",
     
   );
 
   const menuItemClasses = clsx(
     "w-fit px-4 py-4 text-center md:p-0 md:w-fit ",
-    "text-20 md:text-base",
+    "text-20 md:text-base 2xl:text-20 font-heebo",
     "hover:underline"
   );
 
@@ -102,6 +102,7 @@ export default function Header(props) {
         <ul className={menuItems}>
             {activeRoutes.map((route, index, page) => (
               <li key={index}>
+                
                 <Link
                   data-label={route.route}
                   ref={(el) => refs.current[index] = el}
@@ -120,10 +121,13 @@ export default function Header(props) {
                     
                   // }}
                 >
+                {/* <p className="text-20 sm:text-base 2xl:text-20"> */}
                   {t(route.key)}
                   {console.log(refs.current, " refs.current")}
                    {/* {console.log(refs.current[index].clientWidth, " width current")}  */}
+               {/* </p> */}
                 </Link>
+                
               </li>
             ))}
             {console.log(refs , " refs only")}

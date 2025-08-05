@@ -232,14 +232,14 @@ const Card = React.forwardRef(
               </CardTitle>
               {/* {position && (<Badge> {position}</Badge>)} */}
             </div>
-            {role && <CardDescription type="short-p" className="text-sm  mt-1  text-gray-300/90">{role}</CardDescription>}
-            {email && (
+            {role && <CardDescription type="short-p" className="text-base sm:text-sm mt-1  text-gray-300/90">{role}</CardDescription>}
+            {/* {email && (
               <Badge size="sm" variant="secondary"
                 className={"font-semibold break-words text-wrap mt-1 text-gray-300 bg-background-300"}>
                 <MailOutlinedIcon className=" text-gray-300 mr-1" sx={{ fontSize: 16 }} />
                 {email}
               </Badge>
-            )}
+            )} */}
             <Divider></Divider>
             <div className="pb-3 gap-2">
         

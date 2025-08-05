@@ -31,6 +31,11 @@
 
 p {
   color: white;
+  @apply text-20 sm:text-base 2xl:text-20 4xl:text-24;
+}
+
+.lang-link {
+    @apply text-20 sm:text-base 2xl:text-20 4xl:text-24;
 }
 
 /*HEIGHTS*/

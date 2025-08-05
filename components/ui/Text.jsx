@@ -19,6 +19,9 @@ const Text = ({ type = "p", children, className }) => {
     case "lg-p":
       Component = "p";
       break;
+       case "full-p":
+      Component = "p";
+      break;
     case "small":
       Component = "p";
       break;
@@ -41,12 +44,13 @@ const Text = ({ type = "p", children, className }) => {
     "font-body font-normal tracking-wide",
     {/*"text-balance"*/ },
     {
-      "text-20 max-w-[60ch] xl:max-w-[63ch] 2xl:max-w-[65ch] text-pretty": type === "lg-p",
-      "text-base max-w-[75ch] xl:max-w-[83ch] 2xl:max-w-[90ch] text-pretty mb-2": type === "p",
-      "text-sm": type === "small",
-      "text-xs": type === "xs",
-         "text-xs italic": type === "source",
-      "text-base max-w-[66ch] xl:max-w-[71ch] 2xl:max-w-[83ch]": type === "short-p",
+      "text-24 text-20 2xl:text-24 4xl:text-32 max-w-[60ch] xl:max-w-[63ch] 2xl:max-w-[65ch] text-pretty": type === "lg-p",
+      "text-20 2xl:text-24": type === "full-p",
+      "text-20 sm:text-base 2xl:text-20 max-w-[75ch] xl:max-w-[83ch] 2xl:max-w-[90ch] text-pretty mb-2": type === "p",
+      "text-base sm:text-sm 2xl:text-base": type === "small",
+      "text-sm sm:text-xs 2xl:text-sm": type === "xs",
+      "text-base sm:text-sm 2xl:text-base italic": type === "source",
+      "text-20 sm:text-base 2xl:text-20 max-w-[66ch] xl:max-w-[71ch] 2xl:max-w-[83ch]": type === "short-p",
     },
     className
   ])

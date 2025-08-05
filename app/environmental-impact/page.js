@@ -38,9 +38,9 @@ export default function enviromentalImpact() {
             {t("environmentalImpact.Intro.sectionTitle")}
           </Heading>
           <div className="flex flex-col md:flex-row gap-4 lg:gap-12 items-start">
-            <Text className="basis-3/4">
+            {/* <Text className="basis-3/4">
               {t("environmentalImpact.Intro.sectionBody")}
-            </Text>
+            </Text> */}
           </div>
         </div>
       </div>
@@ -48,17 +48,17 @@ export default function enviromentalImpact() {
       <div className="flex flex-col gap-2 mb-12">
         {/* SECCION 1 */}
         <div className="standard_margin  !my-0 pb-4 rounded-md flex gap-4">
-          <div className="w-full lg:w-4/5">
+          <div className="w-full lg:w-full">
             <Heading level="h4" className="text-left">
               {t("environmentalImpact.firstSection.title")}
             </Heading>
             <div className=" md:float-right mb-4 md:mb-2 md:mx-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-green ">
-              <span className="">{t("environmentalImpact.fact")} </span>
+               <Text type="p" className="font-bold">{t("environmentalImpact.fact")} </Text>
               <Heading level="highlightTitle" className="text-left ">
                 {t("environmentalImpact.firstSection.highlight.title")}
               </Heading>
               <div className="flex flex-col justify-between h-full ">
-                <Text type="small" className="text-left ">
+                <Text type="p" className="text-left ">
                   {t("environmentalImpact.firstSection.highlight.body")}
                 </Text>
                 <Text type="source" className="mt-4 text-left ">
@@ -67,7 +67,7 @@ export default function enviromentalImpact() {
                 </Text>
               </div>
             </div>
-            <Text className="text-left">
+            <Text type="full-p" className="text-left">
               {t("environmentalImpact.firstSection.body")}
             </Text>
           </div>
@@ -75,17 +75,17 @@ export default function enviromentalImpact() {
 
         {/* SECCION 2. */}
         <div className="standard_margin !my-0 pb-4 rounded-md flex gap-4">
-          <div className="w-full lg:w-4/5">
+          <div className="w-full lg:w-full">
             <Heading level="h4" className="text-left">
               {t("environmentalImpact.secondSection.title")}
             </Heading>
             <div className=" md:float-left mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-outline ">
-              <span className="">{t("environmentalImpact.fact")} </span>
+                 <Text type="p" className="font-bold">{t("environmentalImpact.fact")} </Text>
               <Heading level="highlightTitle" className="text-left ">
                 {t("environmentalImpact.secondSection.highlight.title")}
               </Heading>
               <div className="flex flex-col justify-between h-full ">
-                <Text type="small" className="text-left ">
+                <Text type="p" className="text-left ">
                   {t("environmentalImpact.secondSection.highlight.body")}
                 </Text>
 
@@ -96,7 +96,7 @@ export default function enviromentalImpact() {
               </div>
             </div>
 
-            <Text className="text-left">
+            <Text type="full-p" className="text-left">
               {t("environmentalImpact.secondSection.body")}
             </Text>
           </div>
@@ -104,17 +104,17 @@ export default function enviromentalImpact() {
 
  {/* SECCION 3. */}
         <div className="standard_margin !my-0 pb-4 rounded-md flex gap-4">
-          <div className="w-full lg:w-4/5">
+          <div className="w-full lg:w-full">
             <Heading level="h4" className="text-left">
               {t("environmentalImpact.thirdSection.title")}
             </Heading>
             <div className=" md:float-right mb-4 md:mb-2 md:mx-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-blue ">
-              <span className="">{t("environmentalImpact.fact")} </span>
+                 <Text type="p" className="font-bold">{t("environmentalImpact.fact")} </Text>
               <Heading level="highlightTitle" className="text-left ">
                 {t("environmentalImpact.thirdSection.highlight.title")}
               </Heading>
               <div className="flex flex-col justify-between h-full ">
-                <Text type="small" className="text-left ">
+                <Text type="p" className="text-left ">
                   {t("environmentalImpact.thirdSection.highlight.body")}
                 </Text>
                 <Text type="source" className="mt-4 text-left ">
@@ -123,7 +123,7 @@ export default function enviromentalImpact() {
                 </Text>
               </div>
             </div>
-            <Text className="text-left">
+            <Text type="full-p" className="text-left">
               {t("environmentalImpact.thirdSection.body")}
             </Text>
           </div>
@@ -131,17 +131,17 @@ export default function enviromentalImpact() {
 
          {/* SECCION 4. */}
         <div className="standard_margin !my-0 pb-4 rounded-md flex gap-4">
-          <div className="w-full lg:w-4/5">
+          <div className="w-full lg:w-full">
             <Heading level="h4" className="text-left">
               {t("environmentalImpact.forthSection.title")}
             </Heading>
             <div className=" md:float-left mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-neonGreen ">
-              <span className="">{t("environmentalImpact.fact")} </span>
+              <Text type="p" className="font-bold">{t("environmentalImpact.fact")} </Text>
               <Heading level="highlightTitle" className="text-left ">
                 {t("environmentalImpact.forthSection.highlight.title")}
               </Heading>
               <div className="flex flex-col justify-between h-full ">
-                <Text type="small" className="text-left ">
+                <Text type="p" className="text-left ">
                   {t("environmentalImpact.forthSection.highlight.body")}
                 </Text>
 
@@ -152,7 +152,7 @@ export default function enviromentalImpact() {
               </div>
             </div>
 
-            <Text className="text-left">
+            <Text type="full-p" className="text-left">
               {t("environmentalImpact.forthSection.body")}
             </Text>
           </div>

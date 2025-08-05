@@ -19,7 +19,8 @@ i18n
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
     debug: true,
-    fallbackLng: 'en', // Set the fallback language to English
+    fallbackLng: 'es', // Set the fallback language to spanish
+    lng: 'es', // Set the initial language to spanish,
     resources: {
       en: {
         translation: en
