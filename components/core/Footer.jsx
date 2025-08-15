@@ -39,7 +39,7 @@ export default function Footer(props) {
             <b>{t("footer.email")} </b>
           </Text>
           </div>
-          <Text className="text-gray-400 text-sm"> responsable@upm.es</Text>
+          <Text className="text-gray-400 text-sm"> javier.conde.diaz@upm.es</Text>
         </div>
       </div>
 

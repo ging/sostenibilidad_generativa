@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "publications": "node transformPublications.js",
-    "deploy": "gh-pages -d docs"
+    "deploy": "gh-pages -d docs",
+    "serve": "npx serve docs"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

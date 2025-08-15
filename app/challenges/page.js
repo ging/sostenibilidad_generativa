@@ -86,6 +86,44 @@ function ChallengesPage() {
                 )}
             
               </div>
+              <div className="code-scapeRoom">
+                <form
+                  onSubmit={async (e) => {
+                    e.preventDefault();
+                    const code = e.target.elements.final_code.value;
+                    const targetHash = "70604c074e2ab18aa953e8218c0ebe01cbdb4922dc66397092004e71ffe766c1";
+                    async function hashCode(str) {
+                      str = str.trim().toLowerCase();
+                      const encoder = new TextEncoder();
+                      const data = encoder.encode(str);
+                      const hashBuffer = await window.crypto.subtle.digest("SHA-256", data);
+                      const hashArray = Array.from(new Uint8Array(hashBuffer));
+                      return hashArray.map(b => b.toString(16).padStart(2, "0")).join("");
+                    }
+                    const hashed = await hashCode(code);
+                    console.log(hashed);
+                    if (hashed === targetHash) {
+                      alert("¡Código correcto! Enhorabuena te has pasado la Escape Room");
+                    } else {
+                      alert("Código incorrecto, sigue intentándolo...");
+                    }
+                  }}
+                  className="flex gap-2"
+                >
+                  <input
+                    type="password"
+                    name="final_code"
+                    placeholder="Código"
+                    className="border rounded px-3 py-2 w-full focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  />
+                  <button
+                    type="submit"
+                    className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+                  >
+                    Enviar
+                  </button>
+                </form>
+              </div>
             </section>
           </main>
         </TabsContent>
