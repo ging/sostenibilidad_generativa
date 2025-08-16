@@ -47,10 +47,10 @@ export const myteam = [
     description_en:
       "Gonzalo Martínez holds a PhD and is a postdoctoral researcher in Telematics Engineering at Universidad Carlos III de Madrid, specializing in generative AI, communication networks, and cybersecurity. He has contributed to projects like B5G-OPEN, ITACA, and others funded by the Spanish State Research Agency. He has industry experience as a consultant at EY and holds a patent in collaboration with NVIDIA. Gonzalo has published in journals such as IEEE Network and ACM TIST, authored books on ChatGPT, teaches undergraduate and graduate courses, coordinates online LLM courses, and completed a research stay at the University of Edinburgh.",
     description_es:
-      "Gonzalo es doctor e investigador postdoctoral en Ingeniería Telemática en la Universidad Carlos III de Madrid, especializado en IA generativa, redes de comunicación y ciberseguridad. Ha participado en proyectos como B5G-OPEN, ITACA y otros financiados por la AEI. Cuenta con experiencia en consultoría en EY y una patente junto a NVIDIA. Ha publicado en revistas como IEEE Network y ACM TIST, y es autor de libros sobre ChatGPT. Imparte docencia en grado y máster, coordina cursos online sobre LLMs y ha realizado estancias de investigación en la Universidad de Edimburgo.",
+      "Gonzalo es doctor y Profesor Ayudante Doctor en la Universidad Politécnica de Madrid, especializado en IA generativa, redes de comunicación y ciberseguridad. Ha participado en proyectos como B5G-OPEN, ITACA y otros financiados por la AEI. Cuenta con experiencia en consultoría en EY y una patente junto a NVIDIA. Ha publicado en revistas como IEEE Network y ACM TIST, y es autor de libros sobre ChatGPT. Imparte docencia en grado y máster, coordina cursos online sobre LLMs y ha realizado estancias de investigación en la Universidad de Edimburgo.",
     img: "assets/img/team/gonzalo-martinez.jpg",
     github: "",
-    email: "gonzmart@pa.uc3m.es",
+    email: "gonzalo.martinez.ruizdearcaute@upm.es",
     center: "E.T.S de Ingenieros de Telecomunicación",
     researchgate: "",
     orcid: "",
