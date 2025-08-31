@@ -50,9 +50,9 @@ const EnvironmentalFactorsSVG = () => {
         <g transform="translate(400, 200)">
             {/* Círculo de fondo para el servidor central */}
             <circle cx="0" cy="0" r="70" fill="#01e401" />
-            {/* Imagen PNG del servidor central */}
+            {/* imagen PNG del servidor central */}
             <image 
-              href="/assets/img/icons/robot-icon.png" 
+              href="assets/img/icons/robot-icon.png" 
               x="-50" 
               y="-50" 
               width="100" 
@@ -70,7 +70,7 @@ const EnvironmentalFactorsSVG = () => {
             <circle cx="200" cy="120" r="60" fill={colors.water} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="/assets/img/icons/water-icon.png" 
+              href="assets/img/icons/water-icon.png" 
               x="160" 
               y="80" 
               width="80" 
@@ -91,7 +91,7 @@ const EnvironmentalFactorsSVG = () => {
             <circle cx="600" cy="120" r="60" fill={colors.carbon} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="/assets/img/icons/carbon-icon.png" 
+              href="assets/img/icons/carbon-icon.png" 
               x="560" 
               y="80" 
               width="80" 
@@ -112,7 +112,7 @@ const EnvironmentalFactorsSVG = () => {
             <circle cx="200" cy="280" r="60" fill={colors.minerals} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="/assets/img/icons/minerals-icon.png" 
+              href="assets/img/icons/minerals-icon.png" 
               x="160" 
               y="240" 
               width="80" 
@@ -133,7 +133,7 @@ const EnvironmentalFactorsSVG = () => {
             <circle cx="600" cy="280" r="60" fill={colors.waste} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="/assets/img/icons/waste-icon.png" 
+              href="assets/img/icons/waste-icon.png" 
               x="560" 
               y="240" 
               width="80" 
