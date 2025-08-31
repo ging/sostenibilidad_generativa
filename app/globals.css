@@ -29,7 +29,7 @@
 }
 /*TYPE*/
 
-p {
+p, li {
   color: white;
   @apply text-20 sm:text-base 2xl:text-20 4xl:text-24;
 }
@@ -248,4 +248,9 @@ main {
   span {
     @apply !text-white;
   }
+}
+
+strong {
+  @apply font-bold;
+  color: #01e401;
 }

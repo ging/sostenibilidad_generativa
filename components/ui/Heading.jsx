@@ -9,7 +9,7 @@ import clsx from "clsx";
   ------------------------------------------------------------------
 */
 
-const Heading = ({ level = "h1", children, className }) => {
+const Heading = ({ level = "h1", children, className, id}) => {
   // Determinar el componente HTML según el nivel
   let Component;
   switch (level) {
@@ -54,6 +54,9 @@ const Heading = ({ level = "h1", children, className }) => {
     },
     className
   ])
+  if (id) {
+    return <Component className={classes} id={id}>{children}</Component>;
+  }
   return <Component className={classes}>{children}</Component>;
 };
 

@@ -16,6 +16,8 @@ import {
   CardDescription,
 } from "@/components/ui/customCard";
 import Text from "@/components/ui/Text";
+import { OrderedList, UnorderedList, ListItem } from "@/components/ui/list";
+import CircularChart from "@/components/ui/CircularChart";
 
 export default function enviromentalImpact() {
   // const [projects, setProjects] = useState(myprojectCards);
@@ -38,22 +40,21 @@ export default function enviromentalImpact() {
             {t("environmentalImpact.Intro.sectionTitle")}
           </Heading>
           <div className="flex flex-col md:flex-row gap-4 lg:gap-12 items-start">
-            {/* <Text className="basis-3/4">
-              {t("environmentalImpact.Intro.sectionBody")}
-            </Text> */}
+            {<Text className="basis-3/4">
+              <i>{t("environmentalImpact.Intro.sectionBody")}</i>
+            </Text>}
           </div>
         </div>
       </div>
-      {/* TARJETAS DATOS */}
       <div className="flex flex-col gap-2 mb-12">
         {/* SECCION 1 */}
         <div className="standard_margin  !my-0 pb-4 rounded-md flex gap-4">
           <div className="w-full lg:w-full">
-            <Heading level="h4" className="text-left">
+            <Heading level="h4" className="text-left" id="impactoMedioambiente">
               {t("environmentalImpact.firstSection.title")}
             </Heading>
+            {/* Card */}
             <div className=" md:float-right mb-4 md:mb-2 md:mx-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-green ">
-               <Text type="p" className="font-bold">{t("environmentalImpact.fact")} </Text>
               <Heading level="highlightTitle" className="text-left ">
                 {t("environmentalImpact.firstSection.highlight.title")}
               </Heading>
@@ -63,7 +64,7 @@ export default function enviromentalImpact() {
                 </Text>
                 <Text type="source" className="mt-4 text-left ">
                   <b> {t("environmentalImpact.source")}</b>
-                  {t("environmentalImpact.firstSection.highlight.source")}
+                  <span dangerouslySetInnerHTML={{__html: t("environmentalImpact.firstSection.highlight.source")}} />
                 </Text>
               </div>
             </div>
@@ -79,26 +80,94 @@ export default function enviromentalImpact() {
             <Heading level="h4" className="text-left">
               {t("environmentalImpact.secondSection.title")}
             </Heading>
-            <div className=" md:float-left mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-outline ">
-                 <Text type="p" className="font-bold">{t("environmentalImpact.fact")} </Text>
-              <Heading level="highlightTitle" className="text-left ">
-                {t("environmentalImpact.secondSection.highlight.title")}
-              </Heading>
-              <div className="flex flex-col justify-between h-full ">
-                <Text type="p" className="text-left ">
-                  {t("environmentalImpact.secondSection.highlight.body")}
-                </Text>
-
-                <Text type="source" className="mt-4 text-left ">
-                  <b> {t("environmentalImpact.source")}</b>
-                  {t("environmentalImpact.secondSection.highlight.source")}
-                </Text>
-              </div>
-            </div>
-
             <Text type="full-p" className="text-left">
               {t("environmentalImpact.secondSection.body")}
             </Text>
+            <OrderedList>
+                <ListItem textType="full-p" dangerouslySetInnerHTML={{__html: t("environmentalImpact.secondSection.li1")}} />
+                <div className=" md:float-left mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-neonGreen ">
+                  <Heading level="highlightTitle" className="text-left ">
+                    {t("environmentalImpact.secondSection.highlight3.title")}
+                  </Heading>
+                  <div className="flex flex-col justify-between h-full ">
+                    <Text type="p" className="text-left ">
+                      <span dangerouslySetInnerHTML={{__html: t("environmentalImpact.secondSection.highlight3.body")}} />
+                    </Text>
+
+                    <Text type="source" className="mt-4 text-left ">
+                      <b> {t("environmentalImpact.source")}</b>
+                      <span dangerouslySetInnerHTML={{__html: t("environmentalImpact.secondSection.highlight3.source")}} />
+                    </Text>
+                  </div>
+                </div>
+                <ListItem textType="full-p" dangerouslySetInnerHTML={{__html: t("environmentalImpact.secondSection.li2")}} />
+            </OrderedList>
+            <Text type="full-p" className="text-left">
+              {t("environmentalImpact.secondSection.body2")}
+            </Text>
+            
+            {/* Gráfico circular interactivo */}
+            <div className="flex justify-center my-8">
+              <CircularChart 
+                data={
+                  [{question: t("environmentalImpact.secondSection.circularChartData.question1"), content: t("environmentalImpact.secondSection.circularChartData.content1")},
+                    {question: t("environmentalImpact.secondSection.circularChartData.question2"), content: t("environmentalImpact.secondSection.circularChartData.content2"), image: "assets/img/sections/datacenter.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright2")}, 
+                    {question: t("environmentalImpact.secondSection.circularChartData.question3"), content: t("environmentalImpact.secondSection.circularChartData.content3"), image: "assets/img/sections/gpu.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright3")},
+                    {question: t("environmentalImpact.secondSection.circularChartData.question4"), content: t("environmentalImpact.secondSection.circularChartData.content4")},
+                  ]
+                } 
+                size={500}
+                className="mx-auto"
+              />
+            </div>
+            <div className="flex flex-wrap gap-4 justify-center">
+              {/* Card */}
+              <div className="flex-1 min-w-[300px] max-w-[400px] px-4 py-2 rounded-md flex flex-col highlight-outline">
+                <Heading level="highlightTitle" className="text-left ">
+                  {t("environmentalImpact.secondSection.highlight1.title")}
+                </Heading>
+                <div className="flex flex-col justify-between h-full ">
+                  <Text type="p" className="text-left ">
+                    {t("environmentalImpact.secondSection.highlight1.body")}
+                  </Text>
+                </div>
+                <Text type="source" className="mt-4 text-left">
+                  <b> {t("environmentalImpact.source")}</b>
+                  <span dangerouslySetInnerHTML={{__html: t("environmentalImpact.secondSection.highlight1.source")}} />
+                </Text>
+              </div>
+              {/* Card */}
+              <div className="flex-1 min-w-[300px] max-w-[400px] px-4 py-2 rounded-md flex flex-col highlight-green">
+                <Heading level="highlightTitle" className="text-left ">
+                  {t("environmentalImpact.secondSection.highlight4.title")}
+                </Heading>
+                <div className="flex flex-col justify-between h-full ">
+                  <Text type="p" className="text-left ">
+                    {t("environmentalImpact.secondSection.highlight4.body")}
+                  </Text>
+
+                  <Text type="source" className="mt-4 text-left ">
+                    <b> {t("environmentalImpact.source")}</b>
+                    <span dangerouslySetInnerHTML={{__html: t("environmentalImpact.secondSection.highlight4.source")}} />
+                  </Text>
+                </div>
+              </div>
+              {/* Card */}
+              <div className="flex-1 min-w-[300px] max-w-[400px] px-4 py-2 rounded-md flex flex-col highlight-blue">
+                <Heading level="highlightTitle" className="text-left ">
+                  {t("environmentalImpact.secondSection.highlight2.title")}
+                </Heading>
+                <div className="flex flex-col justify-between h-full ">
+                  <Text type="p" className="text-left ">
+                    {t("environmentalImpact.secondSection.highlight2.body")}
+                  </Text>
+                  <Text type="source" className="mt-4 text-left ">
+                    <b> {t("environmentalImpact.source")}</b>
+                    <span dangerouslySetInnerHTML={{__html: t("environmentalImpact.secondSection.highlight2.source")}} />
+                  </Text>
+                </div>
+              </div>
+            </div> 
           </div>
         </div>
 
@@ -109,7 +178,6 @@ export default function enviromentalImpact() {
               {t("environmentalImpact.thirdSection.title")}
             </Heading>
             <div className=" md:float-right mb-4 md:mb-2 md:mx-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-blue ">
-                 <Text type="p" className="font-bold">{t("environmentalImpact.fact")} </Text>
               <Heading level="highlightTitle" className="text-left ">
                 {t("environmentalImpact.thirdSection.highlight.title")}
               </Heading>
@@ -136,7 +204,6 @@ export default function enviromentalImpact() {
               {t("environmentalImpact.forthSection.title")}
             </Heading>
             <div className=" md:float-left mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-neonGreen ">
-              <Text type="p" className="font-bold">{t("environmentalImpact.fact")} </Text>
               <Heading level="highlightTitle" className="text-left ">
                 {t("environmentalImpact.forthSection.highlight.title")}
               </Heading>

@@ -16,6 +16,7 @@ const Image = ({
   badgeContent = "badge",
   isSvg = false, // prop para detectar SVG
   svgCode = "",  // SVG en formato de código
+  copyright = "", // texto de copyright (puede incluir HTML)
 }) => {
   const imageContainerClasses = clsx(
     "relative flex w-full h-full overflow-hidden",
@@ -42,19 +43,28 @@ const Image = ({
   );
 
   return (
-    <div className={imageContainerClasses}>
-      {isSvg ? (
-        <div
-          className={imageClasses + ""}
-          dangerouslySetInnerHTML={{ __html: svgCode }} // Renderizamos SVG
+    <div>
+      <div className={imageContainerClasses}>
+        {isSvg ? (
+          <div
+            className={imageClasses + ""}
+            dangerouslySetInnerHTML={{ __html: svgCode }} // Renderizamos SVG
+          />
+        ) : (
+          <img src={src} alt={alt} className={imageClasses} />
+        )}
+        {hasBadge && (
+          <Badge className={badgeLayout} variant={badgeVariant} size={badgeSize}>
+            {badgeContent}
+          </Badge>
+        )}
+        </div>
+      
+      {copyright && (
+        <p 
+          style={{ fontSize: '0.8rem', color: 'gray', margin: '4px 0 0 0' }} 
+          dangerouslySetInnerHTML={{ __html: copyright }}
         />
-      ) : (
-        <img src={src} alt={alt} className={imageClasses} />
-      )}
-      {hasBadge && (
-        <Badge className={badgeLayout} variant={badgeVariant} size={badgeSize}>
-          {badgeContent}
-        </Badge>
       )}
     </div>
   );
