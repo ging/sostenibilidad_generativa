@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="28.1.0">
+  <diagram name="Página-1" id="knVurcuxZgjUEC2mt-ib">
+    <mxGraphModel dx="716" dy="518" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XAbL_YIp_3KYb6Id9jLL-7" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Carbon_footprint_icon.png/500px-Carbon_footprint_icon.png?20190525171751;fontColor=#91C772;convertToSvg=0;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="290" height="368" as="geometry" />
+        </mxCell>
+        <mxCell id="XAbL_YIp_3KYb6Id9jLL-8" value="" style="shape=mxgraph.signs.sports.rock_collection;html=1;pointerEvents=1;fillColor=#647687;strokeColor=#314354;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="50" y="907" width="168" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="XAbL_YIp_3KYb6Id9jLL-12" value="" style="shape=mxgraph.signs.sports.rock_collection;html=1;pointerEvents=1;fillColor=#fff2cc;strokeColor=#d6b656;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="400" y="890" width="168" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="XAbL_YIp_3KYb6Id9jLL-13" value="" style="shape=mxgraph.signs.sports.rock_collection;html=1;pointerEvents=1;fillColor=#a0522d;strokeColor=#6D1F00;verticalLabelPosition=bottom;verticalAlign=top;align=center;fontColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="70" y="670" width="168" height="162" as="geometry" />
+        </mxCell>
+        <mxCell id="XAbL_YIp_3KYb6Id9jLL-14" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Ionicons_Outline_Vol_2-2191/water-outline-1023.svg" vertex="1" parent="1">
+          <mxGeometry x="480" y="60" width="212" height="212" as="geometry" />
+        </mxCell>
+        <mxCell id="XAbL_YIp_3KYb6Id9jLL-16" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#C4C4C4;shadow=0;dashed=0;shape=mxgraph.ios7.icons.trashcan;" vertex="1" parent="1">
+          <mxGeometry x="430" y="300" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="XAbL_YIp_3KYb6Id9jLL-20" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://png.pngtree.com/png-clipart/20230323/ourmid/pngtree-rubbish-bin-clipart-png-image_6665225.png;" vertex="1" parent="1">
+          <mxGeometry x="346" y="460" width="174" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="XAbL_YIp_3KYb6Id9jLL-28" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Phosphor_Regular_Vol_4-2948/robot-1474.svg" vertex="1" parent="1">
+          <mxGeometry x="380" y="640" width="256" height="256" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -18,6 +18,7 @@ import {
 import Text from "@/components/ui/Text";
 import { OrderedList, UnorderedList, ListItem } from "@/components/ui/list";
 import CircularChart from "@/components/ui/CircularChart";
+import EnvironmentalFactorsSVG from "@/components/ui/EnvironmentalFactorsSVG";
 
 export default function enviromentalImpact() {
   // const [projects, setProjects] = useState(myprojectCards);
@@ -194,7 +195,13 @@ export default function enviromentalImpact() {
             <Text type="full-p" className="text-left">
               <span dangerouslySetInnerHTML={{ __html: t("environmentalImpact.thirdSection.body") }} />
             </Text>
+            
+            {/* Environmental Impact Factors SVG - Interactive diagram */}
+            <div className="my-8">
+              <EnvironmentalFactorsSVG />
+            </div>
           </div>
+
         </div>
 
          {/* SECCION 4. */}
@@ -221,6 +228,63 @@ export default function enviromentalImpact() {
 
             <Text type="full-p" className="text-left">
               {t("environmentalImpact.forthSection.body")}
+            </Text>
+          </div>
+        </div>
+
+         {/* SECCION 5. */}
+        <div className="standard_margin !my-0 pb-4 rounded-md flex gap-4">
+          <div className="w-full lg:w-full">
+            <Heading level="h4" className="text-left">
+              {t("environmentalImpact.fifthSection.title")}
+            </Heading>
+            <div className=" md:float-left mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-neonGreen ">
+              <Heading level="highlightTitle" className="text-left ">
+                {t("environmentalImpact.fifthSection.highlight.title")}
+              </Heading>
+              <div className="flex flex-col justify-between h-full ">
+                <Text type="p" className="text-left ">
+                  {t("environmentalImpact.fifthSection.highlight.body")}
+                </Text>
+
+                <Text type="source" className="mt-4 text-left ">
+                  <b> {t("environmentalImpact.source")}</b>
+                  {t("environmentalImpact.fifthSection.highlight.source")}
+                </Text>
+              </div>
+            </div>
+
+            <Text type="full-p" className="text-left">
+              {t("environmentalImpact.fifthSection.body")}
+            </Text>
+          </div>
+        </div>
+
+
+         {/* SECCION 6. */}
+        <div className="standard_margin !my-0 pb-4 rounded-md flex gap-4">
+          <div className="w-full lg:w-full">
+            <Heading level="h4" className="text-left">
+              {t("environmentalImpact.sixthSection.title")}
+            </Heading>
+            <div className=" md:float-left mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-neonGreen ">
+              <Heading level="highlightTitle" className="text-left ">
+                {t("environmentalImpact.sixthSection.highlight.title")}
+              </Heading>
+              <div className="flex flex-col justify-between h-full ">
+                <Text type="p" className="text-left ">
+                  {t("environmentalImpact.sixthSection.highlight.body")}
+                </Text>
+
+                <Text type="source" className="mt-4 text-left ">
+                  <b> {t("environmentalImpact.source")}</b>
+                  {t("environmentalImpact.sixthSection.highlight.source")}
+                </Text>
+              </div>
+            </div>
+
+            <Text type="full-p" className="text-left">
+              {t("environmentalImpact.sixthSection.body")}
             </Text>
           </div>
         </div>

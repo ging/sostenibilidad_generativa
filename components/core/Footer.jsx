@@ -79,14 +79,14 @@ export default function Footer(props) {
               className="max-h-full w-auto" // Asegura que la imagen no exceda la altura máxima
             />
           </div>
-          <div className={partnerLogoClasses}>
+          {/* <div className={partnerLogoClasses}>
             <Image
               fit="contain" // Ajuste de la imagen
               src="assets/logos/GING-logo.png" // Usa una ruta válida
               alt="Descripción de la imagen"
               className="max-h-full w-auto" // Asegura que la imagen no exceda la altura máxima
             />
-          </div>
+          </div> */}
             <div className={partnerLogoClasses}>
             <Image
               fit="contain" // Ajuste de la imagen

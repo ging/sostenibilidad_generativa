@@ -111,8 +111,36 @@ export const es = {
         body: "Diferentes noticias mencionan que generar una sola imagen con IA puede suponer hasta 5 litros de agua. Se utiliza el agua como medida de impacto medioambiental porque es algo que todo el mundo comprende, pero es importante destacar que el impacto no se limita al consumo de agua.",
         source: "<a class='underline' target='_blank' href='https://cadenaser.com/nacional/2025/04/05/el-gasto-energetico-de-la-ia-cada-imagen-generada-con-chatgpt-consume-entre-2-y-5-litros-de-agua-cadena-ser'>Cadena SER</a>",
       },
+      environmentalFactors: {
+        question1: "Consumo de agua",
+        content1: "Se utiliza para refrigerar los servidores. La refrigeración es fundamental, pues los servidores por su propio funcionamiento se calientan y si no se mantiene una temperatura adecuada dejan de funcionar. También hay que considerar el consumo indirecto de agua, como el necesario para obtener la energía eléctrica. También es interesante conocer que el agua no es el único mecanismo de refrigeración existente, otros sistemas como el aire seco, o sistemas de ventilación.",
+        question2: "Huella de carbono",
+        content2: "Todas las emisiones asociadas al funcionamiento y mantenimiento de los sistemas. Esto incluye la energía consumida para el funcionamiento de los centros de datos, el impacto de la fabricación y transporte de equipos, así como las emisiones generadas durante todo el ciclo de vida de la infraestructura.",
+        question3: "Extracción de minerales",
+        content3: "Necesarios para fabricar los componentes de los servidores, GPUs, baterías y resto de elementos del centro de datos. La minería para obtener materiales como cobre, oro, tierras raras y otros metales tiene importantes impactos ambientales en los ecosistemas locales.",
+        question4: "Gestión de residuos",
+        content4: "Reciclaje y disposición de equipos al final de su vida útil y residuos generados durante la operación. La industria tecnológica genera grandes cantidades de desechos electrónicos que contienen materiales tóxicos y valiosos que requieren procesos especiales de reciclaje y gestión."
+      }
     },
     forthSection: {
+      title: "Título sección",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
+      highlight: {
+        title: "Destacado",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat.",
+        source: "www.example.com",
+      },
+    },
+    fifthSection: {
+      title: "Título sección",
+      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
+      highlight: {
+        title: "Destacado",
+        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat.",
+        source: "www.example.com",
+      },
+    },
+    sixthSection: {
       title: "Título sección",
       body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
       highlight: {
