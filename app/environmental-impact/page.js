@@ -9,7 +9,7 @@ import ImportantDevicesIcon from "@mui/icons-material/ImportantDevices";
 import PolylineIcon from "@mui/icons-material/Polyline";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Heading from "@/components/ui/Heading";
-import Image from "@/components/ui/Image";
+import Image from "@/components/ui/image";
 import clsx from "clsx";
 
 import { Button, ButtonVariants } from "@/components/ui/button";
