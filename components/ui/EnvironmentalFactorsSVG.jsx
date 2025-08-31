@@ -41,7 +41,7 @@ const EnvironmentalFactorsSVG = () => {
         <svg 
         viewBox="0 0 800 400" 
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full max-w-3xl mx-auto drop-shadow-lg"
+        className="w-full max-w-5xl mx-auto drop-shadow-lg"
         >
         {/* Background */}
         <rect x="0" y="0" width="800" height="400" rx="10" fill="#0d1f19" fillOpacity="0.1" />
@@ -180,8 +180,7 @@ const EnvironmentalFactorsSVG = () => {
                 >
                 {selectedSection.question}
                 </h4>
-                <p className="text-xl">
-                {selectedSection.content}
+                <p className="text-xl" dangerouslySetInnerHTML={{ __html: selectedSection.content }}>
                 </p>
             </div>
             </div>

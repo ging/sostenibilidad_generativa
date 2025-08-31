@@ -47,7 +47,7 @@ export const es = {
     Intro: {
       sectionTitle: "La IA y su impacto en el medio ambiente",
       sectionBody:
-        "Este informe tiene carácter divulgativo pues se espera que su audiencia sea cualquier persona que utiliza sistemas basados en IA en su día a día sin necesidad de comprender el funcionamiento interno de la tecnología. El informe se centra en IA generativa, la más extendida hoy en día entre público general. En él aprenderás cómo usar la IA de forma responsable con el medioambiente. Cuando termines podrás probar tus conocimientos en una <strong><a target='_blank' class='underline' href='/challenges'>Escape Room</a></strong> en la que tendrás que obtener un código secreto antes de que se termine el tiempo y la energía…",
+        "Este informe tiene carácter divulgativo pues se espera que su audiencia sea cualquier persona que utiliza sistemas basados en IA en su día a día sin necesidad de comprender el funcionamiento interno de la tecnología. El informe se centra en IA generativa, la más extendida hoy en día entre público general. En él aprenderás cómo usar la IA de forma responsable con el medioambiente. Cuando termines podrás probar tus conocimientos en una <strong><a target='_blank' class='underline' href='challenges'>Escape Room</a></strong> en la que tendrás que obtener un código secreto antes de que se termine el tiempo y la energía…",
     },
     fact: "Dato",
     advice: "Consejo",
@@ -87,13 +87,13 @@ export const es = {
         source: "<a class='underline' target='_blank' href='https://x.ai/colossus'>xAI</a>",
       },
       highlight2: {
-        title: "Usuarios ChatGPT",
+        title: "Usuarios de ChatGPT",
         body: "ChatGPT tardó 2 meses en conseguir 100 millones de usuarios, mientras que otras aplicaciones como Instagram necesitaron 26 meses.",
         source: "<a class='underline' target='_blank' href='https://www.xataka.com/empresas-y-economia/instagram-tiktok-chatgpt-plataforma-que-rapido-ha-crecido-toda-historia-internet'>Xataka</a>",
       },
       highlight3: {
-        title: "Entrenamiento GPT4",
-        body: "Los modelos más potentes han tardado varios meses en entrenarse, se estima que GPT4 tardó unos 100 días en los que ejecutó alrededor de 10<sup>25</sup> operaciones matemáticas utilizando 25.000 GPU.",
+        title: "Entrenamiento GPT-4",
+        body: "Los modelos más potentes han tardado varios meses en entrenarse, se estima que GPT-4 tardó unos 100 días en los que ejecutó alrededor de 10<sup>25</sup> operaciones matemáticas utilizando 25.000 GPU.",
         source: "<a class='underline' target='_blank' href='https://semianalysis.com/2023/07/10/gpt-4-architecture-infrastructure/'>Dylan Patel y Gerald Wong en Semianalysis.com</a>",
       },
       highlight4: {
@@ -113,41 +113,76 @@ export const es = {
       },
       environmentalFactors: {
         question1: "Consumo de agua",
-        content1: "Se utiliza para refrigerar los servidores. La refrigeración es fundamental, pues los servidores por su propio funcionamiento se calientan y si no se mantiene una temperatura adecuada dejan de funcionar. También hay que considerar el consumo indirecto de agua, como el necesario para obtener la energía eléctrica. También es interesante conocer que el agua no es el único mecanismo de refrigeración existente, otros sistemas como el aire seco, o sistemas de ventilación.",
+        content1: "Se utiliza para refrigerar los servidores. La <strong>refrigeración</strong> es fundamental, pues los servidores por su propio funcionamiento se calientan y si no se mantiene una temperatura adecuada dejan de funcionar. También hay que considerar el <strong>consumo indirecto de agua</strong>, como el necesario para obtener la energía eléctrica. El agua no es el único mecanismo de refrigeración existente, otros sistemas son el aire seco o sistemas de ventilación.",
         question2: "Huella de carbono",
-        content2: "Todas las emisiones asociadas al funcionamiento y mantenimiento de los sistemas. Esto incluye la energía consumida para el funcionamiento de los centros de datos, el impacto de la fabricación y transporte de equipos, así como las emisiones generadas durante todo el ciclo de vida de la infraestructura.",
+        content2: "La huella de carbono es un indicador ambiental que mide la cantidad total de gases de efecto invernadero emitidos de forma directa o indirecta. Esto incluye la energía consumida para el funcionamiento de los centros de datos, el impacto de la fabricación y transporte de equipos, así como las emisiones generadas durante todo el ciclo de vida de la infraestructura. Sirve para <strong>medir el impacto en el cambio climático</strong> de cualquier producto, en este caso la IA.",
         question3: "Extracción de minerales",
-        content3: "Necesarios para fabricar los componentes de los servidores, GPUs, baterías y resto de elementos del centro de datos. La minería para obtener materiales como cobre, oro, tierras raras y otros metales tiene importantes impactos ambientales en los ecosistemas locales.",
+        content3: "Necesarios para fabricar los componentes de los servidores, GPUs, baterías y resto de elementos del centro de datos. La minería para obtener materiales como <strong>cobre, oro, tierras raras y otros metales</strong> tiene importantes impactos ambientales en los ecosistemas locales. Al excavar y remover grandes áreas de terreno, <strong>destruye hábitats naturales</strong>, <strong>afecta a la fauna y flora</strong>, <strong>contamina ríos y lagos</strong> con metales pesados y sustancias tóxicas, <strong>ensucia el aire</strong> con polvo y gases dañinos, y acelera la <strong>erosión del suelo</strong>, dejándolo más pobre y menos fértil.",
         question4: "Gestión de residuos",
-        content4: "Reciclaje y disposición de equipos al final de su vida útil y residuos generados durante la operación. La industria tecnológica genera grandes cantidades de desechos electrónicos que contienen materiales tóxicos y valiosos que requieren procesos especiales de reciclaje y gestión."
+        content4: "Reciclaje y disposición de equipos al final de su vida útil y residuos generados durante la operación. La industria tecnológica genera grandes cantidades de desechos electrónicos que contienen <strong>materiales tóxicos</strong> y valiosos que requieren procesos especiales de reciclaje y gestión."
       }
     },
-    forthSection: {
-      title: "Título sección",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
+    fourthSection: {
+      title: "Impacto de la IA",
+      body: "Este informe se centra en el impacto en el uso de la IA y no en el entrenamiento pues es el impacto que depende del uso de las personas. Para conocer el impacto que tiene la IA generativa es necesario comprender un aspecto básico de su funcionamiento. La IA no genera todo el contenido a la vez, sino que genera palabra a palabra (en realidad fragmentos de palabra que en el mundo de la IA se conocen como tokens). Esto es relevante, pues para generar un texto de 1.000 tokens necesitas ejecutar el modelo 1.000 veces. Recientemente han surgido trabajos de las propias empresas que desarrollan los modelos en los que han evaluado su impacto medioambiental. Por ejemplo, <a class='underline' target='_blank' href='https://services.google.com/fh/files/misc/measuring_the_environmental_impact_of_delivering_ai_at_google_scale.pdf'>Google</a> estima que una consulta textual a Gemini supone la misma energía que ver la televisión por 9 segundos. En un estudio similar en <a class='underline' target='_blank' href='https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai'>Mistral</a> obtuvieron que generar una página de texto con el modelo Large 2 supone el mismo consumo que ver una serie en streaming en EEUU por 10 segundos. Medir todos los factores que producen un impacto medioambiental es un reto tecnológico complejo, de hecho, no existe un consenso sobre la magnitud exacta del efecto que tiene la IA sobre el planeta.",
+      body2: "Un aspecto fundamental para conocer el impacto medioambiental de la IA es el tamaño de los modelos. Existe una gran variedad de tamaños que abarcan desde pocos miles de millones de parámetros hasta 1-2 billones de parámetros. Normalmente cuanto más grande es el modelo mayor es su calidad, pero también consume más al necesitar más servidores y GPU para ejecutarlos.",
       highlight: {
-        title: "Destacado",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat.",
-        source: "www.example.com",
+        title: "Noticias recientes",
+        body: "indican que Google no ha tenido en cuenta aspectos relevantes a la hora de hacer las medidas de consumo de sus modelos.",
+        source: "<a class='underline' target='_blank' href='https://www.theverge.com/report/763080/google-ai-gemini-water-energy-emissions-study'>The Verge</a>",
       },
+      highlight2: {
+        title: "IA vs Cerebro",
+        body: "Aunque las IA son muy grandes todavía están lejos del tamaño de nuestro cerebro, el cual está compuesto por unos 100 billones de sinapsis."
+      },
+      chart: {
+        title: "Energía consumida por modelo en Wh (100 token in → 300 token out)",
+        yLabel: "Consumo de energía (Wh)",
+        legendLabel: "Empresa",
+        source: "<a class='underline' target='_blank' href='https://arxiv.org/abs/2505.09598'>Jegham et al. (2025)</a>"
+      }
     },
     fifthSection: {
-      title: "Título sección",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
+      title: "Presente y futuro",
+      body: "Aunque los modelos de inteligencia artificial consumen energía, hay que tener en cuenta que cada vez son más eficientes y que la tecnología que los soporta también ha mejorado mucho. Hoy en día, existen modelos más pequeños que se pueden ejecutar incluso en ordenadores personales con recursos suficientes, aunque no suelen ser los que se usan habitualmente para tareas más complejas o a gran escala. Esto significa que, en teoría, se podría reducir el consumo energético usando versiones más ligeras, pero la práctica diaria suele requerir modelos grandes que exigen más energía. Además, se han desarrollado avances importantes para ahorrar energía en la infraestructura. Por ejemplo, los centros de datos incorporan sistemas de refrigeración avanzados, reutilizan el calor generado mediante baterías térmicas y utilizan servidores más eficientes que consumen menos electricidad para el mismo procesamiento. No obstante, a pesar de las mejoras en eficiencia, el uso de la inteligencia artificial está creciendo de manera acelerada, lo que eleva tanto su utilización como su impacto ambiental. Entre los principales factores que incrementan el consumo energético se encuentran:",
       highlight: {
-        title: "Destacado",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat.",
-        source: "www.example.com",
+        title: "Proyectos sostenibles",
+        body: "En 2024 Google inició un proyecto para capturar el calor producido por un centro de datos y reutilizarlo para calentar viviendas y negocios cercanos en Hamina, Finlandia.",
+        source: "<a class='underline' target='_blank' href='https://www.youtube.com/watch?v=YUmFQM4jvD8'>Google</a>",
       },
+      highlight2: {
+        title: "OpenAI",
+        body: "limitó el número de imágenes a generar con su plataforma tras hacerse viral la generación de imágenes al estilo Studio Ghibli",
+        source: "<a class='underline' target='_blank' href='https://www.example.com'>OpenAI</a>"
+      },
+      li1: "<strong>Mayor demanda de inferencias.</strong> Las nuevas versiones de los modelos incorporan capacidades de razonamiento más avanzadas que realizan procesos más complejos, traducidos en mayor número de tokens (inferencias), lo que requiere más cálculos y, por ende, más energía. Modelos actuales pueden estar ejecutándose durante minutos o incluso horas para dar un único resultado. Esto incrementa de forma considerable el tiempo de ejecución del modelo.",
+      li2:"<strong>Agentes.</strong> Los agentes son sistemas que no solo generan contenido, sino que también interactúan con su entorno para alcanzar objetivos más complejos. Actualmente, existen agentes que permiten a la IA navegar por Internet y elaborar informes a partir de la información obtenida, así como agentes que asisten a los programadores en la escritura de código. Estos agentes requieren ejecutar los modelos durante períodos prolongados, ya que deben realizar múltiples interacciones para completar sus tareas de manera efectiva.",
+      li3:"<strong>Multimodalidad.</strong> La generación de contenido más allá del texto, como imágenes, audio o vídeos, demanda un consumo energético significativamente mayor. Por ejemplo, un vídeo consiste en cientos o miles de fotogramas, producirlo puede requerir decenas o incluso cientos de veces más energía que generar un texto de tamaño comparable.",
+      imagecopy:"En esta interacción con GPT-5 sin el razonamiento activado tarda menos de un segundo de ejecución pero el resultado es erróneo (arriba). Con el razonamiento activado (abajo) tarda 8 segundos y ahora la respuesta sí es correcta"
     },
     sixthSection: {
-      title: "Título sección",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
+      title: "El rol de los usuarios: guía de buenas prácticas",
+      body: "Los usuarios no tienen control directo sobre el impacto medioambiental derivado del <strong>desarrollo de la tecnología</strong>, pero sí pueden influir <strong>en su uso</strong>. Del mismo modo que la sociedad ha tomado conciencia sobre reducir el desperdicio de papel o limitar el uso de plásticos, también es posible fomentar un uso de la inteligencia artificial más eficiente y respetuoso con el medio ambiente. Algunas prácticas sencillas que, aplicadas de forma generalizada, pueden marcar la diferencia son:",
+      body2: "Ya eres un experto en utilizar la IA de forma responsable con el medioambiente. Pon a prueba tus habilidades en la <strong><a class='underline' target='_blank' href='challenges'>Escape Room</a></strong> del proyecto #SostenibilidadGenerativa. En este reto interactivo aplicarás los trucos de uso eficiente de la IA mientras intentas descifrar un código de seguridad y escapar antes de que se agote el tiempo y la energía.",
       highlight: {
-        title: "Destacado",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat.",
-        source: "www.example.com",
+        title: "#Sostenibilidad Generativa",
+        body: "Un estudio del proyecto #SostenibilidadGenerativa muestra que en más del 75% de los casos las personas consideran adecuadas las respuestas de modelos más pequeños, sin necesidad de recurrir a versiones más grandes.",
+        source: "<a class='underline' target='_blank' href='https://huggingface.co/spaces/GING-UPM/ArenaEnergy'>Arena Energy (#SostenibilidadGenerativa)</a>",
       },
+      highlight2: {
+        title: "Consejo",
+        body: "Dar las gracias a los chatbots supone un consumo de energía innecesario ya que un modelo no se enfada porque no les digas gracias. Este ejemplo ilustra cómo pequeños hábitos, multiplicados por millones de usuarios, pueden tener un impacto significativo."
+      },
+      li1:"<strong>Usar la IA solo cuando sea necesario.</strong> Muchas veces se recurre a la IA para tareas muy simples, como redactar un correo breve, cuando hacerlo manualmente ahorraría energía y mantendría nuestras propias habilidades activas. Además, algunos estudios señalan que delegar constantemente en la IA puede tener un impacto negativo en nuestras capacidades cognitivas.",
+      li2:"<strong>Elegir el modelo más eficiente para cada tarea.</strong> El mejor modelo no siempre es el más grande o potente, sino aquel que resuelve la tarea consumiendo la menor cantidad de energía. A menudo, los modelos más pequeños ofrecen resultados suficientes para las tareas cotidianas. Además los modelos más pequeños responden más rápido que los modelos de razonamiento avanzados. Actualmente los desarrolladores de modelos están integrando sistemas que deciden cual es el mejor modelo para cada caso, por lo que se espera que en los próximos meses sea algo automático, aunque no está de más saberlo.",
+      li3:"<strong>Ajustar el nivel de detalle necesario.</strong> No siempre se requiere una explicación extensa o técnica. Indicar el nivel de profundidad deseado (“responde en 3 frases” o “resumen breve”) ayuda a reducir el cómputo. Los modelos suelen extenderse innecesariamente en sus explicaciones.",
+      li4:"<strong>Reducir la información de entrada.</strong> No solo importa lo que la IA genera, sino también lo que le proporcionamos como entrada. Cargar al modelo con información excesiva, como un PDF de 1.000 páginas, consume mucha más energía que formular una pregunta directa o aportar únicamente el fragmento necesario.",
+      li5:"<strong>Limitar el contenido multimedia.</strong> Como se mencionó anteriormente, generar imágenes, audio o vídeo requiere mucha más energía que producir solo texto. Por ello, conviene recurrir a formatos multimedia únicamente cuando aporten un valor añadido real.",
+      li6:"<strong>Reutilizar resultados previos.</strong> Antes de volver a preguntar algo, revisa si ya obtuviste esa información en una interacción anterior. Esto evita ejecuciones innecesarias.",
+      li7:"<strong>Evitar pedir múltiples versiones de lo mismo.</strong> Muchas veces se solicita “dame 10 opciones” cuando con 2 o 3 ejemplos basta. Cada versión adicional implica más procesamiento y, por lo tanto, más energía.",
+      li8:"<strong>Aprovechar herramientas de búsqueda tradicionales cuando sea suficiente.</strong> Para ciertas consultas rápidas (definiciones, datos muy concretos, conversiones de unidades), un buscador clásico puede ser mucho más eficiente que invocar un modelo de IA.",
+      li9:"<strong>Formarse en IA.</strong> Aprender a formular buenas preguntas (prompt engineering) evita intentos fallidos o repetidos, lo que también reduce el número de interacciones necesarias.",
+      imagecopy:"Escape Room del proyecto #Sostenibilidad Generativa"
     },
    
   },
