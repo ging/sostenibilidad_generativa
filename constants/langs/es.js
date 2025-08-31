@@ -47,7 +47,7 @@ export const es = {
     Intro: {
       sectionTitle: "La IA y su impacto en el medio ambiente",
       sectionBody:
-        "Este informe tiene carácter divulgativo pues se espera que su audiencia sea cualquier persona que utiliza sistemas basados en IA en su día a día sin necesidad de comprender el funcionamiento interno de la tecnología. El informe se centra en IA generativa, la más extendida hoy en día entre público general. En él aprenderás cómo usar la IA de forma responsable con el medioambiente. Cuando termines podrás probar tus conocimientos en una Escape Room en la que tendrás que obtener un código secreto antes de que se termine el tiempo y la energía…",
+        "Este informe tiene carácter divulgativo pues se espera que su audiencia sea cualquier persona que utiliza sistemas basados en IA en su día a día sin necesidad de comprender el funcionamiento interno de la tecnología. El informe se centra en IA generativa, la más extendida hoy en día entre público general. En él aprenderás cómo usar la IA de forma responsable con el medioambiente. Cuando termines podrás probar tus conocimientos en una <strong><a target='_blank' class='underline' href='/challenges'>Escape Room</a></strong> en la que tendrás que obtener un código secreto antes de que se termine el tiempo y la energía…",
     },
     fact: "Dato",
     advice: "Consejo",
@@ -58,7 +58,7 @@ export const es = {
       highlight: {
         title: "CONSUMO IA",
         body: "Para finales de 2025 se estima que la IA consuma el doble de energía que los Países Bajos",
-        source: "<a target='_blank' href='https://www.theguardian.com/environment/2025/may/22/ai-data-centre-power-consumption'>The Guardian</a>",
+        source: "<a class='underline' target='_blank' href='https://www.theguardian.com/environment/2025/may/22/ai-data-centre-power-consumption'>The Guardian</a>",
       },
     },
     secondSection: {
@@ -71,45 +71,45 @@ export const es = {
       circularChartData:{
           question3: "¿Dónde?",
           content3: "La IA se ejecuta en <strong>servidores</strong> (ordenadores muy potentes). Dentro de estos servidores, un componente clave son las <strong>GPU</strong> (equipos diseñados para hacer los cálculos necesarios para entrenar y ejecutar los modelos). Los servidores se agrupan en unos lugares llamados <strong>centros de datos</strong> para procesar grandes cantidades de información de manera segura y continua.",
-          copyright3: "GPU. Imagen por <a href='https://commons.wikimedia.org/wiki/File:NVidia_GeForce_6600GT_AGP_with_GPU_2009-01-27.jpg'>Wikimeida</a>. Licencia <a href='https://creativecommons.org/licenses/by-sa/3.0/deed.en'>CC BY-SA 3.0</a>",
+          copyright3: "GPU. Imagen por <a target='_blank' class='underline' href='https://commons.wikimedia.org/wiki/File:NVidia_GeForce_6600GT_AGP_with_GPU_2009-01-27.jpg'>Wikimeida</a>. Licencia <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-sa/3.0/deed.en'>CC BY-SA 3.0</a>",
           question1: "¿Quién?",
           content1: "<strong>1) Las empresas</strong> que desarrollan los modelos son responsables del mayor consumo energético durante el entrenamiento. <br> <strong> 2) Los usuarios </strong> son los que generan un impacto cada vez que hacen preguntas al sistema, aunque más pequeño que el entrenamiento. <br> <br> Sin embargo, el entrenamiento solo se ejecuta una vez, mientras que las inferencias suponen un coste por <strong>cada usuario y pregunta</strong> que hagan. La popularidad de la IA es tan grande que hay millones de usuarios al mismo tiempo haciendo consultas, por lo que, aunque el impacto de la inferencia sea muy inferior al de entrenamiento el gran número de usuarios y peticiones hacen que se conviertan en algo muy relevante.",
           question4: "¿Cuándo?",
           content4: "<strong>1) Durante el entrenamiento</strong> el modelo necesita ejecutar muchos cálculos para aprender de los datos de entrada. Gracias al entrenamiento el modelo es capaz de procesar nuestras preguntas y darnos respuesta. <br> <br> <strong>2) Durante la inferencia</strong> el modelo tiene que ejecutarse para darnos la respuesta. Cada ejecución del modelo da como resultado una única palabra (o fragmento de palabra), por lo que para formar una respuesta completa necesitará ejecutarse muchas veces. Obtener una respuesta completa puede llevar desde milisegundos a unos pocos segundos.",
           question2: "¿Por qué?",
           content2: "Los centros de datos requieren un gran consumo de electricidad y refrigeración para su funcionamiento. Obtener esa energía conlleva un gran impacto medioambiental. Además, la propia construcción, y mantenimiento de los centros de datos contribuyen significativamente a aumentar su huella de carbono.",
-          copyright2: "Centro de datos. Imagen por <a href='https://modius.com/modius-blog/modius-blog-data-center/what-is-colocation-data-center/'>Modius, Inc</a>. Licencia <a href='https://creativecommons.org/licenses/by-nc/4.0/#ref-commercial-purposes'>CC BY-NC 4.0</a>",
+          copyright2: "Centro de datos. Imagen por <a target='_blank' class='underline' href='https://modius.com/modius-blog/modius-blog-data-center/what-is-colocation-data-center/'>Modius, Inc</a>. Licencia <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-nc/4.0/#ref-commercial-purposes'>CC BY-NC 4.0</a>",
 
       },
       highlight1: {
         title: "Colossus",
         body: "En 2024 xAI (empresa fundada por Elon Musk y desarrolladora del modelo Grok) construyó el centro de datos Colosus siendo más grande del mundo en solo 122 días, compuesto por 100.000 GPU. Recientemente dobló su tamaño y ahora contiene unas 200.000 GPU.",
-        source: "<a target='_blank' href='https://x.ai/colossus'>xAI</a>",
+        source: "<a class='underline' target='_blank' href='https://x.ai/colossus'>xAI</a>",
       },
       highlight2: {
         title: "Usuarios ChatGPT",
         body: "ChatGPT tardó 2 meses en conseguir 100 millones de usuarios, mientras que otras aplicaciones como Instagram necesitaron 26 meses.",
-        source: "<a target='_blank' href='https://www.xataka.com/empresas-y-economia/instagram-tiktok-chatgpt-plataforma-que-rapido-ha-crecido-toda-historia-internet'>Xataka</a>",
+        source: "<a class='underline' target='_blank' href='https://www.xataka.com/empresas-y-economia/instagram-tiktok-chatgpt-plataforma-que-rapido-ha-crecido-toda-historia-internet'>Xataka</a>",
       },
       highlight3: {
         title: "Entrenamiento GPT4",
         body: "Los modelos más potentes han tardado varios meses en entrenarse, se estima que GPT4 tardó unos 100 días en los que ejecutó alrededor de 10<sup>25</sup> operaciones matemáticas utilizando 25.000 GPU.",
-        source: "<a target='_blank' href='https://semianalysis.com/2023/07/10/gpt-4-architecture-infrastructure/'>Dylan Patel y Gerald Wong en Semianalysis.com</a>",
+        source: "<a class='underline' target='_blank' href='https://semianalysis.com/2023/07/10/gpt-4-architecture-infrastructure/'>Dylan Patel y Gerald Wong en Semianalysis.com</a>",
       },
       highlight4: {
         title: "Centros de datos",
         body: "La Agencia Internacional de Energía estima que el consumo eléctrico de los centros de datos se duplicará para 2030 llegando a aproximadamente equivalente al consumo total actual de Japón hoy.",
-        source: "<a target='_blank' href='https://www.iea.org/reports/energy-and-ai/executive-summary'>Agencia Internacional de Energía (IEA)</a>",
+        source: "<a class='underline' target='_blank' href='https://www.iea.org/reports/energy-and-ai/executive-summary'>Agencia Internacional de Energía (IEA)</a>",
       },
 
     },
     thirdSection: {
-      title: "Título sección",
-      body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien.",
+      title: "Cómo medir el impacto de la IA",
+      body: "Medir el impacto medioambiental de cualquier tecnología no es sencillo, ya que afecta a muchas dimensiones diferentes. Habitualmente, se habla de <strong>energía consumida</strong>, es decir, la potencia necesaria para ejecutar los modelos multiplicada por el tiempo de funcionamiento. Esta información es la misma que se obtiene en la factura de la luz del hogar. A menudo también se utiliza la medida de <strong>kg de CO₂ equivalentes</strong>, que estima la cantidad de dióxido de carbono liberado para generar esa electricidad. Este cálculo depende de la fuente de energía: un país con predominio de energías renovables tendrá emisiones mucho menores que otro que dependa principalmente de energías no renovables como el carbón. Sin embargo, el impacto de la IA no se limita al consumo de energía. Hay que considerar todo el ciclo de vida del producto y los actores implicados. Algunos aspectos importantes incluyen:",
       highlight: {
-        title: "Destacado",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat.",
-        source: "www.example.com",
+        title: "Consumo de agua",
+        body: "Diferentes noticias mencionan que generar una sola imagen con IA puede suponer hasta 5 litros de agua. Se utiliza el agua como medida de impacto medioambiental porque es algo que todo el mundo comprende, pero es importante destacar que el impacto no se limita al consumo de agua.",
+        source: "<a class='underline' target='_blank' href='https://cadenaser.com/nacional/2025/04/05/el-gasto-energetico-de-la-ia-cada-imagen-generada-con-chatgpt-consume-entre-2-y-5-litros-de-agua-cadena-ser'>Cadena SER</a>",
       },
     },
     forthSection: {

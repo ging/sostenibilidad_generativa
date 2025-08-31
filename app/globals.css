@@ -254,3 +254,7 @@ strong {
   @apply font-bold;
   color: #01e401;
 }
+
+/* a {
+  @apply underline;
+} */

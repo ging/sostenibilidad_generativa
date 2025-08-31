@@ -46,7 +46,7 @@ const Heading = ({ level = "h1", children, className, id}) => {
       "text-40 2xl:text-48 mb-6 font-chaney font-normal ": level === "h1", // Aplicar "adasd" si el nivel es h1
       "text-36 2xl:text-40 mb-4 font-chaney font-normal ": level === "h2",
       "text-36 2xl:text-40 mb-4 font-heebo font-bold tracking-wide": level === "h3",
-      "text-28 2xl:text-32 mb-2 font-heebo tracking-wide": level === "h4",
+      "text-28 2xl:text-32 mb-2 font-heebo font-bold tracking-wide": level === "h4",
        "text-28 2xl:text-32 mb-2 font-chaney": level === "highlightTitle",
       "text-24 2xl:text-28 mb-2 font-heebo font-semibold tracking-wide": level === "h5",
       "text-base 2xl:text-20 font-medium uppercase mb-2": level === "h6",

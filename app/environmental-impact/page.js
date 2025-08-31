@@ -41,7 +41,7 @@ export default function enviromentalImpact() {
           </Heading>
           <div className="flex flex-col md:flex-row gap-4 lg:gap-12 items-start">
             {<Text className="basis-3/4">
-              <i>{t("environmentalImpact.Intro.sectionBody")}</i>
+              <i dangerouslySetInnerHTML={{ __html: t("environmentalImpact.Intro.sectionBody") }} />
             </Text>}
           </div>
         </div>
@@ -50,7 +50,7 @@ export default function enviromentalImpact() {
         {/* SECCION 1 */}
         <div className="standard_margin  !my-0 pb-4 rounded-md flex gap-4">
           <div className="w-full lg:w-full">
-            <Heading level="h4" className="text-left" id="impactoMedioambiente">
+            <Heading level="h4" className="text-left font-bold" id="impactoMedioambiente">
               {t("environmentalImpact.firstSection.title")}
             </Heading>
             {/* Card */}
@@ -174,7 +174,7 @@ export default function enviromentalImpact() {
  {/* SECCION 3. */}
         <div className="standard_margin !my-0 pb-4 rounded-md flex gap-4">
           <div className="w-full lg:w-full">
-            <Heading level="h4" className="text-left">
+            <Heading level="h4" className="text-left" id="como-se-mide">
               {t("environmentalImpact.thirdSection.title")}
             </Heading>
             <div className=" md:float-right mb-4 md:mb-2 md:mx-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-blue ">
@@ -187,12 +187,12 @@ export default function enviromentalImpact() {
                 </Text>
                 <Text type="source" className="mt-4 text-left ">
                   <b> {t("environmentalImpact.source")}</b>
-                  {t("environmentalImpact.thirdSection.highlight.source")}
+                  <span dangerouslySetInnerHTML={{__html: t("environmentalImpact.thirdSection.highlight.source")}} />
                 </Text>
               </div>
             </div>
             <Text type="full-p" className="text-left">
-              {t("environmentalImpact.thirdSection.body")}
+              <span dangerouslySetInnerHTML={{ __html: t("environmentalImpact.thirdSection.body") }} />
             </Text>
           </div>
         </div>
