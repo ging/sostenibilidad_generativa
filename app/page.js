@@ -12,7 +12,6 @@ import Text from "@/components/ui/Text";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import { myteam } from "@/constants/team";
 import { Card, CardVariants } from "@/components/core/Cards";
-
 import { CardDescription } from "@/components/ui/customCard";
 
 //Banner
