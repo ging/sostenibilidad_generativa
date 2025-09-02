@@ -379,7 +379,7 @@ export default function enviromentalImpact() {
                   />
                   <Link href="/challenges" className={`${iconCardClasses} flex justify-center`}>
                       <Button variant="outline" size="sm" className="mt-4">
-                        {t("front.summaryWeb.challenges.button")}
+                        {t("front.summaryWeb.challenges.button2")}
                         <ArrowForwardIcon
                           sx={{ fontSize: 18 }}
                           className="h-4 w-4 "

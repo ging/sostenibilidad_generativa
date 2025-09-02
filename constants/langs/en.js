@@ -33,6 +33,7 @@ export const en = {
         title: "Challenges",
         body: "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien purus ac vehicula.",
         button: "Challenge yourself",
+        button2: "Challenge yourself..."
       },
       results: {
         title: "Results",
@@ -169,7 +170,8 @@ export const en = {
       },
       highlight2: {
         title: "Advice",
-        body: "Thanking chatbots means unnecessary energy consumption since a model doesn't get upset if you don't say thanks. This example illustrates how small habits, multiplied by millions of users, can have a significant impact."
+        body: "Thanking chatbots means unnecessary energy consumption since a model doesn't get upset if you don't say thanks. This example illustrates how small habits, multiplied by millions of users, can have a significant impact.",
+        source: "<a class='underline' target='_blank' href='https://www.nytimes.com/2025/04/24/technology/chatgpt-alexa-please-thank-you.html'>The New York Times</a>"
       },
       li1:"<strong>Use AI only when necessary.</strong> Many times AI is used for very simple tasks, such as writing a brief email, when doing it manually would save energy and keep our own skills active. In addition, some studies point out that constantly delegating to AI can have a negative impact on our cognitive abilities.",
       li2:"<strong>Choose the most efficient model for each task.</strong> The best model is not always the largest or most powerful, but the one that solves the task consuming the least amount of energy. Often, smaller models offer sufficient results for daily tasks. Also smaller models respond faster than advanced reasoning models. Currently model developers are integrating systems that decide which is the best model for each case, so it is expected that in the coming months it will be automatic, although it doesn't hurt to know it.",
