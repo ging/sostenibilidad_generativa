@@ -52,16 +52,7 @@ module.exports = {
 
         primary: { // azul genérico
           DEFAULT: "#056dc1",
-          900: "#0e406c",
-          800: "#094b83",
-          700: "#05589f",
-          600: "#056dc1",
-          500: "#118de6",
-          400: "#3ba8f5",
-          300: "#7fc5fa",
-          200: "#bbdffc",
-          100: "#e0effe",
-          50: "#f0f7ff",
+         
           foreground: "#FFFFFF",
          
         },
