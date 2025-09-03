@@ -145,9 +145,10 @@ function ResultsPage() {
                 title_en,
                 description_en,
                 description_es,
+                type_es,
+                type_en,
                 logo,
-                route,
-              type
+                route
               },
               index
             ) => (
@@ -159,7 +160,7 @@ function ResultsPage() {
                 logo={logo}
                 route={route}
                 description={currentLang === "es" ? description_es : description_en}
-                type={type}
+                type={currentLang === "es" ? type_es : type_en}
               ></Card>
             )
           )}

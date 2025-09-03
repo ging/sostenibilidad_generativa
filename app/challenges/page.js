@@ -46,20 +46,23 @@ function ChallengesPage() {
           <div className="h-4"></div>
           <div className=" ">
             <Heading level="h3">{t("challenges.escaperoom.title")}</Heading>
-            <Text type="p" className="pb-2">
-              {t("challenges.escaperoom.description1")}
+            <Text type="full-p" className="pb-2">
+              <span dangerouslySetInnerHTML={{__html: t("challenges.escaperoom.description1")}} />
             </Text>
-            <Text type="p" className="pb-2">
-              {t("challenges.escaperoom.description2")}
+            <Text type="full-p" className="pb-2">
+              <span dangerouslySetInnerHTML={{__html: t("challenges.escaperoom.description2")}} />
             </Text>
-            <Text type="p" className="pb-2">
-              {t("challenges.escaperoom.description3")}
+            <Text type="full-p" className="pb-2">
+              <span dangerouslySetInnerHTML={{__html: t("challenges.escaperoom.description3")}} />
             </Text>
-            <Text type="p" className="pb-2">
-              {t("challenges.escaperoom.description4")}
+            <Text type="full-p" className="pb-2">
+              <span dangerouslySetInnerHTML={{__html: t("challenges.escaperoom.description4")}} />
             </Text>
-            <Text type="lg-p" className="pb-2 font-semibold">
-              {t("challenges.escaperoom.description5")}
+            <Text type="full-p" className="pb-2 font-semibold">
+              <span dangerouslySetInnerHTML={{__html: t("challenges.escaperoom.description5")}} />
+            </Text>
+            <Text type="full-p" className="pb-2 font-semibold">
+              <span dangerouslySetInnerHTML={{__html: t("challenges.escaperoom.description6")}} />
             </Text>
           </div>
           <div className="h-4 border-b border-white/40"></div>
@@ -70,12 +73,12 @@ function ChallengesPage() {
               <div className="grid sm:gap-4 gap-y-6 sm:grid-cols-2 lg:grid-cols-3 ">
                 {escaperooms.map(
                   (
-                    { key, title, description_es, description_en, route, img },
+                    { key, title_es, title_en, description_es, description_en, route, img },
                     index
                   ) => (
                     <Card
                       key={index}
-                      title={title}
+                      title={currentLang === "es" ? title_es : title_en}
                       cardType={"escaperoom"}
                       description_es={description_es}
                       description_en={description_en}

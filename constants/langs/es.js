@@ -14,9 +14,7 @@ export const es = {
     "doc-button": "Documentación",
     "action-button": "Sobre nosotros",
     section1Title: "Sobre el proyecto",
-    section1Description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Sed auctor lectus at elit consectetur, at venenatis ligula faucibus.",
-    section1Subtitle: "Principios del proyecto",
+    section1Description: "La Inteligencia Artificial está transformando la sociedad, pero también tiene un impacto ambiental oculto que pocas veces se menciona. Sostenibilidad Generativa nace para demostrar que la tecnología puede avanzar y utilizarse sin dejar de cuidar el planeta. A diferencia de lo que cree parte de la sociedad, el impacto ambiental de la IA no se limita a quienes la desarrollan, sino que también involucra a las personas que la utilizan. Nuestro trabajo se centra en investigar el consumo real asociado al uso de la IA, en concienciar a la sociedad sobre su empleo responsable y en enseñar sencillos trucos para aplicarla de manera respetuosa con el medio ambiente. Queremos que tanto jóvenes como adultos y desarrolladores de nuevas tecnologías basadas en IA descubran que existen formas simples y efectivas de reducir el impacto sin renunciar a la innovación.",    section1Subtitle: "Principios del proyecto",
     latestPublicationsTitle: "Últimas publicaciones",
     latestPublicationsButton: "Ver todas las publicaciones",
     sectionHomeTitle: "A collaborative project between UC3M and UPM",
@@ -28,18 +26,18 @@ export const es = {
       sectionTitle: "Secciones",
       environmentalImpact: {
         title: "Impacto ambiental",
-        body: "Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus.",
+        body: "Informe sobre el impacto ambiental de la IA y guía de buenas prácticas para reducir su impacto por parte de los usuarios.",
         button: "Saber más",
       },
       challenges: {
         title: "Desafíos",
-        body: "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien purus ac vehicula.",
+        body: "Rétate en nuestra Escape Room virtual. ¿Serás capaz de escapar de la sala antes de que se acaben el tiempo y la energía...?",
         button: "Rétate",
         button2: "¿Te atreves?"
       },
       results: {
         title: "Resultados",
-        body: "Sed auctor etra, orci nec ultullam id dolor rices lectus at elit consectetur,  urna faucibus lorem at venenatis ligula faucibus.",
+        body: "Consulta los resultados del proyecto, eventos, y las herramientas desarrolladas.",
         button: "Descubre más",
       },
     },
@@ -188,11 +186,7 @@ export const es = {
     },
    
   },
-
-
-
-
-
+  
   research: {
     title: "Publicaciones",
     description:
@@ -225,7 +219,7 @@ export const es = {
   results: {
     title: "Resultados",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Aquí puedes encontrar los resultados del proyecto, publicaciones, eventos, y las herramientas desarrolladas.",
     button: "Detalles",
     researchLines: {
       data: "Datos",
@@ -236,23 +230,10 @@ export const es = {
       other: "Otros",
       all: "Todo",
     },
-    filter: {
-      fieldTitle1: "Búsqueda por nombre",
-      fieldTitle2: "Tipo de proyecto",
-      all: "Todo",
-      "national-project": "Proyecto nacional",
-      "european-project": "Proyecto europeo",
-      "private-project": "Proyecto privado",
-    },
     card: {
       toggleMore: "Ver más",
       toggleLess: "Ver menos",
       button: "Publicaciones relacionadas",
-    },
-    type: {
-      "european-project": "Proyecto europeo",
-      "national-project": "Proyecto nacional",
-      "private-project": "Proyecto privado",
     },
   },
   team: {
@@ -308,15 +289,12 @@ export const es = {
     escaperoom: {
       title: "Escaperoom",
       rooms: "Salas",
-      description1:
-        "Bienvenido/a al escape room de Sostenibilidad Generativa! 🕵️‍♂️ Para abrir la sala, deberás interactuar con el chatbot y descubrir la contraseña oculta 🔑.",
-      description2:
-        "Cuando la tengas, introdúcela en el candado para salir de la sala. ⏰ Tienes 5 minutos para encontrar el código. Puedes utilizar todo lo que quieras además del chatbot (internet, libros, tu cerebro 🧠...)",
-      description3:
-        "Una última cosa... para poder desbloquear la puerta debemos de haber reservado un poco de energía ⚡ en el sistema.",
-      description4:
-        "Cada fallo ❌ resta un 10% de energía, cada palabra que le preguntes al chatbot resta energía, y cada palabra que este nos responda también... Por lo tanto debes diseñar estrategias de prompt efectiva 📝.",
-      description5: "¡Mucha suerte! ",
+      description1: "En las sombras del ciberespacio, un grupo de <strong>cuatro ciberdelincuentes</strong> dispersos por todo el mundo ha desarrollado un virus informático sin precedentes. Su objetivo: <strong>poner en bucle la canción <a class='underline' target='_blank' href='https://youtu.be/1m8IyfG925Q?si=Dcrm2lWQorHacl21'>Baby Shark</a> en todos los ordenadores del planeta</strong> 🦈​, generando caos, desorganización y pánico global. Las autoridades tecnológicas han lanzado todos sus recursos para detenerlos, pero el reloj corre en su contra. Los últimos informes de inteligencia indican que el ciberataque comenzará en pocas horas, y si no se detiene a tiempo, el desorden será irreversible.",
+      description2: "Existe, sin embargo, una última esperanza. Los criminales han protegido su creación con un <strong>código secreto de cuatro dígitoes</strong> 🔑 que puede desactivar la propagación del virus. <strong>Cada ciberdelincuente guarda un único dígito en su propio ordenador personal</strong>. Los equipos de seguridad han logrado conectarse de manera remota a estos dispositivos, pero los ciberdelincuentes han instalado un <strong>Chatbot de seguridad extremadamente sofisticado</strong>, diseñado para impedir que cualquier intruso acceda a sus archivos.",
+      description3: "<strong>Tu misión</strong> 🕵️‍♂️ es clara, pero peligrosa: ingresar a cada uno de los cuatro ordenadores, <strong>enfrentarte a sus Chatbots y recuperar la contraseña</strong> antes de que sea demasiado tarde. Cuidado, <strong>el tiempo es limitado</strong> ⏰: solo se dispone de 10 minutos de acceso por ordenador. Además, <strong>la batería de cada equipo ⚡ es crítica</strong> y si los equipos se quedan sin batería perderemos el acceso. Un fallo puede significar perder para siempre la oportunidad de detener el virus. Cada interacción debe ser precisa y estratégica, porque un movimiento en falso podría sellar el destino de la humanidad al ritmo de una canción interminable.",
+      description4: "El mundo depende de tu habilidad, ingenio y rapidez. Si logras reunir los cuatro dígitos y descifrar el código final, <strong>podrás neutralizar el virus y salvar a la humanidad</strong> del caos cibernético más absurdo jamás imaginado. Cada segundo cuenta y cada decisión puede ser la diferencia entre el orden y un reinado global de <a class='underline' target='_blank' href='https://youtu.be/1m8IyfG925Q?si=Dcrm2lWQorHacl21'>Baby Shark</a>.",
+      description5:"Puedes utilizar todo lo que quieras además del ChatBot de cada sala (internet, libros, tu cerebro 🧠...). <strong>Cada fallo ❌ resta un 10% de energía, cada palabra que le preguntes al chatbot resta energía, y cada palabra que este nos responda también...</strong> Por lo tanto debes diseñar <strong>estrategias de prompt efectiva</strong>. Puedes consultar <strong><a class='underline' target='_blank' href='environmental-impact#guia-buenas-practicas'>la guía</a></strong> de #Sostenibilidad Generativa que te mostrará trucos muy efectivos 📝.</a>",
+      description6: "¡Mucha suerte! ",
       escaperoomCards: {
         button: "Jugar",
       },

@@ -12,8 +12,7 @@ export const en = {
     "doc-button": "Documentation",
     "action-button": "About us",
     section1Title: "About the project",
-    section1Description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Sed auctor lectus at elit consectetur, at venenatis ligula faucibus.",
+    section1Description: "Artificial Intelligence is transforming society, but it also has a hidden environmental impact that is rarely mentioned. Generative Sustainability was created to show that technology can progress and be used while still caring for the planet. Contrary to what some people believe, the environmental impact of AI is not limited to those who develop it, it also affects the people who use it. Our work focuses on researching the real energy consumption associated with AI use, raising awareness in society about its responsible use, and teaching simple tips to apply it in an environmentally friendly way. We want young people, adults, and developers of new AI-based technologies to discover that there are simple and effective ways to reduce the impact without giving up innovation.",
     section1Subtitle: "Project principles",
     latestPublicationsTitle: "Latest publications",
     latestPublicationsButton: "View all publications",
@@ -26,18 +25,18 @@ export const en = {
       sectionTitle: "Sections",
       environmentalImpact: {
         title: "Environmental Impact",
-        body: "Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus.",
+        body: "Report on the Environmental Impact of AI and a Guide to Best Practices for Reducing Its Impact by Users.",
         button: "Learn more",
       },
       challenges: {
         title: "Challenges",
-        body: "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien purus ac vehicula.",
+        body: "Challenge yourself in our virtual Escape Room. Will you be able to escape the room before time and energy run out...?",
         button: "Challenge yourself",
         button2: "Challenge yourself..."
       },
       results: {
         title: "Results",
-        body: "Sed auctor etra, orci nec ultullam id dolor rices lectus at elit consectetur,  urna faucibus lorem at venenatis ligula faucibus.",
+        body: "Check the results of the project, events, and the tools developed.",
         button: "Discover more",
       },
     },
@@ -302,15 +301,12 @@ export const en = {
     escaperoom: {
       title: "Escaperoom",
       rooms: "Rooms",
-      description1:
-        "Welcome to the Generative Sustainability escape room! 🕵️‍♂️ To open the room, you'll need to interact with the chatbot and discover the hidden password 🔑.",
-      description2:
-        "When you have it, enter it into the lock to exit the room. ⏰ You have 5 minutes to find the code. You can use anything you want besides the chatbot (internet, books, your brain 🧠...)",
-      description3:
-        "One last thing... to unlock the door we must have saved some energy ⚡ in the system.",
-      description4:
-        "Each mistake ❌ drains 10% of energy, each word you ask the chatbot uses energy, and each word it responds also consumes energy... So you must design effective prompt strategies 📝.",
-      description5: "Good luck!",
+      description1: "In the shadows of cyberspace, a group of <strong>four cybercriminals</strong> scattered around the world has developed an unprecedented computer virus. Their goal: <strong>to loop the song <a class='underline' target='_blank' href='https://youtu.be/1m8IyfG925Q?si=Dcrm2lWQorHacl21'>Baby Shark</a> on every computer on the planet</strong> 🦈​, generating chaos, disorder, and global panic. Technology authorities have deployed all their resources to stop them, but the clock is ticking against them. The latest intelligence reports indicate that the cyberattack will begin in a few hours, and if it isn’t stopped in time, the disruption will be irreversible.",
+      description2: "However, there is one last hope. The criminals have protected their creation with a <strong>four-digit secret code</strong> 🔑 that can deactivate the virus’s spread. <strong>Each cybercriminal keeps a single digit on their personal computer</strong>. Security teams have managed to remotely access these devices, but the cybercriminals have installed an <strong>extremely sophisticated security Chatbot</strong>, designed to prevent any intruder from accessing their files.",
+      description3: "<strong>Your mission</strong> 🕵️‍♂️ is clear but dangerous: enter each of the four computers, <strong>face their Chatbots, and retrieve the password</strong> before it’s too late. Be careful, <strong>time is limited</strong> ⏰: only 10 minutes of access per computer. Additionally, <strong>the battery of each device ⚡ is critical</strong>, and if the devices run out of power, we will lose access. A single mistake could mean losing the chance to stop the virus forever. Every interaction must be precise and strategic, because one wrong move could seal humanity’s fate to the rhythm of an endless song.",
+      description4: "The world depends on your skill, ingenuity, and speed. If you manage to gather all four digits and crack the final code, <strong>you will be able to neutralize the virus and save humanity</strong> from the most absurd cyber chaos ever imagined. Every second counts, and every decision could be the difference between order and a global reign of <a class='underline' target='_blank' href='https://youtu.be/1m8IyfG925Q?si=Dcrm2lWQorHacl21'>Baby Shark</a>.",
+      description5: "You can use anything you want besides the ChatBot in each room (internet, books, your brain 🧠...). <strong>Each mistake ❌ reduces energy by 10%, each word you ask the chatbot costs energy, and every word it responds with also costs energy...</strong> Therefore, you must design <strong>effective prompt strategies</strong>. You can consult <strong><a class='underline' target='_blank' href='environmental-impact#guia-buenas-practicas'>the guide</a></strong> on #GenerativeSustainability, which will show you very effective tricks 📝.",
+      description6: "Good luck! ",
       escaperoomCards: {
         button: "Play",
       },

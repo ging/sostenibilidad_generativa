@@ -106,7 +106,15 @@ const calculateTextWidth = (description) => {
   return totalWidth;
 };
 const isDescriptionLongEnough = (description) => {
-  return calculateTextWidth(description) >= getIdealLength();
+  try {
+    return calculateTextWidth(description) > getIdealLength();
+  } catch (error) {
+    console.error("Error calculating text width:", error);
+    if (description) {
+      return true;
+    }
+    return false;
+  }
 };
 
 const deleteSpaces = (string) => {
