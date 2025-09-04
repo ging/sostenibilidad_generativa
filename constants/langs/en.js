@@ -299,7 +299,24 @@ export const en = {
   challenges: {
     escaperoom: {
       title: "Escaperoom",
-      rooms: "Rooms",
+      rooms: {
+        title: "Rooms",
+        description1:
+          "Upon completing each room, you'll unlock a character of the password. You'll be able to enter the escape room's opening code once you've completed all the rooms.",
+        
+          button: "Send",
+        feedback: {
+          positive: {
+            button: " ¡Escaperoom solved!",
+            title: "Victory!",
+            description: "Congratulations! You solved the escaperoom."
+          },
+          negative: {
+            title: "Invalid code",
+            description: "Try with another one."
+          },
+        },
+      },
       description1:
         "Welcome to the Generative Sustainability escape room! 🕵️‍♂️ To open the room, you'll need to interact with the chatbot and discover the hidden password 🔑.",
       description2:

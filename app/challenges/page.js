@@ -32,13 +32,7 @@ function ChallengesPage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-  useEffect(() => {
-    if (openOverlay) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
-  }, [openOverlay]);
+ 
 
   return (
     <div className={"standard_margin page_" + currentLang}>
@@ -52,7 +46,7 @@ function ChallengesPage() {
           </TabsTrigger>
           <TabsTrigger value="tools">
             {" "}
-            {t("challenges.tools.title")}{" "}
+            {t("challenges.tools.title")}
           </TabsTrigger>
         </TabsList>
 
@@ -78,8 +72,10 @@ function ChallengesPage() {
                       autoplay
                     />
                     <div className="mt-[-28px] flex justify-center flex-col items-center">
-                      <Heading className="text-center" level="h3"> ¡VICTORIA! </Heading>
-                      <p className="text-center">¡Enhorabuena! Has superado el escaperoom</p>
+                      <Heading className="text-center" level="h3"> 
+                      {t("challenges.escaperoom.rooms.feedback.positive.title")}
+                       </Heading>
+                      <p className="text-center">{t("challenges.escaperoom.rooms.feedback.positive.description")}</p>
                     </div>
                   </div>
                 ) : (
@@ -91,8 +87,8 @@ function ChallengesPage() {
                       autoplay
                     />
                     <div className="flex justify-center flex-col items-center">
-                      <Heading className="text-center" level="h3"> Código incorrecto </Heading>
-                      <p className="text-center">Prueba con otro código diferente.</p>
+                      <Heading className="text-center" level="h3"> {t("challenges.escaperoom.rooms.feedback.negative.title")} </Heading>
+                      <p className="text-center">{t("challenges.escaperoom.rooms.feedback.negative.description")}</p>
                     </div>
                   </div>
                 )}
@@ -125,11 +121,9 @@ function ChallengesPage() {
           <main>
             <section className="z-10">
               <div className="h-4"></div>
-              <Heading level="h4">{t("challenges.escaperoom.rooms")}</Heading>
+              <Heading level="h4">{t("challenges.escaperoom.rooms.title")}</Heading>
               <Text>
-                {" "}
-                Cuando hayas completado las 4 salas, podrás introducir el código
-                de apertura de la escaperoom.{" "}
+              {t("challenges.escaperoom.rooms.description1")}
               </Text>
               <div className="code-scapeRoom mt-4 mb-8">
                 <form
@@ -190,11 +184,13 @@ function ChallengesPage() {
     />
   
                       <CheckIcon className="hidden sm:inline sm:mr-2 "/> 
-                      ¡Escaperoom superado!  
+                      {t("challenges.escaperoom.rooms.feedback.positive.button")}{" "}
  
                       </div> 
                       : 
-                      "Enviar"
+                      <>
+                      {t("challenges.escaperoom.rooms.button")}
+                      </>
                       }
                   </button>
                 </form>
