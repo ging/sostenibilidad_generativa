@@ -14,7 +14,7 @@ const Banner = React.forwardRef(({ className, ...props }, ref) => (
   <section
     ref={ref}
     className={cn(
-      "padding_home md:min-h-[500px] md:max-h-[900px]",
+      "standard_padding sm:h-screen md:max-h-[500px]  3xl:max-h-[80vh]",
       "text-black ",
       "bg-main bg-cover bg-center",
       "flex gap-8 justify-around items-center",
@@ -37,7 +37,7 @@ BannerContent.displayName = "BannerContent";
 const BannerTitle = React.forwardRef(({ className, ...props }, ref) => (
   <h1
   
-    className=" !text-28 sm:!text-36 !text-black !font-chaney font-normal  w-full !leading-[28px] sm:!leading-[40px] md:max-w-[50vw] mb-4  "
+    className=" !text-28 sm:!text-36 xl:!text-48 !text-black !font-chaney font-normal  w-full !leading-[28px] sm:!leading-[40px] xl:!leading-[48px]  md:max-w-[50vw] mb-4  "
   {...props}
   />
 ));
@@ -47,7 +47,7 @@ const BannerDescription = React.forwardRef(({ className, ...props }, ref) => (
     <Text type="lg-p"
     ref={ref}
 
-    className= {cn("!text-black font-body font-semibold text-balance text-20 md:!max-w-[60vw] lg:!max-w-[43vw] mb-4", className)}
+    className= {cn("!text-black font-body font-normal text-balance text-20 md:!max-w-[60vw] lg:!max-w-[43vw] mb-4", className)}
     {...props} />
     ))
 BannerDescription.displayName = "BannerDescription"
@@ -68,7 +68,7 @@ BannerButton.displayName = "BannerButton";
 const BannerImg = React.forwardRef(({ className, ...props }, ref) => (
   <div ref={ref} className={cn("hidden md:block relative w-full h-full overflow-hidden", className)}>
     <img
-      className="w-full h-full flex items-center justify-center object-contain"
+      className="w-full h-full flex items-center justify-center object-cover"
       src="placeholder.jpg"
       alt="icon"
     />

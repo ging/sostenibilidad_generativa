@@ -13,19 +13,23 @@ export default function Footer(props) {
   const { t } = useTranslation();
 
   const projectLogoContainerClasses = clsx(
-    "flex flex-col gap-4 items-start justify-start sm:justify-center"
+    "flex flex-col gap-4 items-start  justify-start sm:justify-center"
   );
 
   const partnerLogoClasses = clsx(
-    "flex justify-start items-start h-20 w-auto md:w-40 overflow-hidden"
+    "flex justify-center items-start h-28 md:h-20 2xl:h-28 w-auto overflow-hidden"
   );
 
   const sectionTitleClasses = clsx(
-    "uppercase text-left-2 text-[14px] font-semibold "
+    "uppercase text-left-2 text-[14px] font-semibold pb-2 "
   );
 
+  const imgLogoClasses = clsx(
+    "contain relative flex h-28 md:h-20 2xl:h-28 overflow-hidden w-auto"
+  )
+
   return (
-    <footer className="narrow_padding flex flex-col flex-wrap  gap-8 xs:flex-row justify-between items-start bg-background-500 text-gray-400">
+    <footer className="padding_home flex flex-col flex-wrap  gap-8 xs:flex-row justify-between items-start bg-background-500 text-gray-400">
       <div className={projectLogoContainerClasses}>
         <img
           className="min-w-60 max-w-[200px] md:max-w-[300px] opacity-70" // Corrige la sintaxis del max-width
@@ -68,31 +72,27 @@ export default function Footer(props) {
       </nav>
 
       <div>
-        <div className={sectionTitleClasses + " pb-2"} >{t("footer.title3")}</div>
-        <div className="w-fit flex gap-4 md:gap-2 justify-start items-start md:items-center flex-wrap flex-col xs:flex-row sm:flex-wrap lg:flex-nowrap">
-
+        <div className={sectionTitleClasses} >{t("footer.title3")}</div>
+        <div className="w-fit flex gap-x-12 gap-y-5 md:gap-8 2xl:gap-12 justify-start items-start md:items-center flex-wrap flex-col xs:flex-row sm:flex-wrap lg:flex-nowrap mt-6 md:mt-2">
           <div className={partnerLogoClasses}>
-            <Image
-              fit="contain" // Ajuste de la imagen
+            <img
               src="assets/logos/cotec-logo.png" // Usa una ruta válida
               alt="Descripción de la imagen"
-              className="max-h-full w-auto" // Asegura que la imagen no exceda la altura máxima
+              className={imgLogoClasses} // Asegura que la imagen no exceda la altura máxima
             />
           </div>
-          {/* <div className={partnerLogoClasses}>
-            <Image
-              fit="contain" // Ajuste de la imagen
+          <div className={partnerLogoClasses}>
+            <img
               src="assets/logos/GING-logo.png" // Usa una ruta válida
               alt="Descripción de la imagen"
-              className="max-h-full w-auto" // Asegura que la imagen no exceda la altura máxima
+              className={imgLogoClasses} 
             />
-          </div> */}
+          </div>
             <div className={partnerLogoClasses}>
-            <Image
-              fit="contain" // Ajuste de la imagen
+            <img
               src="assets/logos/UPM-logo.png" // Usa una ruta válida
               alt="Descripción de la imagen"
-              className="max-h-full w-auto" // Asegura que la imagen no exceda la altura máxima
+              className={imgLogoClasses}  // Asegura que la imagen no exceda la altura máxima
             />
           </div>
         </div>

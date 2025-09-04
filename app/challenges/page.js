@@ -60,7 +60,7 @@ function ChallengesPage() {
         <TabsContent value="escaperoom">
           {openOverlay ? (
             <div className="fixed inset-0 w-full h-full flex items-center justify-center bg-black/40 z-50 ">
-              <div className="bg-gray-800/90 border border-gray-400 rounded-md z-50 w-11/12 h-1/2 md:w-fit md:h-fit fixed flex align-center justify-center py-8 px-4 md:px-16">
+              <div className="bg-gray-800/90 border border-gray-400 rounded-md z-50 w-11/12 h-fit sm:w-fit md:h-fit fixed flex align-center justify-center pb-8 pt-4 px-4 md:px-16">
                 <div className="right-4 top-3 absolute ">
                   <CloseIcon
                     sx={{ fontSize: 24 }}
@@ -78,8 +78,8 @@ function ChallengesPage() {
                       autoplay
                     />
                     <div className="mt-[-28px] flex justify-center flex-col items-center">
-                      <Heading level="h3"> ¡VICTORIA! </Heading>
-                      <p>¡Enhorabuena! Has superado el escaperoom</p>
+                      <Heading className="text-center" level="h3"> ¡VICTORIA! </Heading>
+                      <p className="text-center">¡Enhorabuena! Has superado el escaperoom</p>
                     </div>
                   </div>
                 ) : (
@@ -91,8 +91,8 @@ function ChallengesPage() {
                       autoplay
                     />
                     <div className="flex justify-center flex-col items-center">
-                      <Heading level="h3"> Código incorrecto </Heading>
-                      <p>Prueba con otro diferente.</p>
+                      <Heading className="text-center" level="h3"> Código incorrecto </Heading>
+                      <p className="text-center">Prueba con otro código diferente.</p>
                     </div>
                   </div>
                 )}
@@ -133,7 +133,7 @@ function ChallengesPage() {
               </Text>
               <div className="code-scapeRoom mt-4 mb-8">
                 <form
-                  className="w-full lg:w-48 flex gap-2"
+                  className="form_password w-full sm:w-48 flex flex-col sm:flex-row gap-4 sm:gap-2"
                   onSubmit={async (e) => {
                     e.preventDefault();
                     const code = e.target.elements.final_code.value;
@@ -167,13 +167,35 @@ function ChallengesPage() {
                     type="password"
                     name="final_code"
                     placeholder="Código"
-                    className="border rounded px-3 py-2 w-32  focus:outline-none focus:ring-4 focus:ring-accent-300/30"
+                    className="input_password"
+                    disabled={success}
+                    autocomplete="new-password"
                   />
                   <button
                     type="submit"
-                    className="min-w-20 h-fit min-w-fit inline-flex gap-2 items-center justify-center font-medium whitespace-nowrap rounded-md transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 uppercase tracking-widest px-4 py-2 text-20 sm:text-base 2xl:text-20 bg-accent-200 text-background-300 hover:text-black shadow-sm hover:bg-accent-400"
+                    className={`min-w-20 h-fit min-w-fit inline-flex gap-2 items-center 
+                      justify-center font-medium whitespace-nowrap rounded-md transition-colors 
+                      focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring 
+                      disabled:pointer-events-none uppercase tracking-widest 
+                      px-4 py-2 text-20 sm:text-base 2xl:text-20 
+                      hover:text-black shadow-sm hover:bg-accent-400 text-wrap sm:text-nowrap ${success ? "bg-background-300 text-accent-200 opacity-100" : "text-background-300  bg-accent-200"}` }
+                  disabled={success}
                   >
-                    {success ?  <div> <CheckIcon/> Escaperoom resuelto </div> : "Enviar"}
+                    {success ?  <div className="flex justify-center items-center"> 
+                      <DotLottieReact
+      src="https://lottie.host/45c9e54a-fcbc-4a49-ab3d-a0e975a8fc86/lUI3B0EvVF.lottie"
+      loop
+      autoplay
+    className="absolute w-72 ratio-1/4 opacity-75"
+    />
+  
+                      <CheckIcon className="hidden sm:inline sm:mr-2 "/> 
+                      ¡Escaperoom superado!  
+ 
+                      </div> 
+                      : 
+                      "Enviar"
+                      }
                   </button>
                 </form>
               </div>

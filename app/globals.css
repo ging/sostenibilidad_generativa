@@ -73,7 +73,7 @@ p, li {
   @apply px-4 py-6 sm:py-6 sm:px-8 md:py-8 md:px-14 lg:py-12 lg:px-24 xl:px-44 2xl:px-72;
 }
 .padding_home {
-  @apply px-4 sm:p-12 md:px-20 lg:px-24 xl:px-32 2xl:px-48 py-6 sm:py-6 md:py-8 lg:py-12;
+  @apply p-6 sm:p-12 md:px-20 lg:px-24 xl:px-32 2xl:px-48 py-6 sm:py-6 md:py-8 lg:py-12;
 }
 .narrow_padding {
   @apply p-6 sm:py-6 sm:px-8 md:py-8 md:px-14 lg:py-10;
@@ -258,3 +258,9 @@ strong {
 /* a {
   @apply underline;
 } */
+
+/* CHALLENGES */
+
+.form_password input[type=password] {
+  @apply border rounded px-3 py-2 w-full sm:w-32  focus:outline-none focus:ring-4 focus:ring-accent-300/30 disabled:!bg-gray-500 disabled:border disabled:!border-gray-300 disabled:cursor-not-allowed disabled:text-gray-700
+}
