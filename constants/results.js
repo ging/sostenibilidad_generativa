@@ -26,8 +26,8 @@ export const results = [
   {
     logo: "assets/img/results/hf-logo.png",
     route: "https://huggingface.co/spaces/GING-UPM/ArenaEnergy",
-    title_es: "LLM Arena - elige el mejor modelo",
-    title_en: "LLM Arena - choose the best model ",
+    title_es: "Generative Energy Arena (GEA) - elige el mejor modelo",
+    title_en: "Generative Energy Arena (GEA) - choose the best model ",
     description_es:
     "Esta herramienta ha permitido descubrir los escenarios en los que las personas están dispuestas a elegir modelos más pequeños perdiendo un poco de calidad en las respuestas pero reduciendo de forma considerable su impacto medioambiental.",
     description_en:

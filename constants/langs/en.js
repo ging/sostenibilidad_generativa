@@ -300,7 +300,24 @@ export const en = {
   challenges: {
     escaperoom: {
       title: "Escaperoom",
-      rooms: "Rooms",
+      rooms: {
+        title: "Rooms",
+        description1:
+          "Upon completing each room, you'll unlock a character of the password. You'll be able to enter the escape room's opening code once you've completed all the rooms.",
+        
+          button: "Send",
+        feedback: {
+          positive: {
+            button: " ¡Escaperoom solved!",
+            title: "Victory!",
+            description: "Congratulations! You solved the escaperoom."
+          },
+          negative: {
+            title: "Invalid code",
+            description: "Try with another one."
+          },
+        },
+      },
       description1: "In the shadows of cyberspace, a group of <strong>four cybercriminals</strong> scattered around the world has developed an unprecedented computer virus. Their goal: <strong>to loop the song <a class='underline' target='_blank' href='https://youtu.be/1m8IyfG925Q?si=JmriYHW1AX0aO9nO&t=21'>Baby Shark</a> on every computer on the planet</strong> 🦈​, generating chaos, disorder, and global panic. Technology authorities have deployed all their resources to stop them, but the clock is ticking against them. The latest intelligence reports indicate that the cyberattack will begin in a few hours, and if it isn’t stopped in time, the disruption will be irreversible.",
       description2: "However, there is one last hope. The criminals have protected their creation with a <strong>four-digit secret code</strong> 🔑 that can deactivate the virus’s spread. <strong>Each cybercriminal keeps a single digit on their personal computer</strong>. Security teams have managed to remotely access these devices, but the cybercriminals have installed an <strong>extremely sophisticated security Chatbot</strong>, designed to prevent any intruder from accessing their files.",
       description3: "<strong>Your mission</strong> 🕵️‍♂️ is clear but dangerous: enter each of the four computers, <strong>face their Chatbots, and retrieve the password</strong> before it’s too late. Be careful, <strong>time is limited</strong> ⏰: only 10 minutes of access per computer. Additionally, <strong>the battery of each device ⚡ is critical</strong>, and if the devices run out of power, we will lose access. A single mistake could mean losing the chance to stop the virus forever. Every interaction must be precise and strategic, because one wrong move could seal humanity’s fate to the rhythm of an endless song.",

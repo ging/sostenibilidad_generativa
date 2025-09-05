@@ -11,17 +11,6 @@ export const escaperooms = [
     key: "1",
   },
   {
-    img: "assets/img/escaperooms/li-restaurant.png",
-    route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_2",
-    title_es: "El restaurante de Li",
-    title_en: "Li's Restaurant",
-    description_es:
-      "Li es una apasionada por la cocina pero está cansada de que la gente le deje malas críticas en Google, así que ha decidido acabar con los críticos virtuales cibernéticos.",
-    description_en:
-      "Li is passionate about cooking but is tired of people leaving bad reviews on Google, so she has decided to get rid of the virtual cyber critics.",
-    key: "2",
-  },
-  {
     img: "assets/img/escaperooms/lab.png",
     route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_3",
     title_es: "El laboratorio de Trebor",
@@ -42,5 +31,16 @@ export const escaperooms = [
     description_en:
       "Gemma is an astronaut who has been trapped in a space mission for a long time. Due to a failure in her ship, she has been listening to the song Baby Shark for 5 years, so she wants the rest of the world to hear it too.",
     key: "4",
+  },
+  {
+    img: "assets/img/escaperooms/li-restaurant.png",
+    route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_2",
+    title_es: "El restaurante de Li",
+    title_en: "Li's Restaurant",
+    description_es:
+      "Li es una apasionada por la cocina pero está cansada de que la gente le deje malas críticas en Google, así que ha decidido acabar con los críticos virtuales cibernéticos.",
+    description_en:
+      "Li is passionate about cooking but is tired of people leaving bad reviews on Google, so she has decided to get rid of the virtual cyber critics.",
+    key: "2",
   },
 ];

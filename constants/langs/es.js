@@ -42,6 +42,7 @@ export const es = {
       },
     },
   },
+
   environmentalImpact: {
     Intro: {
       sectionTitle: "La IA y su impacto en el medio ambiente",
@@ -67,18 +68,23 @@ export const es = {
       li2: "<strong>Fase de inferencia.</strong> El modelo entrenado se instala en centros de datos para poder atender a todos los usuarios. En realidad, no se instala un único modelo, sino que hay muchas versiones de este ejecutándose en paralelo para poder atender a todos los usuarios. Cuando un usuario realiza una pregunta (inferencia) el modelo se ejecuta y responde con el conocimiento que ha adquirido en la fase de entrenamiento, o consultando fuentes externas en el caso de que esté conectado a Internet. Por ejemplo, si le preguntamos sobre recetas de cocina, combina su conocimiento previo para dar instrucciones claras paso a paso. Todo ocurre en tiempo real, como un “diálogo” adaptado a lo que se le solicita. Al contrario que la fase de entrenamiento, la de inferencia se ejecuta tantas veces como sea necesario para obtener la respuesta.",
       body2: "Tanto el entrenamiento como la inferencia suponen un impacto medioambiental, aunque a diferentes escalas:",
       // Datos para el gráfico circular interactivo
-      circularChartData:{
-          question3: "¿Dónde?",
-          content3: "La IA se ejecuta en <strong>servidores</strong> (ordenadores muy potentes). Dentro de estos servidores, un componente clave son las <strong>GPU</strong> (equipos diseñados para hacer los cálculos necesarios para entrenar y ejecutar los modelos). Los servidores se agrupan en unos lugares llamados <strong>centros de datos</strong> para procesar grandes cantidades de información de manera segura y continua.",
-          copyright3: "GPU. Imagen por <a target='_blank' class='underline' href='https://commons.wikimedia.org/wiki/File:NVidia_GeForce_6600GT_AGP_with_GPU_2009-01-27.jpg'>Wikimeida</a>. Licencia <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-sa/3.0/deed.en'>CC BY-SA 3.0</a>",
-          question1: "¿Quién?",
-          content1: "<strong>1) Las empresas</strong> que desarrollan los modelos son responsables del mayor consumo energético durante el entrenamiento. <br> <strong> 2) Los usuarios </strong> son los que generan un impacto cada vez que hacen preguntas al sistema, aunque más pequeño que el entrenamiento. <br> <br> Sin embargo, el entrenamiento solo se ejecuta una vez, mientras que las inferencias suponen un coste por <strong>cada usuario y pregunta</strong> que hagan. La popularidad de la IA es tan grande que hay millones de usuarios al mismo tiempo haciendo consultas, por lo que, aunque el impacto de la inferencia sea muy inferior al de entrenamiento el gran número de usuarios y peticiones hacen que se conviertan en algo muy relevante.",
-          question4: "¿Cuándo?",
-          content4: "<strong>1) Durante el entrenamiento</strong> el modelo necesita ejecutar muchos cálculos para aprender de los datos de entrada. Gracias al entrenamiento el modelo es capaz de procesar nuestras preguntas y darnos respuesta. <br> <br> <strong>2) Durante la inferencia</strong> el modelo tiene que ejecutarse para darnos la respuesta. Cada ejecución del modelo da como resultado una única palabra (o fragmento de palabra), por lo que para formar una respuesta completa necesitará ejecutarse muchas veces. Obtener una respuesta completa puede llevar desde milisegundos a unos pocos segundos.",
-          question2: "¿Por qué?",
-          content2: "Los centros de datos requieren un gran consumo de electricidad y refrigeración para su funcionamiento. Obtener esa energía conlleva un gran impacto medioambiental. Además, la propia construcción, y mantenimiento de los centros de datos contribuyen significativamente a aumentar su huella de carbono.",
-          copyright2: "Centro de datos. Imagen por <a target='_blank' class='underline' href='https://modius.com/modius-blog/modius-blog-data-center/what-is-colocation-data-center/'>Modius, Inc</a>. Licencia <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-nc/4.0/#ref-commercial-purposes'>CC BY-NC 4.0</a>",
-
+      circularChartData: {
+        question3: "¿Dónde?",
+        content3:
+          "La IA se ejecuta en <strong>servidores</strong> (ordenadores muy potentes). Dentro de estos servidores, un componente clave son las <strong>GPU</strong> (equipos diseñados para hacer los cálculos necesarios para entrenar y ejecutar los modelos). Los servidores se agrupan en unos lugares llamados <strong>centros de datos</strong> para procesar grandes cantidades de información de manera segura y continua.",
+        copyright3:
+          "GPU. Imagen por <a target='_blank' class='underline' href='https://commons.wikimedia.org/wiki/File:NVidia_GeForce_6600GT_AGP_with_GPU_2009-01-27.jpg'>Wikimeida</a>. Licencia <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-sa/3.0/deed.en'>CC BY-SA 3.0</a>",
+        question1: "¿Quién?",
+        content1:
+          "<strong>1) Las empresas</strong> que desarrollan los modelos son responsables del mayor consumo energético durante el entrenamiento. <br> <strong> 2) Los usuarios </strong> son los que generan un impacto cada vez que hacen preguntas al sistema, aunque más pequeño que el entrenamiento. <br> <br> Sin embargo, el entrenamiento solo se ejecuta una vez, mientras que las inferencias suponen un coste por <strong>cada usuario y pregunta</strong> que hagan. La popularidad de la IA es tan grande que hay millones de usuarios al mismo tiempo haciendo consultas, por lo que, aunque el impacto de la inferencia sea muy inferior al de entrenamiento el gran número de usuarios y peticiones hacen que se conviertan en algo muy relevante.",
+        question4: "¿Cuándo?",
+        content4:
+          "<strong>1) Durante el entrenamiento</strong> el modelo necesita ejecutar muchos cálculos para aprender de los datos de entrada. Gracias al entrenamiento el modelo es capaz de procesar nuestras preguntas y darnos respuesta. <br> <br> <strong>2) Durante la inferencia</strong> el modelo tiene que ejecutarse para darnos la respuesta. Cada ejecución del modelo da como resultado una única palabra (o fragmento de palabra), por lo que para formar una respuesta completa necesitará ejecutarse muchas veces. Obtener una respuesta completa puede llevar desde milisegundos a unos pocos segundos.",
+        question2: "¿Por qué?",
+        content2:
+          "Los centros de datos requieren un gran consumo de electricidad y refrigeración para su funcionamiento. Obtener esa energía conlleva un gran impacto medioambiental. Además, la propia construcción, y mantenimiento de los centros de datos contribuyen significativamente a aumentar su huella de carbono.",
+        copyright2:
+          "Centro de datos. Imagen por <a target='_blank' class='underline' href='https://modius.com/modius-blog/modius-blog-data-center/what-is-colocation-data-center/'>Modius, Inc</a>. Licencia <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-nc/4.0/#ref-commercial-purposes'>CC BY-NC 4.0</a>",
       },
       highlight1: {
         title: "Colossus",
@@ -88,7 +94,8 @@ export const es = {
       highlight2: {
         title: "Usuarios de ChatGPT",
         body: "ChatGPT tardó 2 meses en conseguir 100 millones de usuarios, mientras que otras aplicaciones como Instagram necesitaron 26 meses.",
-        source: "<a class='underline' target='_blank' href='https://www.xataka.com/empresas-y-economia/instagram-tiktok-chatgpt-plataforma-que-rapido-ha-crecido-toda-historia-internet'>Xataka</a>",
+        source:
+          "<a class='underline' target='_blank' href='https://www.xataka.com/empresas-y-economia/instagram-tiktok-chatgpt-plataforma-que-rapido-ha-crecido-toda-historia-internet'>Xataka</a>",
       },
       highlight3: {
         title: "Entrenamiento GPT-4",
@@ -100,7 +107,6 @@ export const es = {
         body: "La Agencia Internacional de Energía estima que el consumo eléctrico de los centros de datos se duplicará para 2030, llegando a ser equivalente al consumo total actual de Japón.",
         source: "<a class='underline' target='_blank' href='https://www.iea.org/reports/energy-and-ai/executive-summary'>Agencia Internacional de Energía (IEA)</a>",
       },
-
     },
     thirdSection: {
       title: "Cómo medir el impacto de la IA",
@@ -108,18 +114,23 @@ export const es = {
       highlight: {
         title: "Consumo de agua",
         body: "Diferentes noticias mencionan que generar una sola imagen con IA puede suponer hasta 5 litros de agua. Se utiliza el agua como medida de impacto medioambiental porque es algo que todo el mundo comprende, pero es importante destacar que el impacto no se limita al consumo de agua.",
-        source: "<a class='underline' target='_blank' href='https://cadenaser.com/nacional/2025/04/05/el-gasto-energetico-de-la-ia-cada-imagen-generada-con-chatgpt-consume-entre-2-y-5-litros-de-agua-cadena-ser'>Cadena SER</a>",
+        source:
+          "<a class='underline' target='_blank' href='https://cadenaser.com/nacional/2025/04/05/el-gasto-energetico-de-la-ia-cada-imagen-generada-con-chatgpt-consume-entre-2-y-5-litros-de-agua-cadena-ser'>Cadena SER</a>",
       },
       environmentalFactors: {
         question1: "Consumo de agua",
-        content1: "Se utiliza para refrigerar los servidores. La <strong>refrigeración</strong> es fundamental, pues los servidores por su propio funcionamiento se calientan y si no se mantiene una temperatura adecuada dejan de funcionar. También hay que considerar el <strong>consumo indirecto de agua</strong>, como el necesario para obtener la energía eléctrica. El agua no es el único mecanismo de refrigeración existente, otros sistemas son el aire seco o sistemas de ventilación.",
+        content1:
+          "Se utiliza para refrigerar los servidores. La <strong>refrigeración</strong> es fundamental, pues los servidores por su propio funcionamiento se calientan y si no se mantiene una temperatura adecuada dejan de funcionar. También hay que considerar el <strong>consumo indirecto de agua</strong>, como el necesario para obtener la energía eléctrica. El agua no es el único mecanismo de refrigeración existente, otros sistemas son el aire seco o sistemas de ventilación.",
         question2: "Huella de carbono",
-        content2: "La huella de carbono es un indicador ambiental que mide la cantidad total de gases de efecto invernadero emitidos de forma directa o indirecta. Esto incluye la energía consumida para el funcionamiento de los centros de datos, el impacto de la fabricación y transporte de equipos, así como las emisiones generadas durante todo el ciclo de vida de la infraestructura. Sirve para <strong>medir el impacto en el cambio climático</strong> de cualquier producto, en este caso la IA.",
+        content2:
+          "La huella de carbono es un indicador ambiental que mide la cantidad total de gases de efecto invernadero emitidos de forma directa o indirecta. Esto incluye la energía consumida para el funcionamiento de los centros de datos, el impacto de la fabricación y transporte de equipos, así como las emisiones generadas durante todo el ciclo de vida de la infraestructura. Sirve para <strong>medir el impacto en el cambio climático</strong> de cualquier producto, en este caso la IA.",
         question3: "Extracción de minerales",
-        content3: "Necesarios para fabricar los componentes de los servidores, GPUs, baterías y resto de elementos del centro de datos. La minería para obtener materiales como <strong>cobre, oro, tierras raras y otros metales</strong> tiene importantes impactos ambientales en los ecosistemas locales. Al excavar y remover grandes áreas de terreno, <strong>destruye hábitats naturales</strong>, <strong>afecta a la fauna y flora</strong>, <strong>contamina ríos y lagos</strong> con metales pesados y sustancias tóxicas, <strong>ensucia el aire</strong> con polvo y gases dañinos, y acelera la <strong>erosión del suelo</strong>, dejándolo más pobre y menos fértil.",
+        content3:
+          "Necesarios para fabricar los componentes de los servidores, GPUs, baterías y resto de elementos del centro de datos. La minería para obtener materiales como <strong>cobre, oro, tierras raras y otros metales</strong> tiene importantes impactos ambientales en los ecosistemas locales. Al excavar y remover grandes áreas de terreno, <strong>destruye hábitats naturales</strong>, <strong>afecta a la fauna y flora</strong>, <strong>contamina ríos y lagos</strong> con metales pesados y sustancias tóxicas, <strong>ensucia el aire</strong> con polvo y gases dañinos, y acelera la <strong>erosión del suelo</strong>, dejándolo más pobre y menos fértil.",
         question4: "Gestión de residuos",
-        content4: "Reciclaje y disposición de equipos al final de su vida útil y residuos generados durante la operación. La industria tecnológica genera grandes cantidades de desechos electrónicos que contienen <strong>materiales tóxicos</strong> y valiosos que requieren procesos especiales de reciclaje y gestión."
-      }
+        content4:
+          "Reciclaje y disposición de equipos al final de su vida útil y residuos generados durante la operación. La industria tecnológica genera grandes cantidades de desechos electrónicos que contienen <strong>materiales tóxicos</strong> y valiosos que requieren procesos especiales de reciclaje y gestión.",
+      },
     },
     fourthSection: {
       title: "Impacto de la IA",
@@ -128,18 +139,21 @@ export const es = {
       highlight: {
         title: "Noticias recientes",
         body: "indican que Google no ha tenido en cuenta aspectos relevantes a la hora de hacer las medidas de consumo de sus modelos.",
-        source: "<a class='underline' target='_blank' href='https://www.theverge.com/report/763080/google-ai-gemini-water-energy-emissions-study'>The Verge</a>",
+        source:
+          "<a class='underline' target='_blank' href='https://www.theverge.com/report/763080/google-ai-gemini-water-energy-emissions-study'>The Verge</a>",
       },
       highlight2: {
         title: "IA vs Cerebro",
         body: "Aunque las IA son muy grandes, todavía están lejos del tamaño de nuestro cerebro, el cual está compuesto por unos 100 billones de sinapsis."
       },
       chart: {
-        title: "Energía consumida por modelo en Wh (100 token in → 300 token out)",
+        title:
+          "Energía consumida por modelo en Wh (100 token in → 300 token out)",
         yLabel: "Consumo de energía (Wh)",
         legendLabel: "Empresa",
-        source: "<a class='underline' target='_blank' href='https://arxiv.org/abs/2505.09598'>Jegham et al. (2025)</a>"
-      }
+        source:
+          "<a class='underline' target='_blank' href='https://arxiv.org/abs/2505.09598'>Jegham et al. (2025)</a>",
+      },
     },
     fifthSection: {
       title: "Presente y futuro",
@@ -147,12 +161,14 @@ export const es = {
       highlight: {
         title: "Proyectos sostenibles",
         body: "En 2024 Google inició un proyecto para capturar el calor producido por un centro de datos y reutilizarlo para calentar viviendas y negocios cercanos en Hamina, Finlandia.",
-        source: "<a class='underline' target='_blank' href='https://www.youtube.com/watch?v=YUmFQM4jvD8'>Google</a>",
+        source:
+          "<a class='underline' target='_blank' href='https://www.youtube.com/watch?v=YUmFQM4jvD8'>Google</a>",
       },
       highlight2: {
         title: "OpenAI",
         body: "limitó el número de imágenes a generar con su plataforma tras hacerse viral la generación de imágenes al estilo Studio Ghibli",
-        source: "<a class='underline' target='_blank' href='https://www.example.com'>OpenAI</a>"
+        source:
+          "<a class='underline' target='_blank' href='https://www.example.com'>OpenAI</a>",
       },
       li1: "<strong>Mayor demanda de inferencias.</strong> Las nuevas versiones de los modelos incorporan capacidades de razonamiento más avanzadas que realizan procesos más complejos, traducidos en mayor número de tokens (inferencias), lo que requiere más cálculos y, por ende, más energía. Algunos modelos actuales pueden estar ejecutándose durante minutos o incluso horas para dar un único resultado. Esto incrementa de forma considerable el tiempo de ejecución del modelo.",
       li2:"<strong>Agentes.</strong> Los agentes son sistemas que no solo generan contenido, sino que también interactúan con su entorno para alcanzar objetivos más complejos. Actualmente, existen agentes que permiten a la IA navegar por Internet y elaborar informes a partir de la información obtenida, así como agentes que asisten a los programadores en la escritura de código. Estos agentes requieren ejecutar los modelos durante períodos prolongados, ya que deben realizar múltiples interacciones para completar sus tareas de manera efectiva.",
@@ -162,11 +178,13 @@ export const es = {
     sixthSection: {
       title: "El rol de los usuarios: guía de buenas prácticas",
       body: "Los usuarios no tienen control directo sobre el impacto medioambiental derivado del <strong>desarrollo de la tecnología</strong>, pero sí pueden influir <strong>en su uso</strong>. Del mismo modo que la sociedad ha tomado conciencia sobre reducir el desperdicio de papel o limitar el uso de plásticos, también es posible fomentar un uso de la inteligencia artificial más eficiente y respetuoso con el medio ambiente. Algunas prácticas sencillas que, aplicadas de forma generalizada, pueden marcar la diferencia son:",
-      body2: "Ya eres un experto en utilizar la IA de forma responsable con el medioambiente. Pon a prueba tus habilidades en la <strong><a class='underline' target='_blank' href='challenges'>Escape Room</a></strong> del proyecto #SostenibilidadGenerativa. En este reto interactivo aplicarás los trucos de uso eficiente de la IA mientras intentas descifrar un código de seguridad y escapar antes de que se agote el tiempo y la energía.",
+      body2:
+        "Ya eres un experto en utilizar la IA de forma responsable con el medioambiente. Pon a prueba tus habilidades en la <strong><a class='underline' target='_blank' href='challenges'>Escape Room</a></strong> del proyecto #SostenibilidadGenerativa. En este reto interactivo aplicarás los trucos de uso eficiente de la IA mientras intentas descifrar un código de seguridad y escapar antes de que se agote el tiempo y la energía.",
       highlight: {
         title: "#Sostenibilidad Generativa",
         body: "Un estudio del proyecto #SostenibilidadGenerativa muestra que en más del 75% de los casos las personas consideran adecuadas las respuestas de modelos más pequeños, sin necesidad de recurrir a versiones más grandes.",
-        source: "<a class='underline' target='_blank' href='https://huggingface.co/spaces/GING-UPM/ArenaEnergy'>Arena Energy (#SostenibilidadGenerativa)</a>",
+        source:
+          "<a class='underline' target='_blank' href='https://huggingface.co/spaces/GING-UPM/ArenaEnergy'>Arena Energy (#SostenibilidadGenerativa)</a>",
       },
       highlight2: {
         title: "Consejo",
@@ -184,7 +202,6 @@ export const es = {
       li9:"<strong>Formarse en IA.</strong> Aprender a formular buenas preguntas (prompt engineering) evita intentos fallidos o repetidos, lo que también reduce el número de interacciones necesarias.",
       imagecopy:"Escape Room del proyecto #Sostenibilidad Generativa"
     },
-   
   },
   
   research: {
@@ -249,7 +266,6 @@ export const es = {
         researcher: "Investigador",
         external: "Personal Externo",
       },
-  
     },
   },
   contact: {
@@ -290,11 +306,28 @@ export const es = {
       title: "Escaperoom",
       rooms: "Salas",
       description1: "En las sombras del ciberespacio, un grupo de <strong>cuatro ciberdelincuentes</strong> dispersos por todo el mundo ha desarrollado un virus informático sin precedentes. Su objetivo: <strong>poner en bucle la canción <a class='underline' target='_blank' href='https://youtu.be/1m8IyfG925Q?si=JmriYHW1AX0aO9nO&t=21'>Baby Shark</a> en todos los ordenadores del planeta</strong> 🦈​, generando caos, desorganización y pánico global. Las autoridades tecnológicas han lanzado todos sus recursos para detenerlos, pero el reloj corre en su contra. Los últimos informes de inteligencia indican que el ciberataque comenzará en pocas horas, y si no se detiene a tiempo, el desorden será irreversible.",
-      description2: "Existe, sin embargo, una última esperanza. Los criminales han protegido su creación con un <strong>código secreto de cuatro dígitoes</strong> 🔑 que puede desactivar la propagación del virus. <strong>Cada ciberdelincuente guarda un único dígito en su propio ordenador personal</strong>. Los equipos de seguridad han logrado conectarse de manera remota a estos dispositivos, pero los ciberdelincuentes han instalado un <strong>Chatbot de seguridad extremadamente sofisticado</strong>, diseñado para impedir que cualquier intruso acceda a sus archivos.",
+      description2: "Existe, sin embargo, una última esperanza. Los criminales han protegido su creación con un <strong>código secreto de cuatro dígitos</strong> 🔑 que puede desactivar la propagación del virus. <strong>Cada ciberdelincuente guarda un único dígito en su propio ordenador personal</strong>. Los equipos de seguridad han logrado conectarse de manera remota a estos dispositivos, pero los ciberdelincuentes han instalado un <strong>Chatbot de seguridad extremadamente sofisticado</strong>, diseñado para impedir que cualquier intruso acceda a sus archivos.",
       description3: "<strong>Tu misión</strong> 🕵️‍♂️ es clara, pero peligrosa: ingresar a cada uno de los cuatro ordenadores, <strong>enfrentarte a sus Chatbots y recuperar la contraseña</strong> antes de que sea demasiado tarde. Cuidado, <strong>el tiempo es limitado</strong> ⏰: solo se dispone de 10 minutos de acceso por ordenador. Además, <strong>la batería de cada equipo ⚡ es crítica</strong> y si los equipos se quedan sin batería perderemos el acceso. Un fallo puede significar perder para siempre la oportunidad de detener el virus. Cada interacción debe ser precisa y estratégica, porque un movimiento en falso podría sellar el destino de la humanidad al ritmo de una canción interminable.",
       description4: "El mundo depende de tu habilidad, ingenio y rapidez. Si logras reunir los cuatro dígitos y descifrar el código final, <strong>podrás neutralizar el virus y salvar a la humanidad</strong> del caos cibernético más absurdo jamás imaginado. Cada segundo cuenta y cada decisión puede ser la diferencia entre el orden y un reinado global de <a class='underline' target='_blank' href='https://youtu.be/1m8IyfG925Q?si=JmriYHW1AX0aO9nO&t=21'>Baby Shark</a>.",
       description5:"Puedes utilizar todo lo que quieras además del ChatBot de cada sala (internet, libros, tu cerebro 🧠...). <strong>Cada fallo ❌ resta un 10% de energía, cada palabra que le preguntes al chatbot resta energía, y cada palabra que este nos responda también...</strong> Por lo tanto debes diseñar <strong>estrategias de prompt efectiva</strong>. Puedes consultar <strong><a class='underline' target='_blank' href='environmental-impact#guia-buenas-practicas'>la guía</a></strong> de #Sostenibilidad Generativa que te mostrará trucos muy efectivos 📝.</a>",
       description6: "¡Mucha suerte! ",
+      rooms: {
+        title: "Salas",
+        description1:
+          "Al superar cada sala, desbloquearás un caracter de la contraseña. Podrás introducir el código de apertura completo de la escaperoom una vez superes todas las salas.",
+        button: "Enviar",
+        feedback: {
+          positive: {
+            button: " ¡Escaperoom superado!",
+            title: "¡Victoria!",
+            description: "¡Enhorabuena! Has superado el escaperoom."
+          },
+          negative: {
+            title: "Código incorrecto",
+            description: "Prueba con otro código diferente."
+          },
+        },
+      },
       escaperoomCards: {
         button: "Jugar",
       },
@@ -303,6 +336,6 @@ export const es = {
       title: "Herramientas",
       description1:
         "En esta sección encontrarás las herramientas que hemos desarrollado.",
-  },
+    },
   },
 };

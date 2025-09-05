@@ -11,8 +11,8 @@ export const tools = [
    {
     img: "assets/img/tools/llm-arena.png",
     route: " https://huggingface.co/spaces/GING-UPM/ArenaEnergy",
-    title_en: "LLM Arena - choose the best model",
-    title_es: "LLM Arena - elige el mejor modelo",
+    title_en: "Generative Energy Arena (GEA) - choose the best model",
+    title_es: "Generative Energy Arena (GEA) - elige el mejor modelo",
     description_es: "Esta plataforma permite descubrir qué modelos son más adecuados para cada tarea, teniendo en cuenta su rendimiento y consumo energético.",
     description_en: "This platform allows you to discover which models are best suited for each task, taking into account their performance and energy consumption.",
     key:"2",

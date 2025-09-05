@@ -13,7 +13,7 @@ const ButtonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-primary text-primary-foreground shadow hover:bg-primary-800",
+          "bg-accent-200 text-accent-200 hover:text-black shadow-sm hover:bg-accent-400",
         outline:
           "border font-normal border-accent-200/60 text-accent-200 bg-transparent shadow-sm hover:bg-accent-300/10 ",
         outlineForeground: //for outline buttons over dark backgrounds
