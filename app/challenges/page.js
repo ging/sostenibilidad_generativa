@@ -112,7 +112,7 @@ function ChallengesPage() {
                 }}
               >
                 <iframe
-                  src="https://www.youtube.com/embed/BVc1bQnunEs?autoplay=1&controls=0"
+                  src="https://www.youtube.com/embed/BVc1bQnunEs?autoplay=1&controls=0&loop=1&playlist=BVc1bQnunEs"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
