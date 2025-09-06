@@ -314,7 +314,7 @@ export const es = {
       rooms: {
         title: "Salas",
         description1:
-          "Al superar cada sala, desbloquearás un caracter de la contraseña. Podrás introducir el código de apertura completo de la escaperoom una vez superes todas las salas.",
+          "Al superar cada sala, desbloquearás un carácter de la contraseña. Podrás introducir el código de apertura completo de la escaperoom una vez superes todas las salas.",
         button: "Enviar",
         feedback: {
           positive: {
