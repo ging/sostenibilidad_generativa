@@ -233,14 +233,14 @@ const Card = React.forwardRef(
           </div>
         )}
         {(name || description || email) && (
-          <CardContent className="flex justify-center items-start mb-auto">
+          <CardContent className="flex justify-center items-start mb-auto text-gray-200">
             <div className="flex flex-row">
-              <CardTitle level="title-sm" className={"tracking-wide text-inherit text-center"}>
-                <b>{name} </b>
-              </CardTitle>
+              <Heading level="h6" className={"tracking-wide text-inherit text-center text-bold !mb-0"}>
+                {name} 
+              </Heading>
               {/* {position && (<Badge> {position}</Badge>)} */}
             </div>
-            {role && <CardDescription type="short-p" className="text-base sm:text-sm mt-1  text-gray-300/90">{role}</CardDescription>}
+            {role && <CardDescription type="short-p" className="text-base sm:text-sm mt-1  text-gray-300/80">{role}</CardDescription>}
             {/* {email && (
               <Badge size="sm" variant="secondary"
                 className={"font-semibold break-words text-wrap mt-1 text-gray-300 bg-background-300"}>

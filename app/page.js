@@ -161,7 +161,7 @@ export default function Page() {
               <Link href="/results" className={iconCardClasses}>
                 <Button variant="outline" size="sm" className="mt-4">
                   {t("front.summaryWeb.results.button")}
-                  <ArrowForwardIcon sx={{ fontSize: 18 }} className="h-2 w-4" />
+                  <ArrowForwardIcon sx={{ fontSize: 18 }} className="h-4 w-4" />
                 </Button>
               </Link>
             </div>

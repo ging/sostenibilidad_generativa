@@ -101,7 +101,7 @@ function ChallengesPage() {
           <Heading level="h3">{t("challenges.escaperoom.title")}</Heading>
             <div className="clearfix mb-4">
               <div
-                className="float-none mx-auto mb-4 sm:float-left sm:mr-6 sm:mb-2"
+                className="float-none mx-auto mb-6 sm:float-right sm:mr-6 sm:mb-2 sm:ml-6"
                 style={{
                   maxWidth: "400px",
                   width: "100%",
@@ -121,7 +121,8 @@ function ChallengesPage() {
                     height: "100%",
                     minHeight: "320px",
                     borderRadius: "12px",
-                    background: "#000"
+                    background: "#000",
+                    left: "right",
                   }}
                 />
               </div>
