@@ -75,7 +75,7 @@ export default function Header(props) {
         
           <img
             className="object-contain"
-            src={isCotec ? "/": "" + "assets/logos/sg-logo.png"}
+            src={(isCotec || !isProd ? "/": "") + "assets/logos/sg-logo.png"}
             alt="logo"
           />
         </div>
