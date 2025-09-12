@@ -12,6 +12,8 @@ import { activeRoutes } from "@/constants/routes";
 // icons
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import { envs } from "@/constants/envs";
+
 
 export default function Header(props) {
   const [state, setState] = useState({ open: false });
@@ -19,8 +21,9 @@ export default function Header(props) {
   const currentLang = i18n.language;
   const currentPath = usePathname();
   const refs = useRef([]);
-  const isProd = process.env.NODE_ENV === 'production';
-  const isCotec = process.env.COTEC === 'true';
+  const isProd = envs.isProd;
+  const isCotec = envs.isCotec;
+
 
   // classes
   const headerClasses = clsx(
@@ -72,7 +75,7 @@ export default function Header(props) {
         
           <img
             className="object-contain"
-            src="/assets/logos/sg-logo.png"
+            src={isCotec ? "/": "" + "assets/logos/sg-logo.png"}
             alt="logo"
           />
         </div>

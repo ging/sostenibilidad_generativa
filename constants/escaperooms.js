@@ -1,6 +1,10 @@
+import { envs } from "@/constants/envs";
+const isProd = envs.isProd;
+const isCotec = envs.isCotec;
+
 export const escaperooms = [
   {
-    img: "/assets/img/escaperooms/game-creator.png",
+    img: isCotec ? "/": "" + "assets/img/escaperooms/game-creator.png",
     route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_1",
     title_es: "Arthur, el creador",
     title_en: "Arthur, the creator",
@@ -11,7 +15,7 @@ export const escaperooms = [
     key: "1",
   },
   {
-    img: "/assets/img/escaperooms/lab.png",
+    img: isCotec ? "/": "" + "assets/img/escaperooms/lab.png",
     route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_3",
     title_es: "El laboratorio de Trebor",
     title_en: "Trebor's Laboratory",
@@ -22,7 +26,7 @@ export const escaperooms = [
     key: "3",
   },
   {
-    img: "/assets/img/escaperooms/space-trip.png",
+    img: isCotec ? "/": "" + "assets/img/escaperooms/space-trip.png",
     route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_4",
     title_es: "Gemma, la astronauta",
     title_en: "Gemma, the astronaut",
@@ -33,7 +37,7 @@ export const escaperooms = [
     key: "4",
   },
   {
-    img: "/assets/img/escaperooms/li-restaurant.png",
+    img: isCotec ? "/": "" + "assets/img/escaperooms/li-restaurant.png",
     route: "https://servicios-ging.dit.upm.es/sostenibilidadgenerativa/escape_2",
     title_es: "El restaurante de Li",
     title_en: "Li's Restaurant",
