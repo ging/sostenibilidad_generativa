@@ -75,25 +75,31 @@ export default function Footer(props) {
         <div className={sectionTitleClasses} >{t("footer.title3")}</div>
         <div className="w-fit flex gap-x-12 gap-y-5 md:gap-8 2xl:gap-12 justify-start items-start md:items-center flex-wrap flex-col xs:flex-row sm:flex-wrap lg:flex-nowrap mt-6 md:mt-2">
           <div className={partnerLogoClasses}>
-            <img
-              src="assets/logos/cotec-logo.png" // Usa una ruta válida
-              alt="Descripción de la imagen"
-              className={imgLogoClasses} // Asegura que la imagen no exceda la altura máxima
-            />
+            <a href="https://cotec.es" target="_blank" rel="noopener">
+              <img
+                src="assets/logos/cotec-logo.png" // Usa una ruta válida
+                alt="Descripción de la imagen"
+                className={imgLogoClasses} // Asegura que la imagen no exceda la altura máxima
+              />
+            </a>
           </div>
           <div className={partnerLogoClasses}>
-            <img
-              src="assets/logos/GING-logo.png" // Usa una ruta válida
-              alt="Descripción de la imagen"
-              className={imgLogoClasses} 
-            />
+            <a href="https://ging.github.io/" target="_blank" rel="noopener">
+              <img
+                src="assets/logos/GING-logo.png" // Usa una ruta válida
+                alt="Descripción de la imagen"
+                className={imgLogoClasses} 
+              />
+            </a>
           </div>
             <div className={partnerLogoClasses}>
-            <img
-              src="assets/logos/UPM-logo.png" // Usa una ruta válida
-              alt="Descripción de la imagen"
-              className={imgLogoClasses}  // Asegura que la imagen no exceda la altura máxima
-            />
+              <a href="https://www.upm.es" target="_blank" rel="noopener">
+                <img
+                  src="assets/logos/UPM-logo.png" // Usa una ruta válida
+                  alt="Descripción de la imagen"
+                  className={imgLogoClasses}  // Asegura que la imagen no exceda la altura máxima
+                />
+              </a>
           </div>
         </div>
       </div>
