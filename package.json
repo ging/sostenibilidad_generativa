@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build_cotec": "COTEC=true next build",
     "start": "next start",
     "lint": "next lint",
     "publications": "node transformPublications.js",

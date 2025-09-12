@@ -1,6 +1,6 @@
 export const tools = [
   {
-    img: "assets/img/tools/ai-efficiency-training.png",
+    img: "/assets/img/tools/ai-efficiency-training.png",
     route: " https://huggingface.co/spaces/GING-UPM/Eco-Friendly_Use",
     title_en: "AI Energy Efficiency Trainer",
     title_es: "Entrenamiento de eficiencia energética de IA",
@@ -9,7 +9,7 @@ export const tools = [
     key:"1",
   },
    {
-    img: "assets/img/tools/llm-arena.png",
+    img: "/assets/img/tools/llm-arena.png",
     route: " https://huggingface.co/spaces/GING-UPM/ArenaEnergy",
     title_en: "Generative Energy Arena (GEA) - choose the best model",
     title_es: "Generative Energy Arena (GEA) - elige el mejor modelo",

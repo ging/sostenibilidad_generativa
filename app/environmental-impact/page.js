@@ -119,8 +119,8 @@ export default function enviromentalImpact() {
               <CircularChart 
                 data={
                   [{question: t("environmentalImpact.secondSection.circularChartData.question1"), content: t("environmentalImpact.secondSection.circularChartData.content1")},
-                    {question: t("environmentalImpact.secondSection.circularChartData.question2"), content: t("environmentalImpact.secondSection.circularChartData.content2"), image: "assets/img/sections/datacenter.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright2")}, 
-                    {question: t("environmentalImpact.secondSection.circularChartData.question3"), content: t("environmentalImpact.secondSection.circularChartData.content3"), image: "assets/img/sections/gpu.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright3")},
+                    {question: t("environmentalImpact.secondSection.circularChartData.question2"), content: t("environmentalImpact.secondSection.circularChartData.content2"), image: "/assets/img/sections/datacenter.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright2")}, 
+                    {question: t("environmentalImpact.secondSection.circularChartData.question3"), content: t("environmentalImpact.secondSection.circularChartData.content3"), image: "/assets/img/sections/gpu.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright3")},
                     {question: t("environmentalImpact.secondSection.circularChartData.question4"), content: t("environmentalImpact.secondSection.circularChartData.content4")},
                   ]
                 } 
@@ -285,7 +285,7 @@ export default function enviromentalImpact() {
 
                 <div className="flex items-center justify-center h-96" style={{ maxWidth: '500px', width: '90%', height: 'auto', margin: '5px auto 0' }}>
                   <Image 
-                    src={"assets/img/sections/conversation.png"} 
+                    src={"/assets/img/sections/conversation.png"} 
                     className="rounded-lg shadow-lg" 
                     layout="center"
                     copyright={t("environmentalImpact.fifthSection.imagecopy") || ""}
@@ -372,7 +372,7 @@ export default function enviromentalImpact() {
             <div className="flex items-center justify-center h-96" style={{ maxWidth: '700px', width: '90%', height: 'auto', margin: '5px auto 0' }}>
                 <a target="_blank" href="challenges">
                   <Image 
-                    src={"assets/img/sections/challenges.png"} 
+                    src={"/assets/img/sections/challenges.png"} 
                     className="rounded-lg shadow-lg" 
                     layout="center"
                     copyright={t("environmentalImpact.sixthSection.imagecopy") || ""}

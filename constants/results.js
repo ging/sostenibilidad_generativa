@@ -1,6 +1,6 @@
 export const results = [
     {
-    logo: "assets/img/results/informeIA.png",
+    logo: "/assets/img/results/informeIA.png",
     route: "./environmental-impact",
     title_es: "Informe de sostenibilidad en el uso de la IA ",
     title_en: "Generative Sustainability Report on the usage of AI ",
@@ -12,7 +12,7 @@ export const results = [
     type_en: ["report"],
   },
     {
-    logo: "assets/img/results/logo-somosnlp.png",
+    logo: "/assets/img/results/logo-somosnlp.png",
     route: "https://aclanthology.org/2025.acl-long.1561/",
     title_es: "La Leaderboard ",
     title_en: "La Leaderboard ",
@@ -24,7 +24,7 @@ export const results = [
     type_en: ["research"],
   },
   {
-    logo: "assets/img/results/hf-logo.png",
+    logo: "/assets/img/results/hf-logo.png",
     route: "https://huggingface.co/spaces/GING-UPM/ArenaEnergy",
     title_es: "Generative Energy Arena (GEA) - elige el mejor modelo",
     title_en: "Generative Energy Arena (GEA) - choose the best model ",
@@ -36,7 +36,7 @@ export const results = [
     type_en: ["software"],
   },
   {
-    logo: "assets/img/sections/challenges.png",
+    logo: "/assets/img/sections/challenges.png",
     route: "./challenges",
     title_es: "Escape Room Sostenibilidad Generativa ",
     title_en: "Escape Room Generative Sustainability ",
@@ -48,7 +48,7 @@ export const results = [
     type_en: ["event"],
   },
   {
-    logo: "assets/img/results/hf-logo.png",
+    logo: "/assets/img/results/hf-logo.png",
     route: "https://huggingface.co/spaces/GING-UPM/Eco-Friendly_Use",
     title_es: "Entrenamiento de eficiencia energética de IA ",
     title_en: "AI Energy Efficiency Trainer ",
@@ -60,7 +60,7 @@ export const results = [
     type_en: ["software"],
   },
   {
-    logo: "assets/img/results/hackathon.png",
+    logo: "/assets/img/results/hackathon.png",
     route: "https://indesiahack.org/listado-retos-2025/",
     title_es:"Hackathon INDESIAHack ",
     title_en: "Hackathon INDESIAHack ",

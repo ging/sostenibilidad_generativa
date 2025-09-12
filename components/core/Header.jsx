@@ -20,7 +20,7 @@ export default function Header(props) {
   const currentPath = usePathname();
   const refs = useRef([]);
   const isProd = process.env.NODE_ENV === 'production';
-
+  const isCotec = process.env.COTEC === 'true';
 
   // classes
   const headerClasses = clsx(
@@ -67,13 +67,12 @@ export default function Header(props) {
 
   return (
     <header className={headerClasses + "z-50"} id="header_home"> {/* route={routes.route} ?????*/}
-      {/* <a href="/sostenibilidad_generativa"> */}
-         <a href={isProd ? "/sostenibilidad_generativa" : "/"} className="flex items-center gap-2">
+         <a href={isProd && !isCotec ? "/sostenibilidad_generativa" : "/"} className="flex items-center gap-2">
         <div className="h-9 flex gap-4">
         
           <img
             className="object-contain"
-            src="assets/logos/sg-logo.png"
+            src="/assets/logos/sg-logo.png"
             alt="logo"
           />
         </div>

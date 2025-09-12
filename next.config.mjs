@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const isProd = process.env.NODE_ENV === 'production';
+const isCotec = process.env.COTEC === 'true';
 
 export async function getStaticPaths() {
   const res = await fetch('https://api.vercel.app/blog')
@@ -18,6 +19,7 @@ const nextConfig = {
    * @see https://nextjs.org/docs/app/building-your-application/deploying/static-exports
    */
    output: "export",
+   trailingSlash: true,
 
   /**
    * Set base path. This is the slug of your GitHub repository.
@@ -47,8 +49,9 @@ const nextConfig = {
    * Environment variables
    */
   env: {
-    PUBLIC_URL: isProd ? "sostenibilidad_generativa" : "",
-    BASE_PATH: isProd ? "sostenibilidad_generativa" : ""
+    PUBLIC_URL: (isProd && !isCotec) ? "sostenibilidad_generativa" : "",
+    BASE_PATH: (isProd && !isCotec) ? "sostenibilidad_generativa" : "",
+    COTEC: isCotec ? "true" : "false"
   }
 };
 
