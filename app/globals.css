@@ -22,10 +22,10 @@
 }
 @layer base {
   @font-face {
-    font-family: "Heebo";
-    src: local("Heebo"),
-      url("../public/assets/fonts/Heebo-VariableFont_wght.ttf") format(truetype);
-  }
+    font-family: "Roboto";
+    src: local("Roboto"),
+      url("../public/assets/fonts/Roboto-Italic-VariableFont_wght.ttf") format(truetype);
+}
 }
 /*TYPE*/
 

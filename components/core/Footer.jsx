@@ -37,13 +37,13 @@ export default function Footer(props) {
           alt="logo placeholder"
         />
         <div className=" flex justify-center flex-col gap-0 xs:gap-2 md:flex-col md:gap-0 ">
-          <div className="flex flex-row">
-          <EmailOutlinedIcon className="mr-2 mb-1 text-base text-gray-400" sx={{fontSize: 20}} />
-          <Text className=" text-[14px] flex gap-1 text-sm text-gray-400" >
+          <div className="flex flex-row items-center mb-1">
+          <EmailOutlinedIcon sx={{ fontSize: 20 }}  className="mr-2  text-base text-gray-400 h-4 w-4 " />
+          <Text className=" text-[14px] flex gap-1 text-sm text-gray-400 !mb-0" >
             <b>{t("footer.email")} </b>
           </Text>
           </div>
-          <Text className="text-gray-400 text-sm"> javier.conde.diaz@upm.es</Text>
+          <Text className="text-gray-400 text-sm "> javier.conde.diaz@upm.es</Text>
         </div>
       </div>
 
@@ -75,31 +75,31 @@ export default function Footer(props) {
         <div className={sectionTitleClasses} >{t("footer.title3")}</div>
         <div className="w-fit flex gap-x-12 gap-y-5 md:gap-8 2xl:gap-12 justify-start items-start md:items-center flex-wrap flex-col xs:flex-row sm:flex-wrap lg:flex-nowrap mt-6 md:mt-2">
           <div className={partnerLogoClasses}>
-            <a href="https://cotec.es" target="_blank" rel="noopener">
-              <img
-                src="assets/logos/cotec-logo.png" // Usa una ruta válida
-                alt="Descripción de la imagen"
-                className={imgLogoClasses} // Asegura que la imagen no exceda la altura máxima
-              />
+                <a href="https://www.cotec.es/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="assets/logos/cotec-logo.png" // Usa una ruta válida
+              alt="Descripción de la imagen"
+              className={imgLogoClasses} // Asegura que la imagen no exceda la altura máxima
+            />
             </a>
           </div>
           <div className={partnerLogoClasses}>
-            <a href="https://ging.github.io/" target="_blank" rel="noopener">
-              <img
-                src="assets/logos/GING-logo.png" // Usa una ruta válida
-                alt="Descripción de la imagen"
-                className={imgLogoClasses} 
-              />
+                <a href="http://ging.github.io/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="assets/logos/GING-logo.png" // Usa una ruta válida
+              alt="Descripción de la imagen"
+              className={imgLogoClasses} 
+            />
             </a>
           </div>
             <div className={partnerLogoClasses}>
-              <a href="https://www.upm.es" target="_blank" rel="noopener">
-                <img
-                  src="assets/logos/UPM-logo.png" // Usa una ruta válida
-                  alt="Descripción de la imagen"
-                  className={imgLogoClasses}  // Asegura que la imagen no exceda la altura máxima
-                />
-              </a>
+              <a href="https://www.upm.es/" target="_blank" rel="noopener noreferrer">
+            <img
+              src="assets/logos/UPM-logo.png" // Usa una ruta válida
+              alt="Descripción de la imagen"
+              className={imgLogoClasses}  // Asegura que la imagen no exceda la altura máxima
+            />
+            </a>
           </div>
         </div>
       </div>
