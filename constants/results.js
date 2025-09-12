@@ -5,7 +5,7 @@ const isCotec = envs.isCotec;
 export const results = [
     {
     logo: (isCotec || !isProd ? "/": "") + "assets/img/results/informeIA.png",
-    route: "./environmental-impact",
+    route: (isCotec || !isProd ? "/": "") +"environmental-impact",
     title_es: "Informe de sostenibilidad en el uso de la IA ",
     title_en: "Generative Sustainability Report on the usage of AI ",
     description_es:
@@ -41,7 +41,7 @@ export const results = [
   },
   {
     logo: (isCotec || !isProd ? "/": "") + "assets/img/sections/challenges.png",
-    route: "./challenges",
+    route: (isCotec || !isProd ? "/": "") + "challenges",
     title_es: "Escape Room Sostenibilidad Generativa ",
     title_en: "Escape Room Generative Sustainability ",
     description_es:
