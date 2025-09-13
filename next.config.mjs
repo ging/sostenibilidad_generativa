@@ -26,7 +26,7 @@ const nextConfig = {
    *
    * @see https://nextjs.org/docs/app/api-reference/next-config-js/basePath
    */
-   basePath: isProd ? '' : '',
+   basePath: isProd ? '' : 'sostenibilidad_generativa',
 
   /**
    * Set asset prefix. This is the URL prefix for assets.
