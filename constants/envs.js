@@ -1,4 +1,4 @@
 export const envs = {
-    isProd: process.env.NODE_ENV === 'production',
+    isProd: process.env.isProd === 'true',
     isCotec: process.env.COTEC === 'true'
 }

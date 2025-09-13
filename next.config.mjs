@@ -51,7 +51,8 @@ const nextConfig = {
   env: {
     PUBLIC_URL: (!isCotec && isProd) ? "sostenibilidad_generativa" : "",
     BASE_PATH: (!isCotec && isProd) ? "sostenibilidad_generativa" : "",
-    COTEC: isCotec ? "true" : "false"
+    COTEC: isCotec ? "true" : "false",
+    isProd: isProd ? "true" : "false",
   }
 };
 
