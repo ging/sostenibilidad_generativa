@@ -8,6 +8,9 @@ import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import Image from "../ui/image";
 import Text from "../ui/Text";
 import Link from 'next/link';
+import { envs } from "@/constants/envs";
+const isProd = envs.isProd;
+const isCotec = envs.isCotec;
 
 export default function Footer(props) {
   const { t } = useTranslation();
@@ -33,7 +36,7 @@ export default function Footer(props) {
       <div className={projectLogoContainerClasses}>
         <img
           className="min-w-60 max-w-[200px] md:max-w-[300px] opacity-70" // Corrige la sintaxis del max-width
-          src="assets/logos/sg-logo.png"
+          src={(isCotec || !isProd ? "/": "") + "assets/logos/sg-logo.png"}
           alt="logo placeholder"
         />
         <div className=" flex justify-center flex-col gap-0 xs:gap-2 md:flex-col md:gap-0 ">
@@ -77,7 +80,7 @@ export default function Footer(props) {
           <div className={partnerLogoClasses}>
                 <a href="https://www.cotec.es/" target="_blank" rel="noopener noreferrer">
             <img
-              src="assets/logos/cotec-logo.png" // Usa una ruta válida
+              src={(isCotec || !isProd ? "/": "") + "assets/logos/cotec-logo.png"} // Usa una ruta válida
               alt="Descripción de la imagen"
               className={imgLogoClasses} // Asegura que la imagen no exceda la altura máxima
             />
@@ -86,7 +89,7 @@ export default function Footer(props) {
           <div className={partnerLogoClasses}>
                 <a href="http://ging.github.io/" target="_blank" rel="noopener noreferrer">
             <img
-              src="assets/logos/GING-logo.png" // Usa una ruta válida
+              src={(isCotec || !isProd ? "/": "") + "assets/logos/GING-logo.png"} // Usa una ruta válida
               alt="Descripción de la imagen"
               className={imgLogoClasses} 
             />
@@ -95,7 +98,7 @@ export default function Footer(props) {
             <div className={partnerLogoClasses}>
               <a href="https://www.upm.es/" target="_blank" rel="noopener noreferrer">
             <img
-              src="assets/logos/UPM-logo.png" // Usa una ruta válida
+              src={(isCotec || !isProd ? "/": "") + "assets/logos/UPM-logo.png"} // Usa una ruta válida
               alt="Descripción de la imagen"
               className={imgLogoClasses}  // Asegura que la imagen no exceda la altura máxima
             />

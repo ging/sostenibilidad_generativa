@@ -12,6 +12,8 @@ import { activeRoutes } from "@/constants/routes";
 // icons
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import CloseOutlinedIcon from '@mui/icons-material/CloseOutlined';
+import { envs } from "@/constants/envs";
+
 
 export default function Header(props) {
   const [state, setState] = useState({ open: false });
@@ -19,7 +21,8 @@ export default function Header(props) {
   const currentLang = i18n.language;
   const currentPath = usePathname();
   const refs = useRef([]);
-  const isProd = process.env.NODE_ENV === 'production';
+  const isProd = envs.isProd;
+  const isCotec = envs.isCotec;
 
 
   // classes
@@ -67,13 +70,12 @@ export default function Header(props) {
 
   return (
     <header className={headerClasses + "z-50"} id="header_home"> {/* route={routes.route} ?????*/}
-      {/* <a href="/sostenibilidad_generativa"> */}
-         <a href={isProd ? "/sostenibilidad_generativa" : "/"} className="flex items-center gap-2">
+         <a href={isProd && !isCotec ? "/sostenibilidad_generativa" : "/"} className="flex items-center gap-2">
         <div className="h-9 flex gap-4">
         
           <img
             className="object-contain"
-            src="assets/logos/sg-logo.png"
+            src={(isCotec || !isProd ? "/": "") + "assets/logos/sg-logo.png"}
             alt="logo"
           />
         </div>

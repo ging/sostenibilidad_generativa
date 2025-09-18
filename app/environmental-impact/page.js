@@ -11,6 +11,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import Heading from "@/components/ui/Heading";
 import Image from "@/components/ui/image";
 import clsx from "clsx";
+import { envs } from "@/constants/envs";
+const isProd = envs.isProd;
+const isCotec = envs.isCotec;
 
 import { Button, ButtonVariants } from "@/components/ui/button";
 import {
@@ -72,7 +75,7 @@ export default function enviromentalImpact() {
                 </Text>
                 <Text type="source" className="mt-4 text-left ">
                   <b> {t("environmentalImpact.source")}</b>
-                  <span  className="leading-8" dangerouslySetInnerHTML={{__html: t("environmentalImpact.firstSection.highlight.source")}} />
+                  <span className="leading-8" dangerouslySetInnerHTML={{__html: t("environmentalImpact.firstSection.highlight.source")}} />
                 </Text>
               </div>
             </div>
@@ -119,8 +122,8 @@ export default function enviromentalImpact() {
               <CircularChart 
                 data={
                   [{question: t("environmentalImpact.secondSection.circularChartData.question1"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong1"),  content: t("environmentalImpact.secondSection.circularChartData.content1")},
-                    {question: t("environmentalImpact.secondSection.circularChartData.question2"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong2"),content: t("environmentalImpact.secondSection.circularChartData.content2"), image: "assets/img/sections/datacenter.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright2")}, 
-                    {question: t("environmentalImpact.secondSection.circularChartData.question3"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong3"), content: t("environmentalImpact.secondSection.circularChartData.content3"), image: "assets/img/sections/gpu.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright3")},
+                    {question: t("environmentalImpact.secondSection.circularChartData.question2"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong2"),content: t("environmentalImpact.secondSection.circularChartData.content2"), image: (isCotec || !isProd ? '/' : '') + 'assets/img/sections/datacenter.webp', copyright: t("environmentalImpact.secondSection.circularChartData.copyright2")}, 
+                    {question: t("environmentalImpact.secondSection.circularChartData.question3"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong3"), content: t("environmentalImpact.secondSection.circularChartData.content3"), image: (isCotec || !isProd ? '/' : '') + 'assets/img/sections/gpu.webp', copyright: t("environmentalImpact.secondSection.circularChartData.copyright3")},
                     {question: t("environmentalImpact.secondSection.circularChartData.question4"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong4"), content: t("environmentalImpact.secondSection.circularChartData.content4")},
                   ]
                 } 
@@ -284,9 +287,9 @@ export default function enviromentalImpact() {
                 <ListItem textType="full-p" dangerouslySetInnerHTML={{__html: t("environmentalImpact.fifthSection.li1")}} />
 
                 <div className="flex items-center justify-center h-96" style={{ maxWidth: '500px', width: '90%', height: 'auto', margin: '5px auto 0' }}>
-                  <Image 
-                    src={"assets/img/sections/conversation.png"} 
-                    className="rounded-lg shadow-lg" 
+                  <Image
+                    src={(isCotec || !isProd ? '/' : '') + 'assets/img/sections/conversation.png'}
+                    className="rounded-lg shadow-lg"
                     layout="center"
                     copyright={t("environmentalImpact.fifthSection.imagecopy") || ""}
                   />
@@ -371,9 +374,9 @@ export default function enviromentalImpact() {
             </Text>
             <div className="flex items-center justify-center h-96" style={{ maxWidth: '700px', width: '90%', height: 'auto', margin: '5px auto 0' }}>
                 <a target="_blank" href="challenges">
-                  <Image 
-                    src={"assets/img/sections/challenges.png"} 
-                    className="rounded-lg shadow-lg" 
+                  <Image
+                    src={(isCotec || !isProd ? '/' : '') + 'assets/img/sections/challenges.png'}
+                    className="rounded-lg shadow-lg"
                     layout="center"
                     copyright={t("environmentalImpact.sixthSection.imagecopy") || ""}
                   />

@@ -2,6 +2,9 @@
 
 import React, { useState } from 'react';
 import { useTranslation } from "react-i18next";
+import { envs } from "@/constants/envs";
+const isProd = envs.isProd;
+const isCotec = envs.isCotec;
 
 
 const EnvironmentalFactorsSVG = () => {
@@ -97,7 +100,7 @@ const EnvironmentalFactorsSVG = () => {
             <circle cx="200" cy="120" r="70" fill={colors.water} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="assets/img/impact/water_consumption.png" 
+              href={(isCotec || !isProd ? '/' : '') + "assets/img/impact/water_consumption.png"} 
               x="130" 
               y="50" 
               width="140" 
@@ -121,7 +124,7 @@ const EnvironmentalFactorsSVG = () => {
           {/* Espacio para imagen PNG */}
           
         <image  
-      href="assets/img/impact/carbon_footprint.png"
+      href={(isCotec || !isProd ? '/' : '') + "assets/img/impact/carbon_footprint.png"}
            x="530" 
           y="50" 
           width="140" 
@@ -144,7 +147,7 @@ const EnvironmentalFactorsSVG = () => {
             <circle cx="200" cy="300" r="70" fill={colors.minerals} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="assets/img/impact/minerals.png" 
+              href={(isCotec || !isProd ? '/' : '') + "assets/img/impact/minerals.png"} 
               x="130" 
               y="230" 
               width="140" 
@@ -166,7 +169,7 @@ const EnvironmentalFactorsSVG = () => {
             <circle cx="600" cy="300" r="70" fill={colors.waste} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="assets/img/impact/residue.png" 
+              href={(isCotec || !isProd ? '/' : '') + "assets/img/impact/residue.png"} 
               x="530" 
               y="230"  
               width="140" 

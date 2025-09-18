@@ -34,7 +34,7 @@ export default function RootLayout({ children }) {
     <html className={` ${sourceSans.variable} ${inter.variable} `}>
       <title>Sostenibilidad Generativa</title>
       <body className="bg-background">
-        <Header route={"/sostenibilidad-generativa"} />
+        <Header route={"/"} />
         {children}
         <Footer />
       </body>
