@@ -40,8 +40,8 @@ export default function Header(props) {
 
 
   const menuClasses = clsx(
-    "w-screen px-8 py-4 md:p-0 md:w-fit",
-    "absolute top-[39px] -right-7 md:static",
+    "w-[100vw] px-8 py-4 md:p-0 md:w-fit",
+    "absolute top-[39px] -right-4 sm:-right-8  md:static",
     "flex flex-col lg:flex-row ",
     "gap-8 md:gap-2 lg:gap-8",
     "bg-background bg-blend-darken md:bg-none",
@@ -61,7 +61,7 @@ export default function Header(props) {
 
   const menuItemClasses = clsx(
     "w-fit px-4 py-4 text-center md:p-0 md:w-fit ",
-    "text-20 md:text-base 2xl:text-20 font-heebo",
+    "text-20 md:text-base 2xl:text-20 font-roboto",
     "hover:underline"
   );
 

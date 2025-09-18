@@ -39,11 +39,11 @@ export default function Footer(props) {
         <div className=" flex justify-center flex-col gap-0 xs:gap-2 md:flex-col md:gap-0 ">
           <div className="flex flex-row items-center mb-1">
           <EmailOutlinedIcon sx={{ fontSize: 20 }}  className="mr-2  text-base text-gray-400 h-4 w-4 " />
-          <Text className=" text-[14px] flex gap-1 text-sm text-gray-400 !mb-0" >
+          <Text type="small" className=" text-[14px] flex gap-1 text-sm text-gray-400 !mb-0" >
             <b>{t("footer.email")} </b>
           </Text>
           </div>
-          <Text className="text-gray-400 text-sm "> javier.conde.diaz@upm.es</Text>
+          <Text type="small" className="text-gray-400 text-sm "> javier.conde.diaz@upm.es</Text>
         </div>
       </div>
 
@@ -63,8 +63,8 @@ export default function Footer(props) {
                   : "text-left mb-1 lg:mb-1 hover:underline"
               }
             >
-              <Link className="text-sm" href={route.route}>
-                {t(route.key)}
+              <Link  href={route.route}>
+              <Text type="small" className="text-sm">{t(route.key)}</Text>  
               </Link>
             </li>
           ))}

@@ -183,12 +183,13 @@ const Card = React.forwardRef(
     // PROJECT
     const resultCard = (
       <CustomCard className={cn(CardVariants({ direction, className })) + " hover:scale-[102%]  shadow-sm border-gray-400/20 border-b-1 rounded-md bg-background-300 flex-col sm:flex-row gap-3 sm:gap-6 px-6 py-6 items-start"}>
-        <div className={`w-full h-fit relative sm:self-stretch sm:w-1/2 flex min-w-[184px] sm:min-h-[200px] sm:h-[200px] sm:max-h-[200px] justify-center items-center  rounded-md`}>
-          <Image className=" min-h-[130px] rounded-md" src={logo} fit="cover"
+        <div className={`w-full h-fit relative sm:self-stretch sm:w-1/2 flex min-w-[184px] sm:min-h-[200px] sm:h-[200px] sm:max-h-[200px] justify-center items-center  rounded-md `}>
+          <Image className=" min-h-[130px] md:min-h-[180px] max-h-[200px] rounded-md" src={logo} fit="cover"
             layout={"bottom-right"}
             hasBadge={true}
             badgeVariant={"default"}
             badgeContent={type}
+            fitProperty="false"
           />
         </div>
         <CardBody className="">

@@ -23,8 +23,17 @@
 @layer base {
   @font-face {
     font-family: "Roboto";
+    font-style:italic;
     src: local("Roboto"),
       url("../public/assets/fonts/Roboto-Italic-VariableFont_wght.ttf") format(truetype);
+}
+}
+@layer base {
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    src: local("Roboto"),
+      url("../public/assets/fonts/Roboto-VariableFont_wght.ttf") format(truetype);
 }
 }
 /*TYPE*/

@@ -136,7 +136,7 @@ function ResultsPage() {
         /> 
         </div>*/}
         
-        <div className="standard_margin my-4 sm:my-6 lg:my-10 flex flex-col sm:gap-4 gap-16">
+        <div className="standard_margin my-4 sm:my-6 lg:my-10 flex flex-col sm:gap-4 gap-8">
           {results.map(
             (
               {

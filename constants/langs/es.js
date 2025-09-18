@@ -74,18 +74,24 @@ export const es = {
           "La IA se ejecuta en <strong>servidores</strong> (ordenadores muy potentes). Dentro de estos servidores, un componente clave son las <strong>GPU</strong> (equipos diseñados para hacer los cálculos necesarios para entrenar y ejecutar los modelos). Los servidores se agrupan en unos lugares llamados <strong>centros de datos</strong> para procesar grandes cantidades de información de manera segura y continua.",
         copyright3:
           "GPU. Imagen por <a target='_blank' class='underline' href='https://commons.wikimedia.org/wiki/File:NVidia_GeForce_6600GT_AGP_with_GPU_2009-01-27.jpg'>Wikimeida</a>. Licencia <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-sa/3.0/deed.en'>CC BY-SA 3.0</a>",
-        question1: "¿Quién?",
-        content1:
+          questionLong3: "Where do the resources and energy consumption take place? ",
+          question1: "¿Quién?",
+          questionLong1: "¿Qué actores producen más impacto? ",
+          content1:
           "<strong>1) Las empresas</strong> que desarrollan los modelos son responsables del mayor consumo energético durante el entrenamiento. <br> <strong> 2) Los usuarios </strong> son los que generan un impacto cada vez que hacen preguntas al sistema, aunque más pequeño que el entrenamiento. <br> <br> Sin embargo, el entrenamiento solo se ejecuta una vez, mientras que las inferencias suponen un coste por <strong>cada usuario y pregunta</strong> que hagan. La popularidad de la IA es tan grande que hay millones de usuarios al mismo tiempo haciendo consultas, por lo que, aunque el impacto de la inferencia sea muy inferior al de entrenamiento el gran número de usuarios y peticiones hacen que se conviertan en algo muy relevante.",
-        question4: "¿Cuándo?",
+          questionLong3: "¿Dónde se produce el consumo de recursos y energía? ",
+          question4: "¿Cuándo?",
         content4:
           "<strong>1) Durante el entrenamiento</strong> el modelo necesita ejecutar muchos cálculos para aprender de los datos de entrada. Gracias al entrenamiento el modelo es capaz de procesar nuestras preguntas y darnos respuesta. <br> <br> <strong>2) Durante la inferencia</strong> el modelo tiene que ejecutarse para darnos la respuesta. Cada ejecución del modelo da como resultado una única palabra (o fragmento de palabra), por lo que para formar una respuesta completa necesitará ejecutarse muchas veces. Obtener una respuesta completa puede llevar desde milisegundos a unos pocos segundos.",
-        question2: "¿Por qué?",
+          questionLong4: "¿En qué momento se produce el mayor consumo? ",
+      
+          question2: "¿Por qué?",
         content2:
           "Los centros de datos requieren un gran consumo de electricidad y refrigeración para su funcionamiento. Obtener esa energía conlleva un gran impacto medioambiental. Además, la propia construcción, y mantenimiento de los centros de datos contribuyen significativamente a aumentar su huella de carbono.",
         copyright2:
           "Centro de datos. Imagen por <a target='_blank' class='underline' href='https://modius.com/modius-blog/modius-blog-data-center/what-is-colocation-data-center/'>Modius, Inc</a>. Licencia <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-nc/4.0/#ref-commercial-purposes'>CC BY-NC 4.0</a>",
-      },
+          questionLong2: "¿Por qué necesita la IA esa cantidad de recursos? ",
+        },
       highlight1: {
         title: "Colossus",
         body: "En 2024 xAI (empresa fundada por Elon Musk y desarrolladora del modelo Grok) construyó el centro de datos Colosus, conviertiéndose en el más grande del mundo en solo 122 días, compuesto por 100.000 GPU. Recientemente dobló su tamaño y ahora contiene unas 200.000 GPU.",
@@ -118,6 +124,7 @@ export const es = {
           "<a class='underline' target='_blank' href='https://cadenaser.com/nacional/2025/04/05/el-gasto-energetico-de-la-ia-cada-imagen-generada-con-chatgpt-consume-entre-2-y-5-litros-de-agua-cadena-ser'>Cadena SER</a>",
       },
       environmentalFactors: {
+        AI: "I.A.",
         question1: "Consumo de agua",
         content1:
           "Se utiliza para refrigerar los servidores. La <strong>refrigeración</strong> es fundamental, pues los servidores por su propio funcionamiento se calientan y si no se mantiene una temperatura adecuada dejan de funcionar. También hay que considerar el <strong>consumo indirecto de agua</strong>, como el necesario para obtener la energía eléctrica. El agua no es el único mecanismo de refrigeración existente, otros sistemas son el aire seco o sistemas de ventilación.",

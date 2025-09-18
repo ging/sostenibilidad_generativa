@@ -72,7 +72,7 @@ export default function enviromentalImpact() {
                 </Text>
                 <Text type="source" className="mt-4 text-left ">
                   <b> {t("environmentalImpact.source")}</b>
-                  <span dangerouslySetInnerHTML={{__html: t("environmentalImpact.firstSection.highlight.source")}} />
+                  <span  className="leading-8" dangerouslySetInnerHTML={{__html: t("environmentalImpact.firstSection.highlight.source")}} />
                 </Text>
               </div>
             </div>
@@ -118,10 +118,10 @@ export default function enviromentalImpact() {
             <div className="flex justify-center my-8">
               <CircularChart 
                 data={
-                  [{question: t("environmentalImpact.secondSection.circularChartData.question1"), content: t("environmentalImpact.secondSection.circularChartData.content1")},
-                    {question: t("environmentalImpact.secondSection.circularChartData.question2"), content: t("environmentalImpact.secondSection.circularChartData.content2"), image: "assets/img/sections/datacenter.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright2")}, 
-                    {question: t("environmentalImpact.secondSection.circularChartData.question3"), content: t("environmentalImpact.secondSection.circularChartData.content3"), image: "assets/img/sections/gpu.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright3")},
-                    {question: t("environmentalImpact.secondSection.circularChartData.question4"), content: t("environmentalImpact.secondSection.circularChartData.content4")},
+                  [{question: t("environmentalImpact.secondSection.circularChartData.question1"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong1"),  content: t("environmentalImpact.secondSection.circularChartData.content1")},
+                    {question: t("environmentalImpact.secondSection.circularChartData.question2"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong2"),content: t("environmentalImpact.secondSection.circularChartData.content2"), image: "assets/img/sections/datacenter.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright2")}, 
+                    {question: t("environmentalImpact.secondSection.circularChartData.question3"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong3"), content: t("environmentalImpact.secondSection.circularChartData.content3"), image: "assets/img/sections/gpu.webp", copyright: t("environmentalImpact.secondSection.circularChartData.copyright3")},
+                    {question: t("environmentalImpact.secondSection.circularChartData.question4"), questionLong: t("environmentalImpact.secondSection.circularChartData.questionLong4"), content: t("environmentalImpact.secondSection.circularChartData.content4")},
                   ]
                 } 
                 size={500}

@@ -17,6 +17,7 @@ const Image = ({
   isSvg = false, // prop para detectar SVG
   svgCode = "",  // SVG en formato de código
   copyright = "", // texto de copyright (puede incluir HTML)
+  fitProperty = "true"
 }) => {
   const imageContainerClasses = clsx(
     "relative flex w-full h-full overflow-hidden",
@@ -24,10 +25,18 @@ const Image = ({
   );
 
   const imageClasses = clsx(
-    "w-full h-full flex items-center justify-center ", 
+    "w-full  flex items-center justify-center ", 
     {
       "object-cover": fit === "cover",
       "object-contain": fit === "contain",
+    }
+  );
+
+  const fitPropertyClass = clsx(
+
+    {
+      "h-full": fitProperty === "true",
+      "": fitProperty === "false",
     }
   );
 
@@ -51,7 +60,7 @@ const Image = ({
             dangerouslySetInnerHTML={{ __html: svgCode }} // Renderizamos SVG
           />
         ) : (
-          <img src={src} alt={alt} className={imageClasses} />
+          <img src={src} alt={alt} className={imageClasses + " " + fitPropertyClass}/>
         )}
         {hasBadge && (
           <Badge className={badgeLayout} variant={badgeVariant} size={badgeSize}>

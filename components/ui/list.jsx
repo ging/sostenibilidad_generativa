@@ -30,7 +30,7 @@ const List = ({ type = "ul", textType = "p", styleList, children, className, ...
 const ListItem = ({ textType = "p", children, className, dangerouslySetInnerHTML, ...props }) => {
   // Clases base para los elementos de lista con tipos de texto del componente Text
   const classes = clsx([
-    "font-body font-normal tracking-wide",
+    "font-body font-normal tracking-wide leading-8",
     {
       "text-24 text-20 2xl:text-24 4xl:text-32 max-w-[60ch] xl:max-w-[63ch] 2xl:max-w-[65ch] text-pretty": textType === "lg-p",
       "text-20 2xl:text-24": textType === "full-p",

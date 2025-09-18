@@ -32,124 +32,158 @@ const EnvironmentalFactorsSVG = () => {
   const colors = {
     water: '#48C9B0',
     carbon: '#B6FF84',
-    minerals: '#3e4b53',
-    waste: '#2E7D32'
+    minerals: '#63a7c7',
+    waste: '#659683'
   };
 
   return (
-    <div>
+    <div className='overflow-hidden'>
         <svg 
-        viewBox="0 0 800 400" 
+        viewBox="0 0 800 420" 
         xmlns="http://www.w3.org/2000/svg"
-        className="w-full max-w-5xl mx-auto drop-shadow-lg"
+        className="w-full h-auto max-w-5xl mx-auto drop-shadow-lg scale-[135%] my-10 md:my-0 md:scale-100"
+        preserveAspectRatio="xMidYMid slice"
+        
         >
+           <defs>
+    {/* Clip circular */}
+    <clipPath id="circleClip">
+      <circle cx="600" cy="120" r="68" />
+    </clipPath>
+    <clipPath id="circleClip2">
+      <circle cx="200" cy="120" r="68" />
+    </clipPath>
+    <clipPath id="circleClip3">
+      <circle cx="200" cy="300" r="68" />
+    </clipPath>
+    <clipPath id="circleClip4">
+      <circle cx="600" cy="300" r="68" />
+    </clipPath>
+  </defs>
         {/* Background */}
-        <rect x="0" y="0" width="800" height="400" rx="10" fill="#0d1f19" fillOpacity="0.1" />
+        <rect x="0" y="0" fill="#0d1f19" width="800" height="400" rx="10"  fillOpacity="0.1"  />
         
         {/* Central server icon */}
-        <g transform="translate(400, 200)">
+        <g transform="translate(400, 210)">
             {/* Círculo de fondo para el servidor central */}
-            <circle cx="0" cy="0" r="70" fill="#01e401" />
+            <circle cx="0" cy="0" r="45" fill="#000000" />
             {/* imagen PNG del servidor central */}
-            <image 
+            {/* <image 
               href="assets/img/icons/robot-icon.png" 
-              x="-50" 
-              y="-50" 
-              width="100" 
-              height="100" 
+              x="-30" 
+              y="-30" 
+              width="60" 
+              height="60" 
               preserveAspectRatio="xMidYMid meet"
-            />
+              className='opacity-70'
+            /> */}
+            <text 
+             x="-24" 
+             y="10" 
+             width="60" 
+             height="60" 
+             fontSize="32"
+             fontWeight="bold"
+             fill="#4888db"
+            >  {t("environmentalImpact.thirdSection.environmentalFactors.AI")} </text>
         </g>
 
         {/* Water consumption */}
         <g 
-            className="hover:opacity-90 cursor-pointer" 
+            className="hover:brightness-125 cursor-pointer" 
             id="water-consumption"
             onClick={() => setSelectedSection(factors.water)}
         >
-            <circle cx="200" cy="120" r="60" fill={colors.water} />
+            <circle cx="200" cy="120" r="70" fill={colors.water} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="assets/img/icons/water-icon.png" 
-              x="160" 
-              y="80" 
-              width="80" 
-              height="80" 
+              href="assets/img/impact/water_consumption.png" 
+              x="130" 
+              y="50" 
+              width="140" 
+              height="140" 
+                    clipPath="url(#circleClip2)"
               preserveAspectRatio="xMidYMid meet"
             />
-            <text x="200" y="195" textAnchor="middle" fill="white" fontWeight="bold" fontSize="14">
+            <text x="200" y="210" textAnchor="middle" fill="white" fontWeight="bold" fontSize="16">
             {factors.water.question}
             </text>
         </g>
 
         {/* Carbon footprint */}
         <g 
-            className="hover:opacity-90 cursor-pointer" 
+            className="hover:brightness-125 cursor-pointer rounded-full" 
             id="carbon-footprint"
             onClick={() => setSelectedSection(factors.carbon)}
         >
-            <circle cx="600" cy="120" r="60" fill={colors.carbon} />
-            {/* Espacio para imagen PNG */}
-            <image 
-              href="assets/img/icons/carbon-icon.png" 
-              x="560" 
-              y="80" 
-              width="80" 
-              height="80" 
-              preserveAspectRatio="xMidYMid meet"
-            />
-            <text x="600" y="195" textAnchor="middle" fill="white" fontWeight="bold" fontSize="14">
-            {factors.carbon.question}
-            </text>
+        
+        <circle cx="600" cy="120" r="70" className='rounded-full' fill={colors.carbon}/>
+          {/* Espacio para imagen PNG */}
+          
+        <image  
+      href="assets/img/impact/carbon_footprint.png"
+           x="530" 
+          y="50" 
+          width="140" 
+          height="140" 
+          clipPath="url(#circleClip)"
+          preserveAspectRatio="xMidYMid meet"
+         />
+ 
+           <text x="600" y="210" textAnchor="middle" fill="white" fontWeight="bold" fontSize="16">
+         {factors.carbon.question}
+       </text> 
         </g>
 
         {/* Mineral extraction */}
         <g 
-            className="hover:opacity-90 cursor-pointer" 
+            className="hover:brightness-125 cursor-pointer" 
             id="mineral-extraction"
             onClick={() => setSelectedSection(factors.minerals)}
         >
-            <circle cx="200" cy="280" r="60" fill={colors.minerals} />
+            <circle cx="200" cy="300" r="70" fill={colors.minerals} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="assets/img/icons/minerals-icon.png" 
-              x="160" 
-              y="240" 
-              width="80" 
-              height="80" 
+              href="assets/img/impact/minerals.png" 
+              x="130" 
+              y="230" 
+              width="140" 
+              height="140" 
+                     clipPath="url(#circleClip3)"
               preserveAspectRatio="xMidYMid meet"
             />
-            <text x="200" y="355" textAnchor="middle" fill="white" fontWeight="bold" fontSize="14">
+            <text x="200" y="390" textAnchor="middle" fill="white" fontWeight="bold" fontSize="16">
             {factors.minerals.question}
             </text>
         </g>
 
         {/* Waste management */}
         <g 
-            className="hover:opacity-90 cursor-pointer" 
+            className="hover:brightness-125 cursor-pointer" 
             id="waste-management"
             onClick={() => setSelectedSection(factors.waste)}
         >
-            <circle cx="600" cy="280" r="60" fill={colors.waste} />
+            <circle cx="600" cy="300" r="70" fill={colors.waste} />
             {/* Espacio para imagen PNG */}
             <image 
-              href="assets/img/icons/waste-icon.png" 
-              x="560" 
-              y="240" 
-              width="80" 
-              height="80" 
+              href="assets/img/impact/residue.png" 
+              x="530" 
+              y="230"  
+              width="140" 
+              height="140" 
+                     clipPath="url(#circleClip4)"
               preserveAspectRatio="xMidYMid meet"
             />
-            <text x="600" y="355" textAnchor="middle" fill="white" fontWeight="bold" fontSize="14">
+            <text x="600" y="390" textAnchor="middle" fill="white" fontWeight="bold" fontSize="16">
             {factors.waste.question}
             </text>
         </g>
 
         {/* Connection lines */}
-        <line x1="250" y1="120" x2="350" y2="160" stroke="#48C9B0" strokeWidth="3" strokeDasharray="5,5" />
-        <line x1="550" y1="120" x2="450" y2="160" stroke="#B6FF84" strokeWidth="3" strokeDasharray="5,5" />
-        <line x1="250" y1="280" x2="350" y2="240" stroke="#3e4b53" strokeWidth="3" strokeDasharray="5,5" />
-        <line x1="550" y1="280" x2="450" y2="240" stroke="#2E7D32" strokeWidth="3" strokeDasharray="5,5" />
+        <line x1="270" y1="130" x2="360" y2="180" stroke="#48C9B0" strokeWidth="3" strokeDasharray="5,5" />
+        <line x1="530" y1="130" x2="440" y2="180" stroke="#B6FF84" strokeWidth="3" strokeDasharray="5,5" />
+        <line x1="270" y1="290" x2="360" y2="240" stroke="#63a7c7" strokeWidth="3" strokeDasharray="5,5" />
+        <line x1="530" y1="290" x2="440" y2="240" stroke="#659683" strokeWidth="3" strokeDasharray="5,5" />
         </svg>
         
         {/* Modal que aparece al hacer clic en un factor */}

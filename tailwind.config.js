@@ -22,9 +22,9 @@ module.exports = {
     extend: {
       fontFamily: {
         "title": ['var(--font-inter)', 'sans-serif'],
-        "main": ['Heebo', 'sans-serif'],
-        "body": ['Heebo', 'sans-serif'],
-          "heebo": ['Heebo', 'sans-serif'],
+        "main": ['Roboto', 'sans-serif'],
+        "body": ['Roboto', 'sans-serif'],
+        "Roboto": ['Roboto', 'sans-serif'],
         "chaney": ['Chaney', 'sans-serif'],
         "chaney-wide": ['Chaney-wide', 'sans-serif'],
         

@@ -41,16 +41,16 @@ const Text = ({ type = "p", children, className }) => {
 
   // clsx, aplica clases según el valor del atributo level de manera dinámica
   const classes = clsx([
-    "font-body font-normal tracking-wide",
+    "font-body font-normal tracking-wide text-wrap",
     {/*"text-balance"*/ },
     {
-      "text-24 text-20 3xl:text-24 4xl:text-32 max-w-[60ch] xl:max-w-[63ch] 2xl:max-w-[65ch] text-balance text-pretty": type === "lg-p",
-      "text-20 3xl:text-24 mb-4": type === "full-p",
-      "text-20 sm:text-base 3xl:text-20 max-w-[75ch] xl:max-w-[83ch] 2xl:max-w-[90ch] text-balance text-pretty mb-2": type === "p",
-      "text-base sm:text-sm 3xl:text-base": type === "small",
+      "text-24 3xl:text-24 4xl:text-32 max-w-[60ch] xl:max-w-[63ch] 2xl:max-w-[65ch] text-balance text-pretty": type === "lg-p",
+      "text-20 3xl:text-24 mb-4 leading-8": type === "full-p",
+      "text-20 3xl:text-24 max-w-[75ch] xl:max-w-[83ch] 2xl:max-w-[90ch] text-balance text-pretty mb-2": type === "p",
+      "text-base sm:text-sm  3xl:text-base": type === "small",
       "text-sm sm:text-xs 3xl:text-sm": type === "xs",
       "text-base sm:text-sm 3xl:text-base italic": type === "source",
-      "text-20 sm:text-base 3xl:text-20 max-w-[66ch] xl:max-w-[71ch] 2xl:max-w-[83ch]": type === "short-p",
+      "text-20 3xl:text-20 max-w-[66ch] xl:max-w-[71ch] 2xl:max-w-[83ch]": type === "short-p",
     },
     className
   ])

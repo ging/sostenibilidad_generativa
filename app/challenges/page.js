@@ -152,7 +152,7 @@ function ChallengesPage() {
             <section className="z-10">
               <div className="h-4"></div>
               <Heading level="h4">{t("challenges.escaperoom.rooms.title")}</Heading>
-              <Text>
+              <Text type="full-p">
               {t("challenges.escaperoom.rooms.description1")}
               </Text>
               <div className="code-scapeRoom mt-4 mb-8">

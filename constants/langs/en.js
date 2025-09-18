@@ -12,7 +12,8 @@ export const en = {
     "doc-button": "Documentation",
     "action-button": "About us",
     section1Title: "About the project",
-    section1Description: "Artificial Intelligence is transforming society, but it also has a hidden environmental impact that is rarely mentioned. Generative Sustainability was created to show that technology can progress and be used while still caring for the planet. Contrary to what some people believe, the environmental impact of AI is not limited to those who develop it, it also affects the people who use it. Our work focuses on researching the real energy consumption associated with AI use, raising awareness in society about its responsible use, and teaching simple tips to apply it in an environmentally friendly way. We want young people, adults, and developers of new AI-based technologies to discover that there are simple and effective ways to reduce the impact without giving up innovation.",
+    section1Description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus, id fermentum augue est in nunc. Aliquam erat volutpat. Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien. Sed auctor lectus at elit consectetur, at venenatis ligula faucibus.",
     section1Subtitle: "Project principles",
     latestPublicationsTitle: "Latest publications",
     latestPublicationsButton: "View all publications",
@@ -25,18 +26,17 @@ export const en = {
       sectionTitle: "Sections",
       environmentalImpact: {
         title: "Environmental Impact",
-        body: "Report on the Environmental Impact of AI and a Guide to Best Practices for Reducing Its Impact by Users.",
+        body: "Nullam id dolor sit amet risus malesuada aliquet. In efficitur, purus ac vehicula gravida, sapien justo luctus metus.",
         button: "Learn more",
       },
       challenges: {
         title: "Challenges",
-        body: "Challenge yourself in our virtual Escape Room. Will you be able to escape the room before time and energy run out...?",
+        body: "Duis pharetra, orci nec ultrices gravida, odio urna faucibus lorem, nec pharetra turpis felis nec sapien purus ac vehicula.",
         button: "Challenge yourself",
-        button2: "Challenge yourself..."
       },
       results: {
         title: "Results",
-        body: "Check the results of the project, events, and the tools developed.",
+        body: "Sed auctor etra, orci nec ultullam id dolor rices lectus at elit consectetur,  urna faucibus lorem at venenatis ligula faucibus.",
         button: "Discover more",
       },
     },
@@ -69,15 +69,18 @@ export const en = {
       circularChartData:{
           question3: "Where?",
           content3: "AI runs on <strong>servers</strong> (very powerful computers). Within these servers, a key component are <strong>GPUs</strong> (equipment designed to do the calculations necessary to train and run the models). Servers are grouped in places called <strong>data centers</strong> to process large amounts of information safely and continuously.",
+          questionLong3: "Where do the resources and energy consumption take place? ",
           copyright3: "GPU. Image by <a target='_blank' class='underline' href='https://commons.wikimedia.org/wiki/File:NVidia_GeForce_6600GT_AGP_with_GPU_2009-01-27.jpg'>Wikimeida</a>. License <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-sa/3.0/deed.en'>CC BY-SA 3.0</a>",
           question1: "Who?",
           content1: "<strong>1) The companies</strong> that develop the models are responsible for the highest energy consumption during training. <br> <strong> 2) Users </strong> are the ones who generate an impact every time they ask questions to the system, although smaller than training. <br> <br> However, training is only executed once, while inferences suppose a cost for <strong>every user and question</strong> they make. The popularity of AI is so great that there are millions of users at the same time making queries, so although the impact of inference is much lower than training, the large number of users and requests make them become very relevant.",
+          questionLong1: "Which stakeholders produce more impact? ",
           question4: "When?",
           content4: "<strong>1) During training</strong> the model needs to execute many calculations to learn from the input data. Thanks to training the model is able to process our questions and give us answers. <br> <br> <strong>2) During inference</strong> the model has to be executed to give us the answer. Each execution of the model results in a single word (or word fragment), so to form a complete answer it will need to be executed many times. Getting a complete answer can take from milliseconds to a few seconds.",
+          questionLong4: "At what time does the consumption take place? ",
           question2: "Why?",
           content2: "Data centers require high electricity consumption and cooling for their operation. Obtaining that energy entails a great environmental impact. In addition, the construction and maintenance of data centers themselves contribute significantly to increasing their carbon footprint.",
           copyright2: "Data center. Image by <a target='_blank' class='underline' href='https://modius.com/modius-blog/modius-blog-data-center/what-is-colocation-data-center/'>Modius, Inc</a>. License <a target='_blank' class='underline' href='https://creativecommons.org/licenses/by-nc/4.0/#ref-commercial-purposes'>CC BY-NC 4.0</a>",
-
+          questionLong2: "Why does AI need this amount of intake? ",
       },
       highlight1: {
         title: "Colossus",
@@ -110,6 +113,7 @@ export const en = {
         source: "<a class='underline' target='_blank' href='https://cadenaser.com/nacional/2025/04/05/el-gasto-energetico-de-la-ia-cada-imagen-generada-con-chatgpt-consume-entre-2-y-5-litros-de-agua-cadena-ser'>Cadena SER</a>",
       },
       environmentalFactors: {
+        AI: "A.I.",
         question1: "Water consumption",
         content1: "It is used to cool the servers. <strong>Cooling</strong> is fundamental, as servers heat up due to their own operation and if an adequate temperature is not maintained they stop working. We must also consider <strong>indirect water consumption</strong>, such as that needed to obtain electrical energy. Water is not the only existing cooling mechanism, other systems are dry air or ventilation systems.",
         question2: "Carbon footprint",
@@ -169,8 +173,7 @@ export const en = {
       },
       highlight2: {
         title: "Advice",
-        body: "Thanking chatbots means unnecessary energy consumption since a model doesn't get upset if you don't say thanks. This example illustrates how small habits, multiplied by millions of users, can have a significant impact.",
-        source: "<a class='underline' target='_blank' href='https://www.nytimes.com/2025/04/24/technology/chatgpt-alexa-please-thank-you.html'>The New York Times</a>"
+        body: "Thanking chatbots means unnecessary energy consumption since a model doesn't get upset if you don't say thanks. This example illustrates how small habits, multiplied by millions of users, can have a significant impact."
       },
       li1:"<strong>Use AI only when necessary.</strong> Many times AI is used for very simple tasks, such as writing a brief email, when doing it manually would save energy and keep our own skills active. In addition, some studies point out that constantly delegating to AI can have a negative impact on our cognitive abilities.",
       li2:"<strong>Choose the most efficient model for each task.</strong> The best model is not always the largest or most powerful, but the one that solves the task consuming the least amount of energy. Often, smaller models offer sufficient results for daily tasks. Also smaller models respond faster than advanced reasoning models. Currently model developers are integrating systems that decide which is the best model for each case, so it is expected that in the coming months it will be automatic, although it doesn't hurt to know it.",
@@ -306,7 +309,7 @@ export const en = {
           "Upon completing each room, you'll unlock a character of the password. You'll be able to enter the escape room's opening code once you've completed all the rooms.",
         
           button: "Send",
-        feedback: {
+          feedback: {
           positive: {
             button: " ¡Escaperoom solved!",
             title: "Victory!",
@@ -318,12 +321,15 @@ export const en = {
           },
         },
       },
-      description1: "In the shadows of cyberspace, a group of <strong>four cybercriminals</strong> scattered around the world has developed an unprecedented computer virus. Their goal: <strong>to loop the song <a class='underline' target='_blank' href='https://youtu.be/1m8IyfG925Q?si=JmriYHW1AX0aO9nO&t=21'>Baby Shark</a> on every computer on the planet</strong> 🦈​, generating chaos, disorder, and global panic. Technology authorities have deployed all their resources to stop them, but the clock is ticking against them. The latest intelligence reports indicate that the cyberattack will begin in a few hours, and if it isn’t stopped in time, the disruption will be irreversible.",
-      description2: "However, there is one last hope. The criminals have protected their creation with a <strong>four-digit secret code</strong> 🔑 that can deactivate the virus’s spread. <strong>Each cybercriminal keeps a single digit on their personal computer</strong>. Security teams have managed to remotely access these devices, but the cybercriminals have installed an <strong>extremely sophisticated security Chatbot</strong>, designed to prevent any intruder from accessing their files.",
-      description3: "<strong>Your mission</strong> 🕵️‍♂️ is clear but dangerous: enter each of the four computers, <strong>face their Chatbots, and retrieve the password</strong> before it’s too late. Be careful, <strong>time is limited</strong> ⏰: only 10 minutes of access per computer. Additionally, <strong>the battery of each device ⚡ is critical</strong>, and if the devices run out of power, we will lose access. A single mistake could mean losing the chance to stop the virus forever. Every interaction must be precise and strategic, because one wrong move could seal humanity’s fate to the rhythm of an endless song.",
-      description4: "The world depends on your skill, ingenuity, and speed. If you manage to gather all four digits and crack the final code, <strong>you will be able to neutralize the virus and save humanity</strong> from the most absurd cyber chaos ever imagined. Every second counts, and every decision could be the difference between order and a global reign of <a class='underline' target='_blank' href='https://youtu.be/1m8IyfG925Q?si=JmriYHW1AX0aO9nO&t=21'>Baby Shark</a>.",
-      description5: "You can use anything you want besides the ChatBot in each room (internet, books, your brain 🧠...). <strong>Each mistake ❌ reduces energy by 10%, each word you ask the chatbot costs energy, and every word it responds with also costs energy...</strong> Therefore, you must design <strong>effective prompt strategies</strong>. You can consult <strong><a class='underline' target='_blank' href='environmental-impact#guia-buenas-practicas'>the guide</a></strong> on #GenerativeSustainability, which will show you very effective tricks 📝.",
-      description6: "Good luck! ",
+      description1:
+        "Welcome to the Generative Sustainability escape room! 🕵️‍♂️ To open the room, you'll need to interact with the chatbot and discover the hidden password 🔑.",
+      description2:
+        "When you have it, enter it into the lock to exit the room. ⏰ You have 5 minutes to find the code. You can use anything you want besides the chatbot (internet, books, your brain 🧠...)",
+      description3:
+        "One last thing... to unlock the door we must have saved some energy ⚡ in the system.",
+      description4:
+        "Each mistake ❌ drains 10% of energy, each word you ask the chatbot uses energy, and each word it responds also consumes energy... So you must design effective prompt strategies 📝.",
+      description5: "Good luck!",
       escaperoomCards: {
         button: "Play",
       },
