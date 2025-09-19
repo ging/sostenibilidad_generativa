@@ -44,7 +44,7 @@ const Text = ({ type = "p", children, className }) => {
     "font-body font-normal tracking-wide text-wrap",
     {/*"text-balance"*/ },
     {
-      "3xl:text-24 4xl:text-32 max-w-[60ch] xl:max-w-[63ch] 2xl:max-w-[65ch] text-balance text-pretty": type === "lg-p",
+      "text-20 3xl:text-24 4xl:text-32 max-w-[60ch] xl:max-w-[67ch] 2xl:max-w-[73ch] text-balance text-pretty": type === "lg-p",
       "text-base 3xl:text-24 mb-4 leading-6 ": type === "full-p",
       "text-base 3xl:text-20 max-w-[75ch] xl:max-w-[83ch] 2xl:max-w-[90ch] text-balance text-pretty mb-2": type === "p",
       "text-base sm:text-sm  3xl:text-base": type === "small",
