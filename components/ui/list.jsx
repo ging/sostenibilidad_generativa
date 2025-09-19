@@ -33,7 +33,7 @@ const ListItem = ({ textType = "p", children, className, dangerouslySetInnerHTML
     "font-body font-normal tracking-wide leading-8",
     {
       "text-24 text-20 2xl:text-24 4xl:text-32 max-w-[60ch] xl:max-w-[63ch] 2xl:max-w-[65ch] text-pretty": textType === "lg-p",
-      "text-20 2xl:text-24": textType === "full-p",
+      "text-20 sm:text-base 2xl:text-24": textType === "full-p",
       "text-20 sm:text-base 2xl:text-20 max-w-[75ch] xl:max-w-[83ch] 2xl:max-w-[90ch] text-pretty mb-2": textType === "p",
       "text-base sm:text-sm 2xl:text-base": textType === "small",
       "text-sm sm:text-xs 2xl:text-sm": textType === "xs",

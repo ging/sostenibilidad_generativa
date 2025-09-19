@@ -44,6 +44,7 @@ export default function enviromentalImpact() {
       lang={currentLang}
       className={"environmental-impact page_" + currentLang}
     >
+  
       {/* INTRO */}
       <div className="parallax__layer standard_margin lg:!mb-4">
         <div className="flex flex-col">
@@ -52,7 +53,7 @@ export default function enviromentalImpact() {
           </Heading>
           <div className="flex flex-col md:flex-row gap-4 lg:gap-12 items-start">
             {<Text type="small" className="text-left">
-              <i dangerouslySetInnerHTML={{ __html: t("environmentalImpact.Intro.sectionBody") }} />
+              <i className="italic " dangerouslySetInnerHTML={{ __html: t("environmentalImpact.Intro.sectionBody") }} />
             </Text>}
           </div>
         </div>
@@ -265,7 +266,7 @@ export default function enviromentalImpact() {
             <Heading level="h4" className="text-left" id="presente-futuro">
               {t("environmentalImpact.fifthSection.title")}
             </Heading>
-            <div className=" md:float-right mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-neonGreen ">
+            <div className=" md:float-right mb-4 md:mb-2 md:ml-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-neonGreen ">
               <Heading level="highlightTitle" className="text-left ">
                 {t("environmentalImpact.fifthSection.highlight.title")}
               </Heading>
@@ -329,7 +330,7 @@ export default function enviromentalImpact() {
 
             <OrderedList>
                 <ListItem textType="full-p" dangerouslySetInnerHTML={{__html: t("environmentalImpact.sixthSection.li1")}} />
-                <div className=" md:float-right mb-4 md:mb-2 md:mr-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-green ">
+                <div className=" md:float-right mb-4 md:mb-2 md:mx-6 md:my-2 w-full xs:w-4/5 sm:w-3/5 md:w-2/5 px-4 py-2 rounded-md flex flex-col highlight-green ">
                   <Heading level="highlightTitle" className="text-left ">
                     {t("environmentalImpact.sixthSection.highlight.title")}
                   </Heading>
