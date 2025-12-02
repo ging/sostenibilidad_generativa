@@ -345,4 +345,8 @@ export const es = {
         "En esta sección encontrarás las herramientas que hemos desarrollado.",
     },
   },
+  cookies: {
+    message: "Este sitio web utiliza cookies necesarias para su correcto funcionamiento y mejorar tu experiencia de navegación.",
+    accept: "Aceptar",
+  },
 };

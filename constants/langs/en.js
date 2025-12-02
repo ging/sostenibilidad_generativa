@@ -335,6 +335,10 @@ export const en = {
       title: "Tools",
       description1:
         "In this section you will find the tools we have developed.",
+    },
   },
+  cookies: {
+    message: "This website uses necessary cookies for its proper functioning and to improve your browsing experience.",
+    accept: "Accept",
   },
 };

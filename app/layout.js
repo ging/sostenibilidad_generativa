@@ -4,6 +4,8 @@ import React from "react";
 import "./globals.css";
 import { useState, useEffect } from "react";
 import { routes } from "@/constants/routes";
+import CookieBanner from "../components/CookieBanner";
+
 
 // import i18n (needs to be bundled ;))
 import "./i18n";
@@ -25,6 +27,7 @@ export default function RootLayout({ children }) {
       <body className="bg-background">
         <Header route={"/"} />
         {children}
+        <CookieBanner />
         <Footer />
       </body>
     </html>
